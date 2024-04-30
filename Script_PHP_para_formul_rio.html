@@ -1,0 +1,906 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Script PHP para formulário
+    </title>
+    <meta name="description" content="Script PHP para formulário">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#333">
+    <meta property="og:title" content="Script PHP para formulário" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Script_PHP_para_formul_rio.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content="  crie o php para envio desse formulário:
+
+
+Entre em Contato Conosco
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enviar Mensagem
+
+
+
+
+Telefone: (18) 99774-9186
+E-mail: contato@lyko.com.br
+
+
+
+
+
+ Para criar um script PHP para o processamento do formulário que você forneceu, você precisa seguir alguns passos. O script PHP irá coletar os dados enviados pelo formulário, validá-los e, em seguida, realizar as...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Script PHP para formulário" />
+    <meta name="twitter:description" content="  crie o php para envio desse formulário:
+
+
+Entre em Contato Conosco
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Enviar Mensagem
+
+
+
+
+Telefone: (18) 99774-9186
+E-mail: contato@lyko.com.br
+
+
+
+
+
+ Para criar um script PHP para o processamento do formulário que você forneceu, você precisa seguir alguns passos. O script PHP irá coletar os dados enviados pelo formulário, validá-los e, em seguida, realizar as...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Script PHP para formulário
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                31 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                31 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                
+
+                    
+
+                <p>crie o php para envio desse formulário:</p>
+<p><section class="contact-section py-5" data-aos="fade-up" data-aos-duration="1500"></p>
+<p><div class="container"></p>
+<p><h2 class="text-center mb-4">Entre em Contato Conosco</h2></p>
+<p><div class="row"></p>
+<p><div class="col-md-6"></p>
+<p><form></p>
+<p><div class="mb-3"></p>
+<p><input type="text" class="form-control" id="name" placeholder="Nome(mãe/responsável)"></p>
+<p></div></p>
+<p><div class="mb-3"></p>
+<p><input type="text" class="form-control" id="idade" placeholder="Idade/tamanho da criança"></p>
+<p></div></p>
+<p><div class="mb-3"></p>
+<p><input type="text" class="form-control" id="data" placeholder="Data da ocasião"></p>
+<p></div></p>
+<p><div class="mb-3"></p>
+<p><input type="text" class="form-control" id="cep" placeholder="CEP(para cálculo do frete)"></p>
+<p></div></p>
+<p><div class="mb-3"></p>
+<p><input type="email" class="form-control" id="email" placeholder="Seu E-mail"></p>
+<p></div></p>
+<p><div class="mb-3"></p>
+<p><textarea class="form-control" id="message" rows="3" placeholder="Sua Mensagem"></textarea></p>
+<p></div></p>
+<p><button type="submit" class="btn btn-primary">Enviar Mensagem</button></p>
+<p></form></p>
+<p></div></p>
+<p><div class="col-md-6"></p>
+<p><!-- Adicionar informações de contato e mapa aqui --></p>
+<p><p><strong>Telefone:</strong> (18) 99774-9186</p></p>
+<p><p><strong>E-mail:</strong> contato@lyko.com.br</p></p>
+<p><!-- Inserir mapa aqui --></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></section></p>
+
+
+                    
+
+                <p>Para criar um script PHP para o processamento do formulário que você forneceu, você precisa seguir alguns passos. O script PHP irá coletar os dados enviados pelo formulário, validá-los e, em seguida, realizar as ações necessárias, como enviar um e-mail ou salvar os dados em um banco de dados. Neste caso, vamos focar em um exemplo simples que envia os dados coletados para um e-mail.</p>
+<p>Primeiro, é importante modificar o formulário HTML para garantir que ele possa enviar dados para o script PHP. Depois, criaremos o script PHP.</p>
+<h3>Modificação no Formulário HTML</h3>Você precisa adicionar o atributo `method` e `action` ao elemento `<form>`:
+<p>```html</p>
+<p><form action="processa_formulario.php" method="POST"></p>
+<p><!-- Campos do formulário aqui --></p>
+<p></form></p>
+<p>```</p>
+<h3>Script PHP (processa_formulario.php)</h3>Agora, crie um novo arquivo chamado `processa_formulario.php` com o seguinte conteúdo:
+<p>```php</p>
+<p><?php</p>
+<p>if ($<i>SERVER["REQUEST</i>METHOD"] == "POST") {</p>
+<p>$nome = $_POST['name'] ?? '';</p>
+<p>$idade = $_POST['idade'] ?? '';</p>
+<p>$data = $_POST['data'] ?? '';</p>
+<p>$cep = $_POST['cep'] ?? '';</p>
+<p>$email = $_POST['email'] ?? '';</p>
+<p>$mensagem = $_POST['message'] ?? '';</p>
+<p>// Validar os dados aqui (como verificar se o e-mail é válido, etc.)</p>
+<p>// Preparar o e-mail</p>
+<p>$to = 'destinatario@exemplo.com';  // Substitua pelo seu endereço de e-mail</p>
+<p>$subject = 'Nova Mensagem do Formulário de Contato';</p>
+<p>$message = "Nome: $nome\nIdade/Tamanho: $idade\nData da Ocasião: $data\nCEP: $cep\nE-mail: $email\nMensagem: $mensagem";</p>
+<p>$headers = "From: webmaster@seusite.com.br\r\n";</p>
+<p>$headers .= "Reply-To: $email\r\n";</p>
+<p>// Enviar o e-mail</p>
+<p>if(mail($to, $subject, $message, $headers)) {</p>
+<p>echo 'Mensagem enviada com sucesso.';</p>
+<p>} else {</p>
+<p>echo 'Erro ao enviar mensagem.';</p>
+<p>}</p>
+<p>}</p>
+<p>?></p>
+<p>```</p>
+<p>Este script recebe os dados do formulário, valida-os e, em seguida, envia um e-mail com esses dados. Lembre-se de substituir os endereços de e-mail e realizar validações adicionais conforme necessário.</p>
+<p>Além disso, para os campos do formulário, é importante adicionar o atributo `name` para que eles possam ser identificados no script PHP. Por exemplo, para o campo nome:</p>
+<p>```html</p>
+<p><input type="text" class="form-control" id="name" name="name" placeholder="Nome(mãe/responsável)"></p>
+<p>```</p>
+<p>Repita isso para todos os campos do formulário.</p>
+
+
+                    
+
+                <p>quero que mostre a mensagem de enviada com sucesso e depois retorne para a pagina</p>
+
+
+                    
+
+                <p>Para mostrar a mensagem de sucesso e depois redirecionar o usuário de volta para a página do formulário, você pode usar um pouco de JavaScript junto com o PHP. Vou modificar o script `processa_formulario.php` para incluir essa funcionalidade.</p>
+<h3>Script PHP Modificado (processa_formulario.php)</h3>
+<p>```php</p>
+<p><?php</p>
+<p>if ($<i>SERVER["REQUEST</i>METHOD"] == "POST") {</p>
+<p>$nome = $_POST['name'] ?? '';</p>
+<p>$idade = $_POST['idade'] ?? '';</p>
+<p>$data = $_POST['data'] ?? '';</p>
+<p>$cep = $_POST['cep'] ?? '';</p>
+<p>$email = $_POST['email'] ?? '';</p>
+<p>$mensagem = $_POST['message'] ?? '';</p>
+<p>// Validar os dados aqui</p>
+<p>// Preparar o e-mail</p>
+<p>$to = 'destinatario@exemplo.com';  // Substitua pelo seu endereço de e-mail</p>
+<p>$subject = 'Nova Mensagem do Formulário de Contato';</p>
+<p>$message = "Nome: $nome\nIdade/Tamanho: $idade\nData da Ocasião: $data\nCEP: $cep\nE-mail: $email\nMensagem: $mensagem";</p>
+<p>$headers = "From: webmaster@seusite.com.br\r\n";</p>
+<p>$headers .= "Reply-To: $email\r\n";</p>
+<p>// Enviar o e-mail</p>
+<p>if(mail($to, $subject, $message, $headers)) {</p>
+<p>echo "<script>alert('Mensagem enviada com sucesso.'); window.location.href='/sua-pagina-de-formulario.html';</script>";</p>
+<p>} else {</p>
+<p>echo "<script>alert('Erro ao enviar mensagem.'); window.location.href='/sua-pagina-de-formulario.html';</script>";</p>
+<p>}</p>
+<p>}</p>
+<p>?></p>
+<p>```</p>
+<p>Neste script, após o processo de envio do e-mail, uma caixa de alerta JavaScript é exibida com a mensagem de sucesso ou erro. Em seguida, a função `window.location.href` redireciona o usuário de volta para a página do formulário. Substitua `/sua-pagina-de-formulario.html` pelo caminho da sua página de formulário.</p>
+<h3>Notas Importantes:</h3>- Certifique-se de que a página do formulário está corretamente especificada no `window.location.href`.
+<p>- Lembre-se de adicionar o atributo `name` a todos os campos do formulário para que possam ser capturados pelo script PHP.</p>
+<p>- Realize as validações necessárias dos dados no script PHP para evitar problemas de segurança, como injeções de código.</p>
+
+
+                    
+
+                <p>se eu quiser mandar para varios e-mails</p>
+
+
+                    
+
+                <p>Para enviar o formulário para vários e-mails, você pode modificar o script PHP para incluir um array com os endereços de e-mail desejados. Vou mostrar como você pode fazer isso:</p>
+<h3>Script PHP Modificado para Vários Destinatários (processa_formulario.php)</h3>
+<p>```php</p>
+<p><?php</p>
+<p>if ($<i>SERVER["REQUEST</i>METHOD"] == "POST") {</p>
+<p>$nome = $_POST['name'] ?? '';</p>
+<p>$idade = $_POST['idade'] ?? '';</p>
+<p>$data = $_POST['data'] ?? '';</p>
+<p>$cep = $_POST['cep'] ?? '';</p>
+<p>$email = $_POST['email'] ?? '';</p>
+<p>$mensagem = $_POST['message'] ?? '';</p>
+<p>// Validar os dados aqui</p>
+<p>// Lista de destinatários</p>
+<p>$destinatarios = ['destinatario1@exemplo.com', 'destinatario2@exemplo.com']; // Adicione os endereços de e-mail aqui</p>
+<p>$subject = 'Nova Mensagem do Formulário de Contato';</p>
+<p>$message = "Nome: $nome\nIdade/Tamanho: $idade\nData da Ocasião: $data\nCEP: $cep\nE-mail: $email\nMensagem: $mensagem";</p>
+<p>$headers = "From: webmaster@seusite.com.br\r\n";</p>
+<p>$headers .= "Reply-To: $email\r\n";</p>
+<p>$envioSucesso = true;</p>
+<p>// Enviar o e-mail para cada destinatário</p>
+<p>foreach ($destinatarios as $to) {</p>
+<p>if(!mail($to, $subject, $message, $headers)) {</p>
+<p>$envioSucesso = false;</p>
+<p>break;</p>
+<p>}</p>
+<p>}</p>
+<p>// Verificar se todos os e-mails foram enviados com sucesso</p>
+<p>if ($envioSucesso) {</p>
+<p>echo "<script>alert('Mensagem enviada com sucesso.'); window.location.href='/sua-pagina-de-formulario.html';</script>";</p>
+<p>} else {</p>
+<p>echo "<script>alert('Erro ao enviar mensagem.'); window.location.href='/sua-pagina-de-formulario.html';</script>";</p>
+<p>}</p>
+<p>}</p>
+<p>?></p>
+<p>```</p>
+<h3>Explicação do Código:</h3>- <b>Array de Destinatários</b>: Um array `$destinatarios` é criado contendo todos os endereços de e-mail para os quais você deseja enviar a mensagem.
+<p>- <b>Loop de Envio</b>: O script percorre o array de destinatários, enviando o e-mail para cada um. Se algum dos e-mails falhar, a variável `$envioSucesso` se torna `false`.</p>
+<p>- <b>Verificação de Sucesso</b>: Após tentar enviar para todos os destinatários, o script verifica se todos os e-mails foram enviados com sucesso e exibe uma mensagem apropriada.</p>
+<h3>Notas Importantes:</h3>- Certifique-se de que os endereços de e-mail estão corretos.
+<p>- Lembre-se de adicionar o atributo `name` a todos os campos do formulário.</p>
+<p>- É importante realizar as validações dos dados recebidos para evitar problemas de segurança.</p>
+
+
+                    
+
+                <p>COMO FAÇO PARA O TEXTO <p> </p> fique mais centrado?     <div class="container-fluid" data-aos="fade-up" data-aos-duration="1500"></p>
+<p><div class="row"></p>
+<p><div class="col-12 p-0"></p>
+<p><div class="banner-section" style="background-image: url('assets/images/bgsec.webp');"></p>
+<p><div class="text-center py-5"></p>
+<p><h2 class=" display-4 fw-bold">Razões para Celebrar o Primeiro Aniversário</h2></p>
+<p><p class="px-2">A festa do primeiro aninho é uma homenagem para as mães/família e criança,</p>
+<p>celebrarem suas próprias conquistas, superações, desafios e marcar o crescimento ao longo do</p>
+<p>ano. A data é uma oportunidade única para se ter lindas lembranças desse período lindo na</p>
+<p>vida da criança e família, um momento de amor, alegria e a presença de pessoas</p>
+<p>significativas.</p>
+<p>Comemorar o primeiro aninho do bebê é uma maneira de marcar esse período efêmero e valorizar</p>
+<p>cada fase do crescimento.</p></p>
+<p><a href="http://lykoluli.blogspot.com/2015/01/lyko-fez-vestido-de-aniversario-de-1_9.html"></p>
+<p><p class="mt-3">>> Veja essa linda história...</p>
+<p></p></p>
+<p></a></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+
+
+                    
+
+                <p>Para centralizar mais o texto dentro do elemento `<p>`, você pode utilizar algumas técnicas de CSS. Uma das formas mais comuns é ajustar as margens e o alinhamento do texto. Vou mostrar como você pode fazer isso.</p>
+<h3>Opção 1: Ajuste de Margens</h3>Você pode ajustar as margens do parágrafo para centralizá-lo mais em relação ao seu container. Isso pode ser feito adicionando um estilo CSS inline ou através de uma classe CSS.
+<h4>CSS Inline</h4>```html
+<p><p class="px-2" style="margin: auto; max-width: 800px;"></p>
+<p><!-- Seu texto aqui --></p>
+<p></p></p>
+<p>```</p>
+<h4>Classe CSS</h4>Em seu arquivo CSS:
+<p>```css</p>
+<p>.centralizado {</p>
+<p>margin: auto;</p>
+<p>max-width: 800px;</p>
+<p>}</p>
+<p>```</p>
+<p>No HTML:</p>
+<p>```html</p>
+<p><p class="px-2 centralizado"></p>
+<p><!-- Seu texto aqui --></p>
+<p></p></p>
+<p>```</p>
+<p>### Opção 2: Utilizando Flex</p>
+
+
+                    
+
+                <p>Para centralizar o texto dentro do elemento `<p>` mais efetivamente, você pode ajustar o CSS. A propriedade `text-align: center;` já é aplicada através da classe `text-center`, que você já está utilizando. No entanto, se o texto ainda não parece centralizado da maneira que você deseja, pode ser necessário ajustar as margens ou o padding do elemento `<p>` para obter o efeito desejado.</p>
+<p>Aqui está uma sugestão de como você pode ajustar o CSS para melhorar o centrado do texto:</p>
+<p>```html</p>
+<p><div class="container-fluid" data-aos="fade-up" data-aos-duration="1500"></p>
+<p><div class="row"></p>
+<p><div class="col-12 p-0"></p>
+<p><div class="banner-section" style="background-image: url('assets/images/bgsec.webp');"></p>
+<p><div class="text-center py-5"></p>
+<p><h2 class="display-4 fw-bold">Razões para Celebrar o Primeiro Aniversário</h2></p>
+<p><p class="custom-paragraph">A festa do primeiro aninho é uma homenagem para as mães/família e criança,</p>
+<p>celebrarem suas próprias conquistas, superações, desafios e marcar o crescimento ao longo do</p>
+<p>ano. A data é uma oportunidade única para se ter lindas lembranças desse período lindo na</p>
+<p>vida da criança e família, um momento de amor, alegria e a presença de pessoas</p>
+<p>significativas.</p>
+<p>Comemorar o primeiro aninho do bebê é uma maneira de marcar esse período efêmero e valorizar</p>
+<p>cada fase do crescimento.</p></p>
+<p><a href="http://lykoluli.blogspot.com/2015/01/lyko-fez-vestido-de-aniversario-de-1_9.html"></p>
+<p><p class="mt-3">>> Veja essa linda história...</p></p>
+<p></a></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p>```</p>
+<p>E no seu arquivo CSS:</p>
+<p>```css</p>
+<p>.custom-paragraph {</p>
+<p>margin-left: auto;</p>
+<p>margin-right: auto;</p>
+<p>width: 80%; /<i> Ajuste esta largura conforme necessário </i>/</p>
+<p>}</p>
+<p>```</p>
+<h3>Explicação:</h3>
+<p>- <b>Classe `custom-paragraph`</b>: Uma nova classe CSS chamada `custom-paragraph` é aplicada ao elemento `<p>` para dar um controle mais específico.</p>
+<p>- <b>Margens Automáticas</b>: As propriedades `margin-left: auto;` e `margin-right: auto;` são utilizadas para centralizar o elemento dentro de seu contêiner pai.</p>
+<p>- <b>Largura</b>: A propriedade `width` é ajustada para controlar a largura do elemento `<p>`. Isso pode ajudar a centrar o texto visualmente dentro da área do elemento.</p>
+<p>Estas mudanças devem ajudar a conseguir o efeito de texto mais centrado que você está buscando. Ajuste o valor da `width` conforme necessário para obter o melhor resultado visual para o seu layout.</p>
+
+
+                    
+
+                <p>quero colocar uma seção com as redes sociais</p>
+
+
+                    
+
+                <p>Criar uma seção dedicada às redes sociais em uma página web é uma ótima maneira de conectar seu site com outras plataformas e incentivar os visitantes a segui-lo nessas redes. Vou descrever como você pode estruturar essa seção usando Bootstrap 5, mantendo um design responsivo e atraente.</p>
+<h3>Estrutura HTML para a Seção de Redes Sociais</h3>
+<p>```html</p>
+<p><section class="social-media-section py-5 bg-light"></p>
+<p><div class="container text-center"></p>
+<p><h2 class="mb-4">Siga-nos nas Redes Sociais</h2></p>
+<p><div class="row"></p>
+<p><div class="col"></p>
+<p><a href="https://www.facebook.com/seuPerfil" target="_blank" class="social-link"></p>
+<p><i class="fab fa-facebook-f"></i> Facebook</p>
+<p></a></p>
+<p></div></p>
+<p><div class="col"></p>
+<p><a href="https://www.instagram.com/seuPerfil" target="_blank" class="social-link"></p>
+<p><i class="fab fa-instagram"></i> Instagram</p>
+<p></a></p>
+<p></div></p>
+<p><div class="col"></p>
+<p><a href="https://www.twitter.com/seuPerfil" target="_blank" class="social-link"></p>
+<p><i class="fab fa-twitter"></i> Twitter</p>
+<p></a></p>
+<p></div></p>
+<p><!-- Adicione mais redes sociais conforme necessário --></p>
+<p></div></p>
+<p></div></p>
+<p></section></p>
+<p>```</p>
+<h3>CSS para Estilizar a Seção</h3>
+<p>```css</p>
+<p>.social-media-section .social-link {</p>
+<p>color: #333;</p>
+<p>font-size: 20px;</p>
+<p>text-decoration: none;</p>
+<p>margin: 10px;</p>
+<p>}</p>
+<p>.social-media-section .social-link:hover {</p>
+<p>color: #007bff;</p>
+<p>}</p>
+<p>.social-media-section i {</p>
+<p>margin-right: 8px;</p>
+<p>}</p>
+<p>```</p>
+<h3>Font Awesome para Ícones de Redes Sociais</h3>
+<p>Inclua o Font Awesome no `<head>` do seu HTML para usar ícones de redes sociais:</p>
+<p>```html</p>
+<p><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"></p>
+<p>```</p>
+<h3>Explicação</h3>
+<p>- <b>Contêiner da Seção</b>: A seção é criada com um `container` do Bootstrap para garantir que o conteúdo esteja alinhado e responsivo.</p>
+<p>- <b>Título</b>: Um título simples indica o propósito da seção.</p>
+<p>- <b>Links das Redes Sociais</b>: Cada rede social tem seu próprio link (`<a>`) dentro de uma coluna (`<div class="col">`). Isso garante que eles sejam exibidos lado a lado em uma linha e empilhados em dispositivos menores.</p>
+<p>- <b>Ícones</b>: Os ícones do Font Awesome são usados para representar visualmente cada rede social.</p>
+<p>- <b>CSS</b>: Estilos adicionais são aplicados para melhorar a aparência dos links e ícones.</p>
+<p>Você pode ajustar os links, adicionar mais redes sociais e personalizar os estilos para se adequarem à identidade visual do seu site.</p>
+
+
+                    
+
+                <p>crie algo que faça a pessoa saber que a foto é clicavel e leva ao blog sobre o tema?</p>
+<p><section class="collections-section pt-5" data-aos="fade-up" data-aos-duration="1500"></p>
+<p><div class="container text-center"></p>
+<p><h2 class="display-4 lh-1 py-5">GALERIA DE SONHOS REALIZADOS:</h2></p>
+<p><div class="row"></p>
+<p><!-- Item de Coleção --></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2023/08/vestido-de-1-ano-da-isabella.html"><img</p>
+<p>src="assets/images/vestido1.webp" alt="Coleção" class="img-fluid"</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Aniversário de 1 Ano</h3></p>
+<p><p>Modelo creme claro feito para o tema camponesa, todo em algodão, com golinha de crochê,</p>
+<p>mangas fofas pequenas e aviamentos nos recortes.</p></p>
+<p></div></p>
+<p></div></p>
+<p><!-- Repetir para mais itens --></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2018/12/lyko-fez-vestido-para-helena.html"><img</p>
+<p>src="assets/images/vestido2.webp" alt="Coleção" class="img-fluid "</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Aniversário de 1 Ano</h3></p>
+<p><p>Modelo azul e verde feito para tema fundo do mar, com tules na saia e mangas, e pérolas</p>
+<p>bordadas nos ombros.</p></p>
+<p></div></p>
+<p></div></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2022/08/lyko-fez-vestido-para-isabela.html"><img</p>
+<p>src="assets/images/vestido3.webp" alt="Coleção" class="img-fluid"</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Aniversário de 1 Ano</h3></p>
+<p><p>Modelo na cor rose feito para o tema arco-íris, com renda e pérolas bordadas no corpo e</p>
+<p>punhos, e tules nas mangas e saia.</p></p>
+<p></div></p>
+<p></div></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2021/10/lyko-fez-vestido-para-marina.html"><img</p>
+<p>src="assets/images/vestido4.webp" alt="Coleção" class="img-fluid"</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Batizado, vestido de 1 Ano</h3></p>
+<p><p>Modelo branco, feito em laise e renda de algodão, tule e pérolas bordadas.</p></p>
+<p></div></p>
+<p></div></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2018/04/lyko-fez-vestido-da-bela-lorena.html"><img</p>
+<p>src="assets/images/vestido5.webp" alt="Coleção" class="img-fluid"</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Aniversário de 1 Ano</h3></p>
+<p><p>Modelo amarelo claro feito para o tema, Princesa Bela, com bordado dourado no corpo, tule sob</p>
+<p>os ombros e saia, e rosas origâmis.</p></p>
+<p></div></p>
+<p></div></p>
+<p><div class="col-md-4 mb-4"></p>
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2022/03/lyko-fez-vestido-para-gabriela.html"><img</p>
+<p>src="assets/images/vestido6.webp" alt="Coleção" class="img-fluid"</p>
+<p>style="border-radius: 15px;"></a></p>
+<p><h3>Daminha de honra</h3></p>
+<p><p>Modelo feito todo branco, com aplicação de recortes de renda e pérolas bordadas no corpo e</p>
+<p>mangas, decote v, laço fofo nas costas, e tule duplo no barrado.</p></p>
+<p></div></p>
+<p></div></p>
+<p><div class="container my-5"></p>
+<p><a href="vestidos.html" class="btn btn-galeria" target="_blank"></p>
+<p>CLIQUE PARA VER MAIS VESTIDOS...</p>
+<p></a></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></section></p>
+
+
+                    
+
+                <p>Para tornar mais evidente que as imagens são clicáveis e levam ao blog sobre o tema, você pode aplicar algumas técnicas visuais e de interação. Aqui estão algumas sugestões:</p>
+<h3>1. Efeito de Hover nas Imagens</h3>Adicionar um efeito visual quando o mouse passa sobre a imagem pode indicar que ela é interativa. Por exemplo, você pode adicionar um leve efeito de zoom ou mudar a opacidade da imagem.
+<h4>CSS para Efeito de Hover</h4>```css
+<p>.collection-item img {</p>
+<p>transition: transform 0.3s ease, opacity 0.3s ease;</p>
+<p>}</p>
+<p>.collection-item img:hover {</p>
+<p>transform: scale(1.05);</p>
+<p>opacity: 0.8;</p>
+<p>}</p>
+<p>```</p>
+<h3>2. Ícone de Link ou Botão "Saiba Mais"</h3>Adicionar um ícone de link ou um botão "Saiba Mais" sobre a imagem também pode indicar interatividade. Isso pode ser feito com um pequeno ícone de seta ou lupa que aparece no meio da imagem quando o mouse passa sobre ela.
+<h4>HTML e CSS para Ícone de Link</h4>```html
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2023/08/vestido-de-1-ano-da-isabella.html"></p>
+<p><img src="assets/images/vestido1.webp" alt="Coleção" class="img-fluid" style="border-radius: 15px;"></p>
+<p><span class="overlay-icon"><i class="fas fa-link"></i></span> <!-- Ícone de link --></p>
+<p></a></p>
+<p><!-- Restante do conteúdo aqui --></p>
+<p></div></p>
+<p>```</p>
+<p>```css</p>
+<p>.collection-item {</p>
+<p>position: relative;</p>
+<p>display: inline-block;</p>
+<p>}</p>
+<p>.overlay-icon {</p>
+<p>position: absolute;</p>
+<p>top: 50%;</p>
+<p>left: 50%;</p>
+<p>transform: translate(-50%, -50%);</p>
+<p>font-size: 24px; /<i> Ajuste o tamanho conforme necessário </i>/</p>
+<p>color: #fff; /<i> Cor do ícone </i>/</p>
+<p>opacity: 0;</p>
+<p>transition: opacity 0.3s ease;</p>
+<p>}</p>
+<p>.collection-item:hover .overlay-icon {</p>
+<p>opacity: 1;</p>
+<p>}</p>
+<p>```</p>
+<h3>3. Legenda "Clique para Saber Mais"</h3>Adicionar uma legenda abaixo de cada imagem indicando que o clique leva a mais informações também é uma boa estratégia.
+<h4>HTML para Legenda</h4>```html
+<p><div class="collection-item image-container text-center"></p>
+<p><a href="http://lykoluli.blogspot.com/2023/08/vestido-de-1-ano-da-isabella.html"></p>
+<p><img src="assets/images/vestido1.webp" alt="Coleção" class="img-fluid" style="border-radius: 15px;"></p>
+<p></a></p>
+<p><h3>Aniversário de 1 Ano</h3></p>
+<p><p>Modelo creme claro feito para o tema camponesa, todo em algodão...</p></p>
+<p><p class="click-info">Clique na imagem para saber mais</p> <!-- Legenda adicional --></p>
+<p></div></p>
+<p>```</p>
+<h3>4. Animação ou Efeito no Cursor</h3>Um efeito adicional pode ser mudar o estilo do cursor para `cursor: pointer;` ao passar sobre a imagem, reforçando a ideia de que é um elemento clicável.
+<h4>CSS para Cursor</h4>```css
+<p>.collection-item img {</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>```</p>
+<h3>Conclusão</h3>Essas técnicas podem ser combinadas ou usadas individualmente para criar um indicativo claro de que as imagens são interativas e levam a mais informações no blog. Lembre-se de testar a acessibilidade e a responsividade para garantir uma experiência de usuário consistente em diferentes dispositivos.
+
+
+                    
+
+                <p>no computador da para utilizar o popper? e no smartphone como da para criar algo intuitivo para passar a ideia de que a foto é clicavel?</p>
+
+
+                    
+
+                <p>Sim, você pode usar o Popper (uma biblioteca popular para tooltips e popovers) em um site para computadores e criar alternativas intuitivas para smartphones. Vou detalhar como você pode fazer isso para ambos os cenários:</p>
+<h3>1. Usando Popper.js em Computadores</h3>Popper.js é uma biblioteca que permite criar tooltips e popovers que podem ser usados para indicar que uma imagem é clicável.
+<h4>Passos Básicos para Usar Popper.js:</h4>1. <b>Incluir o Popper.js</b>: Adicione o Popper.js ao seu projeto. Você pode fazer isso incluindo o CDN no `<head>` do seu HTML:
+<p>```html</p>
+<p><script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script></p>
+<p>```</p>
+<p>2. <b>Criar Tooltip com Popper.js</b>:</p>
+<p>No seu HTML, adicione um atributo `title` às imagens que você deseja que tenham um tooltip.</p>
+<p>```html</p>
+<p><img src="assets/images/vestido1.webp" alt="Coleção" title="Clique para saber mais"></p>
+<p>```</p>
+<p>No seu JavaScript, você pode inicializar o Popper para mostrar tooltips quando o mouse estiver sobre a imagem:</p>
+<p>```javascript</p>
+<p>var popperInstance = Popper.createPopper(imageElement, tooltipElement, {</p>
+<p>placement: 'top', // Você pode mudar a posição do tooltip aqui</p>
+<p>});</p>
+<p>```</p>
+<h3>2. Alternativas Intuitivas para Smartphones</h3>Em smartphones, onde o hover não é uma opção, você pode usar diferentes métodos para indicar que uma imagem é clicável:
+<p>- <b>Ícones Visíveis</b>: Adicione um ícone de link ou uma lupa diretamente sobre a imagem. Isso pode ser feito com um ícone de "seta" ou "mais" que fica visível o tempo todo.</p>
+<p>```html</p>
+<p><div class="collection-item"></p>
+<p><a href="seuLink.html"></p>
+<p><img src="imagem.jpg" alt="Descrição"></p>
+<p><span class="overlay-icon"><i class="fas fa-link"></i></span></p>
+<p></a></p>
+<p></div></p>
+<p>```</p>
+<p>- <b>Bordas ou Sombras ao Redor da Imagem</b>: Estilizar as imagens com bordas ou sombras destacadas pode também indicar que são elementos interativos.</p>
+<p>```css</p>
+<p>.collection-item img {</p>
+<p>box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);</p>
+<p>border: 2px solid #007bff;</p>
+<p>}</p>
+<p>```</p>
+<p>- <b>Animações Subtis</b>: Adicionar uma animação sutil que é ativada ao carregar a página, como um breve "pulsar" da imagem, pode chamar atenção para a interatividade da imagem.</p>
+<p>```css</p>
+<p>@keyframes pulse {</p>
+<p>0% { transform: scale(1); }</p>
+<p>50% { transform: scale(1.05); }</p>
+<p>100% { transform: scale(1); }</p>
+<p>}</p>
+<p>.collection-item img {</p>
+<p>animation: pulse 2s infinite;</p>
+<p>}</p>
+<p>```</p>
+<h3>Conclusão</h3>Para computadores, o uso de popovers ou tooltips do Popper.js pode ser uma solução eficaz. Para smartphones, onde o hover não é uma opção, ícones visíveis, bordas destacadas, sombras, ou animações sutis podem ser usadas para indicar que a imagem é clicável. Lembre-se de testar a funcionalidade em vários dispositivos para garantir uma experiência de usuário consistente.
+
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>

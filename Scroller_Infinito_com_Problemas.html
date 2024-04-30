@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Scroller Infinito com Problemas
+    </title>
+    <meta name="description" content="Scroller Infinito com Problemas">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta property="og:title" content="Scroller Infinito com Problemas" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Scroller_Infinito_com_Problemas.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content="  estou fazendo uma faixa com scroller infinito veja o que esta errado, html:                         Home          ...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Scroller Infinito com Problemas" />
+    <meta name="twitter:description" content="  estou fazendo uma faixa com scroller infinito veja o que esta errado, html:                         Home          ...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+    <div id="cookieConsentContainer" class="cookie-consent-container">
+        <p>Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site. <a href="#">Saiba Mais</a></p>
+        <button id="acceptCookieConsent">Aceitar</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Scroller Infinito com Problemas
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                29 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                29 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                
+
+                    
+
+                <p>estou fazendo uma faixa com scroller infinito veja o que esta errado, html:     <div class="scroller"><br/>        <ul class="tag-list scrollerinterno"><br/>            <li><a href="index.html" class="text-white">Home</a></li><br/>            <li><a href="vestidos.html" class="text-white">Galeria</a></li><br/>            <li><a href="nossahistória.html" class="text-white">Nossa História</a></li><br/>            <li><a href="https://lykoluli.blogspot.com/" class="text-white">Blog</a></li><br/>            <li><a href="termosdeservicos.html" class="text-white">Termos de Serviços</a></li><br/>            <li><a href="politicadeprivacidade.html" class="text-white">Políticas de Privacidade</a></li><br/>        </ul><br/>    </div> css:<br/>.tag-list {<br/>    margin: 0;<br/>    padding-inline: 0;<br/>    list-style: none;<br/>}</p><p>.tag-list li {<br/>    padding: 1rem;<br/>    background: #555555;<br/>    border-radius: 0.5rem;<br/>    box-shadow: 0 0.5rem 1 rem -0.25rem #555555;<br/>}</p><p>.scroller {<br/>    max-width: 600px;<br/>    <br/>}</p><p>.scrollerinterno {<br/>    padding-block: 1rem;<br/>    display: flex;<br/>    gap: 1rem;<br/>    flex-wrap: wrap;<br/>    <br/>}</p><p>.scroller[data-animated="true"] {<br/>    overflow: hidden;<br/>    -webkit-mask: linear-gradient(<br/>      90deg,<br/>      transparent,<br/>      white 20%,<br/>      white 80%,<br/>      transparent<br/>    );<br/>    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);<br/>  }<br/>  <br/>  .scroller[data-animated="true"] .scroller<i></i>inner {<br/>    width: max-content;<br/>    flex-wrap: nowrap;<br/>    animation: scroll var(--<i>animation-duration, 40s)<br/>      var(--</i>animation-direction, forwards) linear infinite;<br/>  }<br/>  <br/>  .scroller[data-direction="right"] {<br/>    --<i>animation-direction: reverse;<br/>  }<br/>  <br/>  .scroller[data-direction="left"] {<br/>    --</i>animation-direction: forwards;<br/>  }<br/>  <br/>  .scroller[data-speed="fast"] {<br/>    --<i>animation-duration: 20s;<br/>  }<br/>  <br/>  .scroller[data-speed="slow"] {<br/>    --</i>animation-duration: 60s;<br/>  }<br/>  <br/>  @keyframes scroll {<br/>    to {<br/>      transform: translate(calc(-50% - 0.5rem));<br/>    }<br/>  }<br/>  js: <script></p><p>const scrollers = document.querySelectorAll('.scroller');</p><p>// If a user hasn't opted in for recuded motion, then we add the animation<br/>if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {<br/>    addAnimation();<br/>}</p><p>function addAnimation() {<br/>    scrollers.forEach((scroller) => {<br/>        // add data-animated="true" to every `.scroller` on the page<br/>        scroller.setAttribute('data-animated', true);</p><p>// Make an array from the elements within `.scroller-inner`<br/>        const scrollerInner = scroller.querySelector('.scrollerinterno');<br/>        const scrollerContent = Array.from(scrollerInner.children);</p><p>// For each item in the array, clone it<br/>        // add aria-hidden to it<br/>        // add it into the `.scroller-inner`<br/>        scrollerContent.forEach((item) => {<br/>            const duplicatedItem = item.cloneNode(true);<br/>            duplicatedItem.setAttribute("aria-hidden", true);<br/>            scrollerInner.appendChild(duplicatedItem);<br/>        });<br/>    });<br/>}<br/></script></p>
+
+                    
+
+                <p>Parece que você está tentando criar um scroller infinito usando HTML, CSS e JavaScript. Vamos analisar o seu código para identificar possíveis problemas e sugerir correções.</p><h3>Análise do Código</h3><h4>HTML</h4><br/>- Sua estrutura HTML parece correta. Você tem uma `div` com a classe `scroller` e um `ul` com a classe `scrollerinterno`.<h4>CSS</h4><br/>- As classes `.tag-list` e `.tag-list li` parecem bem configuradas.<br/>- A classe `.scroller` define uma largura máxima, o que é bom.<br/>- A classe `.scrollerinterno` está configurada para exibição flexível e espaçamento entre os itens.<br/>- A classe `.scroller[data-animated="true"]` e suas variantes parecem ser para estilizar o scroller quando animado.<h4>JavaScript</h4><br/>- O JavaScript identifica todos os elementos com a classe `.scroller` e, se o usuário não preferir reduzir o movimento, adiciona a animação.<br/>- A função `addAnimation` clona os elementos dentro do `.scrollerinterno` para criar o efeito de scroller infinito.<h3>Possíveis Problemas e Soluções</h3><p>1. <b>Classe `.scroller<i></i>inner` Não Definida:</b> No seu CSS, você se refere a uma classe `.scroller<i></i>inner` na animação, mas essa classe não existe no seu HTML. Você deveria substituir `.scroller<i></i>inner` por `.scrollerinterno` no CSS.</p><p>```css<br/>    .scroller[data-animated="true"] .scrollerinterno {<br/>        width: max-content;<br/>        flex-wrap: nowrap;<br/>        animation: scroll var(--<i>animation-duration, 40s) var(--</i>animation-direction, forwards) linear infinite;<br/>    }<br/>    ```</p><p>2. <b>Animação de Rolagem:</b> Certifique-se de que a animação `scroll` no CSS está se movendo na direção correta. O valor `transform: translate(calc(-50% - 0.5rem));` pode precisar ser ajustado com base na direção e velocidade desejadas.</p><p>3. <b>Teste em Diferentes Navegadores:</b> Diferentes navegadores podem interpretar o CSS e o JavaScript de maneiras ligeiramente diferentes. Teste o seu scroller em navegadores diferentes para garantir a compatibilidade.</p><p>4. <b>Verificação de Elementos Duplicados:</b> Seu JavaScript clona cada item dentro do `scrollerinterno`. Certifique-se de que esses itens clonados estão sendo corretamente anexados e exibidos. Você pode adicionar um console.log para verificar se os elementos estão sendo duplicados como esperado.</p><p>5. <b>Desempenho:</b> Scrollers infinitos podem causar problemas de desempenho se não forem bem otimizados, especialmente se houver muitos elementos. Monitore o desempenho e considere limitar o número de elementos clonados se necessário.</p><p>6. <b>Prefers-Reduced-Motion:</b> Boa prática incluir a verificação de `prefers-reduced-motion` para acessibilidade.</p><p>Se após essas correções o scroller ainda não funcionar como esperado, pode ser necessário investigar mais a fundo, talvez verificando se há conflitos com outros estilos ou scripts na página.</p>
+
+                    
+
+                <p>estou rodando bootstrap 5 na pagina, isso pode afetar meu efeito?</p>
+
+                    
+
+                <p>Sim, o uso do Bootstrap 5 em sua página pode afetar o efeito do seu scroller infinito de várias maneiras, principalmente devido aos estilos e comportamentos padrão do Bootstrap que podem entrar em conflito ou sobrescrever seu CSS e JavaScript personalizados. Aqui estão alguns pontos a considerar:</p><h3>Conflitos de Estilo</h3><br/>1. <b>Classes Padrão do Bootstrap:</b> Bootstrap vem com um conjunto de classes predefinidas que podem ter estilos que entram em conflito com os seus. Por exemplo, se você estiver usando classes como `.list-unstyled` ou `.d-flex` do Bootstrap em elementos próximos ou dentro do seu scroller, esses estilos podem alterar o layout ou a aparência do seu scroller.<p>2. <b>Estilos Responsivos:</b> Bootstrap é focado em design responsivo. Se o seu scroller não estiver configurado para ser responsivo, ele pode se comportar de maneira inesperada em diferentes tamanhos de tela.</p><p>3. <b>Sobrescrita de Estilos:</b> O Bootstrap pode estar sobrescrevendo alguns dos seus estilos personalizados. É importante garantir que seus estilos tenham especificidade suficiente para sobrescrever os do Bootstrap quando necessário.</p><h3>Conflitos de JavaScript</h3><br/>1. <b>Manipulação do DOM:</b> Se o Bootstrap estiver manipulando o DOM de uma maneira que afeta seu scroller, isso pode causar problemas. Por exemplo, componentes do Bootstrap como modais ou guias podem alterar o layout ou a visibilidade de elementos na página.<p>2. <b>Eventos de JavaScript:</b> Se o Bootstrap e seu script estiverem tentando manipular os mesmos elementos, eles podem entrar em conflito. Por exemplo, se ambos estiverem tentando controlar a rolagem ou a resposta a cliques em determinados elementos.</p><h3>Soluções</h3><br/>1. <b>Revisão dos Estilos:</b> Verifique se os estilos do seu scroller têm especificidade suficiente para sobrescrever os estilos do Bootstrap. Isso pode envolver o uso de seletores mais específicos ou a aplicação de estilos diretamente através do JavaScript.<p>2. <b>Testar em Ambiente Isolado:</b> Tente implementar o scroller em uma página sem Bootstrap para ver se ele funciona como esperado. Se funcionar, provavelmente há um conflito com o Bootstrap na sua página atual.</p><p>3. <b>Depuração do JavaScript:</b> Use ferramentas de desenvolvedor do navegador para verificar se há erros de JavaScript ou problemas de manipulação do DOM que possam estar afetando o scroller.</p><p>4. <b>Documentação e Comunidade do Bootstrap:</b> Consulte a documentação do Bootstrap para entender melhor como seus componentes funcionam e procure na comunidade por problemas semelhantes enfrentados por outros desenvolvedores.</p><p>5. <b>Customização Cuidadosa:</b> Se necessário, personalize o Bootstrap, removendo componentes que você não está usando e que podem estar causando conflitos.</p><p>Lembrando que a depuração eficaz geralmente envolve testar e isolar o problema passo a passo, para entender exatamente onde o conflito está ocorrendo.</p>
+
+                    
+
+                <p>o javascript não esta funcionando</p>
+
+                    
+
+                <p>Se o JavaScript não está funcionando para o seu scroller infinito na página com Bootstrap 5, vamos abordar algumas etapas de solução de problemas para identificar e corrigir o problema:</p><h3>1. Verifique os Erros no Console</h3><br/>- Abra as ferramentas de desenvolvedor do seu navegador (geralmente acessível pressionando F12) e vá para a aba "Console". Procure por mensagens de erro que podem indicar o que está dando errado.<h3>2. Confirme se o Script Está Carregando</h3><br/>- Verifique se o seu script JavaScript está sendo carregado corretamente na página. Confirme se o caminho do arquivo está correto e se o script não está sendo bloqueado por algum motivo.<h3>3. Ordem de Carregamento dos Scripts</h3><br/>- Bootstrap requer jQuery e Popper.js para alguns de seus componentes. Garanta que você está carregando essas dependências antes do Bootstrap e que seu script personalizado é carregado após todas essas bibliotecas.<h3>4. Teste de Isolamento</h3><br/>- Tente executar o código JavaScript para o scroller em uma página simples sem o Bootstrap. Isso ajudará a determinar se o problema está no seu código JavaScript ou na interação com o Bootstrap.<h3>5. Verifique a Sintaxe e a Lógica</h3><br/>- Reveja a sintaxe do seu código JavaScript para garantir que não há erros. Também verifique a lógica para assegurar que as funções estão sendo chamadas corretamente e que os seletores estão corretos.<h3>6. Conflitos com Bootstrap</h3><br/>- O Bootstrap pode ter seus próprios manipuladores de eventos que entram em conflito com os seus. Verifique se não há nenhum conflito entre seu código JavaScript e o Bootstrap, especialmente se você estiver manipulando elementos que o Bootstrap também manipula.<h3>7. Uso de `DOMContentLoaded`</h3><br/>- Certifique-se de que seu código JavaScript é executado após o carregamento completo do DOM. Você pode envolver seu código em um ouvinte de eventos `DOMContentLoaded`:<p>```javascript<br/>  document.addEventListener('DOMContentLoaded', (event) => {<br/>      // Seu código aqui<br/>  });<br/>  ```</p><h3>8. Depuração Passo a Passo</h3><br/>- Use `console.log` para imprimir mensagens em diferentes pontos do seu script para ver onde o código pode estar falhando.<h3>9. Compatibilidade do Navegador</h3><br/>- Verifique se o seu código JavaScript é compatível com o navegador que você está usando. Algumas funcionalidades podem não ser suportadas em navegadores mais antigos.<h3>10. Verificação de Acessibilidade</h3><br/>- Confirme se a funcionalidade 'prefers-reduced-motion' está interferindo com a execução do seu script, especialmente se você estiver usando isso em seu código.<p>Se, após essas verificações, o problema persistir, você pode precisar compartilhar mais detalhes ou considerar simplificar seu código para identificar o problema com mais facilidade.</p>
+
+                    
+
+                <p>não esta ativando o  [data-animated="true"]</p>
+
+                    
+
+                <p>Se o atributo `data-animated="true"` não está sendo ativado no seu scroller, isso indica um problema no JavaScript, onde a função responsável por adicionar esse atributo não está sendo executada ou não está funcionando conforme o esperado. Vamos revisar e ajustar seu código para corrigir esse problema.</p><h3>Passos para Solucionar o Problema</h3><h4>1. Verificar a Execução do JavaScript</h4><br/>Confirme se o script JavaScript está sendo executado. Você pode fazer isso adicionando um `console.log` no início da função `addAnimation`:<p>```javascript<br/>function addAnimation() {<br/>    console.log("addAnimation is running");<br/>    // Resto do código...<br/>}<br/>```</p><p>Se você não ver a mensagem no console do navegador, isso significa que a função não está sendo chamada.</p><h4>2. Confirmação do Seletor</h4><br/>Certifique-se de que o seletor `.scroller` está selecionando os elementos corretos. Verifique se a classe `scroller` está aplicada nos elementos HTML apropriados.<h4>3. Condição de Animação</h4><br/>O script depende da condição `window.matchMedia("(prefers-reduced-motion: reduce)").matches`. Confirme se essa condição está sendo satisfeita. Para testar, você pode temporariamente comentar essa condição:<p>```javascript<br/>// if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {<br/>    addAnimation();<br/>// }<br/>```</p><h4>4. Revisão da Função `addAnimation`</h4><br/>Dentro da função `addAnimation`, você está configurando `data-animated` para `true`. Certifique-se de que `scroller.querySelector('.scrollerinterno')` está selecionando o elemento correto. Se `scrollerinterno` não for um filho direto de `scroller`, esse seletor não funcionará.<h4>5. Teste de Elementos Encontrados</h4><br/>Adicione um `console.log` para testar se os elementos estão sendo encontrados corretamente:<p>```javascript<br/>scrollers.forEach((scroller) => {<br/>    console.log(scroller); // Verifique se o elemento correto está sendo encontrado<br/>    // Resto do código...<br/>});<br/>```</p><h4>6. Verificar Erros de JavaScript</h4><br/>Verifique o console do navegador para quaisquer erros de JavaScript que possam estar impedindo a execução do código.<h4>7. Execução Após o Carregamento do DOM</h4><br/>Garanta que o seu script está sendo executado após o carregamento completo do DOM. Se o script for executado antes de o DOM estar totalmente carregado, ele pode não encontrar os elementos corretamente.<p>```javascript<br/>document.addEventListener('DOMContentLoaded', (event) => {<br/>    // Seu código JavaScript aqui<br/>});<br/>```</p><h3>Conclusão</h3><br/>Ao seguir esses passos, você deve ser capaz de identificar o motivo pelo qual `data-animated="true"` não está sendo ativado. A solução geralmente envolve garantir que o script está sendo executado no momento certo, que os seletores estão corretos, e que não há condições impedindo a execução do código.
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>

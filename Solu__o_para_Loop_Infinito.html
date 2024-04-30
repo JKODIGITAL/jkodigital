@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Solução para Loop Infinito
+    </title>
+    <meta name="description" content="Solução para Loop Infinito">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta property="og:title" content="Solução para Loop Infinito" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Solu__o_para_Loop_Infinito.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content="  estou com problema de carregar essa seção que tem looping infinito aparecendo algumas revistas, mostre uma solução mantendo o mesmo efeito:             Aparecemos em:             ...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Solução para Loop Infinito" />
+    <meta name="twitter:description" content="  estou com problema de carregar essa seção que tem looping infinito aparecendo algumas revistas, mostre uma solução mantendo o mesmo efeito:             Aparecemos em:             ...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+    <div id="cookieConsentContainer" class="cookie-consent-container">
+        <p>Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site. <a href="#">Saiba Mais</a></p>
+        <button id="acceptCookieConsent">Aceitar</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Solução para Loop Infinito
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                29 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                29 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                
+
+                    
+
+                <p>estou com problema de carregar essa seção que tem looping infinito aparecendo algumas revistas, mostre uma solução mantendo o mesmo efeito:     <section class="faixa-marcas"><br/>        <h1 class="text-center" data-aos="fade-up" data-aos-duration="1500">Aparecemos em:</h1><br/>        <div class="scroller mx-auto" data-direction="right" data-speed="slow" data-aos="fade-up"<br/>            data-aos-duration="1500"><br/>            <div class="scrollerinterno mx-auto"><br/>                <img src="/assets/images/revistabazarkids.png" height="100" alt="" /><br/>                <img src="/assets/images/revistacrescer1.png" height="100" alt="" /><br/>                <img src="/assets/images/revistaestilo.png" height="100" alt="" /><br/>                <img src="/assets/images/revistamariee.png" height="100" alt="" /><br/>                <img src="/assets/images/revistamodamoldes.png" height="100" alt="" /><br/>                <img src="/assets/images/revistanmagazine.png" height="100" alt="" /><br/>            </div><br/>        </div><br/>    </section> estilo: <br/>.tag-list {<br/>    margin: 0;<br/>    padding-inline: 0;<br/>    list-style: none;<br/>}</p><p>.tag-list li {<br/>    padding: 1rem;<br/>    background: #555555;<br/>    border-radius: 0.5rem;<br/>    box-shadow: 0 0.5rem 1 rem -0.25rem #555555;<br/>}</p><p>.scroller {<br/>    max-width: 1200px;<br/>    <br/>}</p><p>.scrollerinterno {<br/>    padding-block: 1rem;<br/>    display: flex;<br/>    gap: 1rem;<br/>    flex-wrap: wrap;<br/>   <br/>}</p><p>.scroller[data-animated="true"] {<br/>    overflow: hidden;<br/>    -webkit-mask: linear-gradient(<br/>      90deg,<br/>      transparent,<br/>      white 20%,<br/>      white 80%,<br/>      transparent<br/>    );<br/>    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);<br/>  }<br/>  <br/>  .scroller[data-animated="true"] .scrollerinterno {<br/>    width: max-content;<br/>    flex-wrap: nowrap;<br/>    animation: scroll var(--<i>animation-duration, 40s)<br/>      var(--</i>animation-direction, forwards) linear infinite;<br/>  }<br/>  <br/>  .scroller[data-direction="right"] {<br/>    --<i>animation-direction: reverse;<br/>  }<br/>  <br/>  .scroller[data-direction="left"] {<br/>    --</i>animation-direction: forwards;<br/>  }<br/>  <br/>  .scroller[data-speed="fast"] {<br/>    --<i>animation-duration: 20s;<br/>  }<br/>  <br/>  .scroller[data-speed="slow"] {<br/>    --</i>animation-duration: 60s;<br/>  }<br/>  <br/>  @keyframes scroll {<br/>    to {<br/>      transform: translate(calc(-50% - 0.5rem));<br/>    }<br/>  }<br/>  .faixa-marcas{<br/>    place-content: center;<br/>  } javascript:  <script></p><p><br/>        document.addEventListener('DOMContentLoaded', (event) => {<br/>            // Seu código JavaScript aqui</p><p>const scrollers = document.querySelectorAll('.scroller');</p><p>// If a user hasn't opted in for recuded motion, then we add the animation<br/>            //if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {<br/>            //  console.log("addAnimation is running");<br/>            //   addAnimation();<br/>            //}<br/>            addAnimation();<br/>            function addAnimation() {<br/>                console.log("addAnimation is running");<br/>                scrollers.forEach((scroller) => {<br/>                    // add data-animated="true" to every `.scroller` on the page<br/>                    scroller.setAttribute('data-animated', true);</p><p>// Make an array from the elements within `.scroller-inner`<br/>                    const scrollerInner = scroller.querySelector('.scrollerinterno');<br/>                    const scrollerContent = Array.from(scrollerInner.children);</p><p>// For each item in the array, clone it<br/>                    // add aria-hidden to it<br/>                    // add it into the `.scroller-inner`<br/>                    scrollerContent.forEach((item) => {<br/>                        const duplicatedItem = item.cloneNode(true);<br/>                        duplicatedItem.setAttribute("aria-hidden", true);<br/>                        scrollerInner.appendChild(duplicatedItem);<br/>                    });<br/>                });<br/>            }<br/>        });<br/>    </script></p>
+
+                    
+
+                <p>Para resolver o problema do loop infinito na seção que apresenta revistas, podemos ajustar o JavaScript e o CSS. Vou sugerir algumas mudanças:</p><p>1. <b>JavaScript</b>: A lógica atual está correta em termos de clonar os elementos para criar um efeito de loop contínuo. No entanto, é importante garantir que a largura do container `.scrollerinterno` seja suficiente para acomodar todas as imagens sem que se sobreponham. Além disso, devemos verificar se o loop está sendo reiniciado corretamente.</p><p>2. <b>CSS</b>: O CSS parece adequado, mas é necessário garantir que o espaço entre as imagens clonadas e as originais seja suficiente para evitar sobreposições visuais.</p><p>Vamos às alterações:</p><h3>JavaScript</h3><p>```javascript<br/>document.addEventListener('DOMContentLoaded', (event) => {<br/>    const scrollers = document.querySelectorAll('.scroller');</p><p>addAnimation();</p><p>function addAnimation() {<br/>        scrollers.forEach((scroller) => {<br/>            scroller.setAttribute('data-animated', true);</p><p>const scrollerInner = scroller.querySelector('.scrollerinterno');<br/>            const scrollerContent = Array.from(scrollerInner.children);</p><p>// Calcula a largura total necessária para evitar sobreposição<br/>            let totalWidth = 0;<br/>            scrollerContent.forEach((item) => {<br/>                totalWidth += item.offsetWidth + parseFloat(getComputedStyle(item).marginRight);<br/>            });</p><p>scrollerInner.style.width = `${totalWidth <b> 2}px`; // Dobro da largura para acomodar clones</p><p>scrollerContent.forEach((item) => {<br/>                const duplicatedItem = item.cloneNode(true);<br/>                duplicatedItem.setAttribute("aria-hidden", true);<br/>                scrollerInner.appendChild(duplicatedItem);<br/>            });<br/>        });<br/>    }<br/>});<br/>```</p><h3>CSS</h3><p>Verifique se o espaçamento entre as imagens é suficiente:</p><p>```css<br/>.scrollerinterno img {<br/>    margin-right: 1rem; /</b> Ajuste conforme necessário */<br/>}<br/>```</p><p>Essas alterações devem ajudar a resolver o problema do loop infinito, mantendo a aparência desejada. Lembre-se de testar a seção em diferentes tamanhos de tela para garantir que o comportamento seja consistente.</p>
+
+                    
+
+                <p>esqueci de mencionar que ele só não esta aparecendo no iphone</p>
+
+                    
+
+                <p>Se a seção de revistas não está sendo exibida corretamente apenas em iPhones, isso sugere que o problema pode estar relacionado à compatibilidade ou a especificidades do navegador Safari, que é o padrão nos dispositivos iOS. Aqui estão algumas sugestões para solucionar o problema:</p><h3>1. Verificação de Compatibilidade CSS</h3><p>O Safari tem algumas peculiaridades em relação ao CSS, especialmente com propriedades como `-webkit-mask` e animações CSS. Certifique-se de que todas as propriedades CSS usadas sejam compatíveis com o Safari. Por exemplo, a propriedade `mask` pode não funcionar conforme esperado no Safari. Em vez disso, considere usar `-webkit-mask-image` com gradientes para obter um efeito semelhante.</p><h3>2. Verificar Problemas de Renderização no Safari</h3><p>O Safari, em algumas versões, pode ter problemas com a renderização de elementos animados ou com overflow oculto. Verifique se a animação ou as propriedades de overflow estão causando o problema. Em alguns casos, adicionar `transform: translate3d(0,0,0);` aos elementos pode forçar a aceleração por hardware e corrigir problemas de renderização.</p><h3>3. Testar Eventos JavaScript</h3><p>Garanta que o evento `DOMContentLoaded` esteja sendo disparado como esperado no Safari. Alguns navegadores têm diferenças sutis no momento em que este evento é acionado. Você pode adicionar um `console.log` para confirmar se o código está sendo executado.</p><h3>4. Verificar a Visualização de Imagens</h3><p>Às vezes, a forma como as imagens são carregadas ou exibidas pode variar entre navegadores. Verifique se o caminho das imagens está correto e se não há problemas com o formato ou tamanho das imagens que possam impedir que sejam exibidas no Safari.</p><h3>5. Testar em Diferentes Dispositivos</h3><p>Se possível, teste em diferentes modelos de iPhone e versões do iOS para determinar se o problema é específico de um modelo ou versão.</p><h3>6. Utilizar Ferramentas de Desenvolvimento do Safari</h3><p>Use as ferramentas de desenvolvimento do Safari para inspecionar a seção problemática e verificar se há erros de console ou problemas de renderização.</p><h3>7. Considerar Consulta de Mídia Específica para iOS</h3><p>Em casos extremos, você pode adicionar uma consulta de mídia CSS específica para iOS que ajusta ou simplifica o estilo para esses dispositivos.</p><p>```css<br/>@media screen and (max-device-width: 812px) { /<b> iPhone X, por exemplo </b>/<br/>    /<b> Estilos específicos para iPhones </b>/<br/>}<br/>```</p><p>Se nenhuma dessas sugestões resolver o problema, talvez seja necessário um diagnóstico mais profundo, o que pode incluir a revisão detalhada do código e testes mais abrangentes em dispositivos iOS.</p>
+
+                    
+
+                <p>como ficaria o código para rodar em iphone com o mesmo efeito visual de loop infinito da faixa rodando?</p>
+
+                    
+
+                <p>Para garantir que o efeito de loop infinito funcione adequadamente em iPhones, mantendo a compatibilidade com outros dispositivos, vamos fazer algumas modificações no código. O Safari no iOS pode apresentar comportamentos diferentes, especialmente em relação a animações e renderização CSS. Vou fornecer uma versão revisada do seu código com foco na compatibilidade com o Safari no iOS:</p><h3>HTML</h3><p>Mantenha o HTML como está, pois a estrutura básica deve funcionar bem em todas as plataformas.</p><h3>CSS</h3><p>No CSS, vamos garantir que as propriedades usadas sejam compatíveis com o Safari e adicionar algumas regras para lidar com possíveis problemas de renderização:</p><p>```css<br/>.tag-list {<br/>    /<b> suas regras existentes </b>/<br/>}</p><p>.tag-list li {<br/>    /<b> suas regras existentes </b>/<br/>}</p><p>.scroller {<br/>    max-width: 1200px;<br/>    overflow: hidden;<br/>}</p><p>.scrollerinterno {<br/>    display: flex;<br/>    gap: 1rem;<br/>    flex-wrap: nowrap; /<b> Alterado para nowrap </b>/<br/>    animation: scroll 60s linear infinite; /<b> Definir a animação diretamente aqui </b>/<br/>}</p><p>@keyframes scroll {<br/>    100% {<br/>        transform: translateX(-100%); /<b> Mudança para simplificar a animação </b>/<br/>    }<br/>}</p><p>/<b> Estilo para Safari e iOS </b>/<br/>@media not all and (min-resolution:.001dpcm) {<br/>    @supports (-webkit-appearance:none) {<br/>        .scrollerinterno {<br/>            -webkit-transform: translate3d(0,0,0); /<b> Melhoria na renderização </b>/<br/>        }<br/>    }<br/>}<br/>```</p><h3>JavaScript</h3><p>O JavaScript permanecerá bastante semelhante, mas vamos garantir que a largura do container interno seja suficiente para acomodar todos os itens:</p><p>```javascript<br/>document.addEventListener('DOMContentLoaded', () => {<br/>    const scrollers = document.querySelectorAll('.scroller');</p><p>scrollers.forEach((scroller) => {<br/>        const scrollerInner = scroller.querySelector('.scrollerinterno');<br/>        const scrollerContent = Array.from(scrollerInner.children);</p><p>let totalWidth = 0;<br/>        scrollerContent.forEach((item) => {<br/>            totalWidth += item.offsetWidth + parseFloat(getComputedStyle(item).marginRight);<br/>        });</p><p>scrollerInner.style.width = `${totalWidth * 2}px`; // Ajuste para evitar sobreposição</p><p>scrollerContent.forEach((item) => {<br/>            const clonedItem = item.cloneNode(true);<br/>            scrollerInner.appendChild(clonedItem);<br/>        });<br/>    });<br/>});<br/>```</p><p>Essas alterações no CSS e no JavaScript visam melhorar a compatibilidade do efeito de loop infinito no Safari, especialmente em iPhones. Recomendo testar em diferentes dispositivos e versões do iOS para garantir que o comportamento seja consistente.</p>
+
+                    
+
+                <p>o efeito parou de funcionar</p>
+
+                    
+
+                <p>Vamos revisar e ajustar o código para garantir que o efeito de loop infinito funcione corretamente, especialmente em iPhones. Parece que a animação CSS pode não estar sendo aplicada como esperado. Vou fornecer uma versão simplificada e mais compatível do seu código:</p><h3>HTML</h3><p>O HTML permanece o mesmo. Certifique-se de que os caminhos das imagens estejam corretos e que as imagens sejam carregadas sem problemas em todos os dispositivos.</p><h3>CSS</h3><p>Vamos simplificar o CSS para a animação e garantir que seja compatível com o Safari:</p><p>```css<br/>.scroller {<br/>    max-width: 1200px;<br/>    overflow: hidden;<br/>    position: relative;<br/>}</p><p>.scrollerinterno {<br/>    display: flex;<br/>    animation: scroll linear infinite;<br/>}</p><p>/<b> Ajuste a duração da animação conforme necessário </b>/<br/>.scroller[data-speed="slow"] .scrollerinterno {<br/>    animation-duration: 60s;<br/>}</p><p>.scroller[data-speed="fast"] .scrollerinterno {<br/>    animation-duration: 20s;<br/>}</p><p>@keyframes scroll {<br/>    0% { transform: translateX(0); }<br/>    100% { transform: translateX(-50%); }<br/>}</p><p>/<b> Estilos adicionais conforme necessário </b>/<br/>```</p><p>Neste CSS, a animação é aplicada diretamente à classe `.scrollerinterno`. Ajuste a duração conforme necessário.</p><h3>JavaScript</h3><p>O JavaScript inicializa a animação e duplica os itens para criar o efeito de loop:</p><p>```javascript<br/>document.addEventListener('DOMContentLoaded', () => {<br/>    const scrollers = document.querySelectorAll('.scroller');</p><p>scrollers.forEach((scroller) => {<br/>        const scrollerInner = scroller.querySelector('.scrollerinterno');<br/>        const items = Array.from(scrollerInner.children);</p><p>items.forEach((item) => {<br/>            const clone = item.cloneNode(true);<br/>            scrollerInner.appendChild(clone);<br/>        });<br/>    });<br/>});<br/>```</p><p>Este JavaScript clona cada item dentro de `.scrollerinterno` para criar o efeito de loop.</p><h3>Testando a Solução</h3><p>Após implementar essas mudanças, teste o site em diferentes navegadores, incluindo o Safari em iPhones. É importante verificar em vários dispositivos para assegurar a compatibilidade.</p><p>Se o problema persistir, pode ser necessário um diagnóstico mais detalhado, o que pode envolver a revisão do código completo e testes em um ambiente de desenvolvimento. Certifique-se também de que não há conflitos com outros scripts ou estilos na página que possam afetar a animação.</p>
+
+                    
+
+                <p>ficou bem pior, melhor retornar a versão que eu passei e tentar outra solução</p>
+
+                    
+
+                <p>Entendo, vamos voltar para a sua versão inicial e tentar uma abordagem diferente para resolver o problema específico com iPhones. Vou focar em ajustes que possam ser mais compatíveis com o Safari em iOS:</p><h3>1. Verifique a Compatibilidade com o Safari</h3><br/>Inicialmente, verifique se todas as propriedades CSS são suportadas pelo Safari. Propriedades como `-webkit-mask` podem ter comportamentos diferentes neste navegador.<h3>2. Ajustes na Animação CSS</h3><br/>Vamos ajustar a animação para garantir que ela funcione bem no Safari. O Safari pode ter problemas com animações complexas ou propriedades de transformação.<h3>CSS</h3><p>```css<br/>.scroller {<br/>    max-width: 1200px;<br/>    overflow: hidden;<br/>}</p><p>.scrollerinterno {<br/>    display: flex;<br/>    animation: scroll 60s linear infinite;<br/>}</p><p>@keyframes scroll {<br/>    0% { transform: translateX(0); }<br/>    100% { transform: translateX(-100%); }<br/>}</p><p>/<b> Ajustes para melhorar a renderização no Safari </b>/<br/>.scrollerinterno img {<br/>    -webkit-transform: translateZ(0);<br/>    transform: translateZ(0);<br/>}<br/>```</p><p>Nesta versão, a animação é simplificada, movendo os itens de 0% a -100% do seu tamanho total. A propriedade `transform: translateZ(0)` é adicionada para melhorar a renderização no Safari.</p><h3>3. JavaScript para Duplicação de Elementos</h3><br/>A sua lógica JavaScript para duplicar os elementos está correta. Podemos mantê-la como está. No entanto, é crucial garantir que a largura do container `.scrollerinterno` seja suficiente para acomodar todas as imagens, inclusive as duplicadas.<h3>Teste e Depuração</h3><br/>Após implementar essas mudanças, teste novamente no Safari, especialmente em iPhones. Use as ferramentas de desenvolvimento do Safari para depurar problemas específicos de renderização ou de animação.<p>Se o problema persistir, pode ser útil verificar se há algum conflito com outros scripts ou estilos na página. Além disso, testar em diferentes versões do iOS pode ajudar a identificar se o problema é específico para uma versão.</p><p>Continuaremos buscando soluções caso estas não resolvam o problema. A depuração em dispositivos específicos pode ser um processo iterativo e, às vezes, complexo.</p>
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>
