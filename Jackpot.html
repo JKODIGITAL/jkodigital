@@ -1,0 +1,2182 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Jackpot
+    </title>
+    <meta name="description" content="Jackpot">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#333">
+    <meta property="og:title" content="Jackpot" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Jackpot.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content=" crie um botão CTA utilizando html, css e javascript, que ao clicar apareça uma tela similar a um caça níquel  e mostra que a pessoa foi premiada com um desconto
+ Para criar um botão CTA (Call to Action) com HTML, CSS e JavaScript, que ao clicar exibe uma...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Jackpot" />
+    <meta name="twitter:description" content=" crie um botão CTA utilizando html, css e javascript, que ao clicar apareça uma tela similar a um caça níquel  e mostra que a pessoa foi premiada com um desconto
+ Para criar um botão CTA (Call to Action) com HTML, CSS e JavaScript, que ao clicar exibe uma...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Jackpot
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                31 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                31 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                <p>crie um botão CTA utilizando html, css e javascript, que ao clicar apareça uma tela similar a um caça níquel  e mostra que a pessoa foi premiada com um desconto</p>
+
+
+                    
+
+                <p>Para criar um botão CTA (Call to Action) com HTML, CSS e JavaScript, que ao clicar exibe uma tela similar a um caça-níquel e informa que a pessoa ganhou um desconto, siga as etapas abaixo:</p>
+<p>1. Crie um arquivo HTML (por exemplo, index.html) e adicione o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></div></p>
+<p><div class="slot"></div></p>
+<p><div class="slot"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>2. Crie um arquivo CSS (por exemplo, styles.css) e adicione o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>3. Crie um arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slots = document.querySelectorAll('.slot');</p>
+<p>const result = document.getElementById('result');</p>
+<p>function spinSlots() {</p>
+<p>for (const slot of slots) {</p>
+<p>const randomNumber = Math.floor(Math.random() * 10);</p>
+<p>slot.textContent = randomNumber;</p>
+<p>}</p>
+<p>}</p>
+<p>function showDiscount() {</p>
+<p>const discount = Math.floor(Math.random() * 51) + 10; // Gera um desconto aleatório entre 10% e 60%</p>
+<p>result.textContent = `Parabéns! Você ganhou ${discount}% de desconto!`;</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>spinSlots();</p>
+<p>setTimeout(showDiscount, 2000); // Mostra o desconto após 2 segundos</p>
+<p>});</p>
+<p>```</p>
+<p>Com isso, você terá um botão CTA que, ao ser clicado, exibirá uma animação de caça-níquel e depois inform</p>
+
+
+                    
+
+                <p>crie um botão CTA utilizando html, css e javascript, que após clicar no botão, uma tela se abre, similar a um caça níquel, alguns símbolos começam a girar e se alinham mostrando que a pessoa foi premiada com um desconto de 40%</p>
+
+
+                    
+
+                <p>Para criar um botão CTA (Call to Action) que, ao ser clicado, exibe uma tela similar a um caça-níquel com símbolos giratórios e mostra que a pessoa ganhou um desconto de 40%, siga as etapas abaixo:</p>
+<p>1. Crie um arquivo HTML (por exemplo, index.html) e adicione o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>2. Crie um arquivo CSS (por exemplo, styles.css) e adicione o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>font-size: 24px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>3. Crie um arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function spinSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>const randomSymbol = symbolsList[Math.floor(Math.random() *</p>
+
+
+                    
+
+                <p>continue</p>
+
+
+                    
+
+                <p>symbolsList.length)];</p>
+<p>symbol.textContent = randomSymbol;</p>
+<p>}</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'none';</p>
+<p>symbol.style.transform = 'translateY(0)';</p>
+<p>}</p>
+<p>setTimeout(() => {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = 'translateY(-240px)';</p>
+<p>}</p>
+<p>}, 50);</p>
+<p>}</p>
+<p>function showDiscount() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou 40% de desconto!';</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>spinSlots();</p>
+<p>showDiscount();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Agora, ao clicar no botão CTA, uma tela similar a um caça-níquel aparecerá com símbolos giratórios. Após a animação terminar, os símbolos se alinham e exibem uma mensagem informando que a pessoa ganhou um desconto de 40%.</p>
+
+
+                    
+
+                <p>melhore apenas o arquivo javascript e faça os elementos girar como um caça níquel e no final se alinhe com os mesmos símbolos passando a impressão de ganhar</p>
+
+
+                    
+
+                <p>Para melhorar o arquivo JavaScript e fazer com que os elementos girem como um caça-níquel, alinhando-se com os mesmos símbolos no final, siga as etapas abaixo:</p>
+<p>1. Modifique o arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function spinSlots() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.textContent = winningSymbol;</p>
+<p>}</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'none';</p>
+<p>symbol.style.transform = 'translateY(0)';</p>
+<p>}</p>
+<p>setTimeout(() => {</p>
+<p>const spins = [5, 10, 15]; // Define the number of spins for each slot</p>
+<p>for (let i = 0; i < symbols.length; i++) {</p>
+<p>symbols[i].style.transition = 'transform 2s ease-out';</p>
+<p>symbols[i].style.transform = `translateY(-${spins[i] * 60}px)`;</p>
+<p>}</p>
+<p>}, 50);</p>
+<p>}</p>
+<p>function showResult() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou!';</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>spinSlots();</p>
+<p>showResult();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Com essas modificações no arquivo JavaScript, os elementos giram como um caça-níquel e se alinham com os mesmos símbolos no final, passando a impressão de vitória.</p>
+
+
+                    
+
+                <p>corrija o código, os simbolos não estão girando corretamente</p>
+
+
+                    
+
+                <p>Peço desculpas pelo equívoco. Vamos corrigir o código JavaScript para garantir que os símbolos girem corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou!';</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>prepareSymbols();</p>
+<p>showResult();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Agora, os símbolos devem girar corretamente, e todos os elementos se alinharão com os mesmos símbolos no final, passando a impressão de vitória.</p>
+
+
+                    
+
+                <p>arrume o html</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos ajustar o arquivo HTML para garantir que os símbolos sejam exibidos corretamente. Substitua o conteúdo do arquivo `index.html` com o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>As alterações feitas no arquivo HTML envolvem a adição de uma div com a classe `symbol-wrapper` em torno das divs com a classe `symbol`. Essa mudança permite que os símbolos sejam exibidos corretamente ao girar.</p>
+
+
+                    
+
+                <p>corrija o css tambem</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco. Vamos ajustar o arquivo CSS para garantir que os símbolos sejam exibidos corretamente. Substitua o conteúdo do arquivo `styles.css` com o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>position: relative;</p>
+<p>}</p>
+<p>.symbol-wrapper {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>overflow: hidden;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>height: 1200px;</p>
+<p>}</p>
+<p>.symbol span {</p>
+<p>height: 60px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>Agora, com as alterações feitas no arquivo CSS, os símbolos devem ser exibidos corretamente ao girar.</p>
+
+
+                    
+
+                <p>corrija o javascript para que o resultado final apareça 3 símbolos iguais</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos corrigir o arquivo JavaScript para garantir que os símbolos finais sejam iguais. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17 + index; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesse código JavaScript corrigido, os três símbolos finais serão iguais, e a mensagem de resultado mostrará o símbolo vencedor.</p>
+
+
+                    
+
+                <p>corrija o css</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos corrigir o arquivo CSS para garantir que os símbolos finais sejam exibidos corretamente. Substitua o conteúdo do arquivo `styles.css` com o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>position: relative;</p>
+<p>}</p>
+<p>.symbol-wrapper {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>overflow: hidden;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>height: 1200px;</p>
+<p>width: 60px;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol span {</p>
+<p>height: 60px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>As alterações no arquivo CSS envolvem a adição do `position: absolute` e definição das propriedades `top` e `left` para a classe `.symbol`. Essas mudanças garantem que os símbolos finais sejam exibidos corretamente após a animação.</p>
+
+
+                    
+
+                <p>acrescente após o resultado premiado palavras que pisquem e dão a impressão de ganhar o jackpot, e após 3 segundo há o direcionamento da pagina</p>
+
+
+                    
+
+                <p>Vamos adicionar a mensagem "JACKPOT!" piscando após o resultado premiado e redirecionar a página após 3 segundos. Primeiro, atualize o arquivo `index.html`, acrescentando uma nova div para a mensagem "JACKPOT!".</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><div id="jackpot" class="jackpot hidden">JACKPOT!</div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Em seguida, atualize o arquivo `styles.css` para adicionar o estilo da mensagem "JACKPOT!" piscando.</p>
+<p>```css</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>.jackpot {</p>
+<p>font-size: 30px;</p>
+<p>font-weight: bold;</p>
+<p>color: red;</p>
+<p>animation: blink 1s linear infinite;</p>
+<p>}</p>
+<p>@keyframes blink {</p>
+<p>0%, 49% {</p>
+<p>opacity: 1;</p>
+<p>}</p>
+<p>50%, 100% {</p>
+<p>opacity: 0;</p>
+<p>}</p>
+<p>}</p>
+<p>```</p>
+<p>Por fim, atualize o arquivo `script.js` para exibir a mensagem "JACKPOT!" piscando após o resultado premiado e redirecionar a página após 3 segundos.</p>
+<p>```javascript</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>```</p>
+<p>Agora, a mensagem "JACKPOT!" piscará após o resultado premiado e a página será redirecionada após 3 segundos. Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado.</p>
+
+
+                    
+
+                <p>o resultado do terceiro slot não esta aparecendo, por favor, corrija</p>
+
+
+                    
+
+                <p>Peço desculpas pelo erro no código. Vamos corrigir o arquivo `script.js` para garantir que os símbolos finais nos três slots sejam exibidos corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesta versão corrigida do arquivo `script.js`, removemos o "+ index" na função `setWinningSymbols()` ao definir os símbolos vencedores. Isso garante que todos os três slots exibam corretamente os símbolos finais.</p>
+
+
+                    
+
+                <p>continua não aparecendo o resultado do terceiro slot</p>
+
+
+                    
+
+                <p>Peço desculpas novamente pelo erro no código. Vamos corrigir o arquivo `script.js` mais uma vez para garantir que os símbolos finais nos três slots sejam exibidos corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = 'translateY(0px)';</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(18 * 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesta versão corrigida do arquivo `script.js`, removemos o `index` relacionado à posição dos elementos nos métodos `prepareSymbols` e `animateSlots`, garantindo que todos os três slots exibam corretamente os símbolos finais.</p>
+
+
+                    
+
+                <p>após o resultado da premiação, crie um código para eu acrescentar ao código atual para aparecer abaixo do jackpot o desconto regredindo o preço original e informando que o cliente será redirecionado para adquirir com o desconto ganho</p>
+
+
+                    
+
+                <p>Você pode adicionar um novo elemento HTML para exibir o preço original e o preço com desconto e, em seguida, atualizar o arquivo `script.js` para mostrar essas informações após o resultado da premiação. Primeiro, atualize o arquivo `index.html`, acrescentando uma nova div para exibir o preço e o desconto:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><!-- ... código existente ... --></p>
+<p><div id="jackpot" class="jackpot hidden">JACKPOT!</div></p>
+<p><div id="discount" class="discount hidden"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Em seguida, atualize o arquivo `styles.css` para adicionar o estilo da mensagem de desconto:</p>
+<p>```css</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>.discount {</p>
+<p>font-size: 20px;</p>
+<p>font-weight: bold;</p>
+<p>margin-top: 10px;</p>
+<p>}</p>
+<p>```</p>
+<p>Por fim, atualize o arquivo `script.js` para exibir a mensagem de desconto após o resultado premiado e antes do redirecionamento:</p>
+<p>```javascript</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>const discountDiv = document.getElementById('discount');</p>
+<p>const originalPrice = 100; // Insira o preço original do produto aqui</p>
+<p>const discount = 0.4; // 40% de desconto</p>
+<p>const discountedPrice = originalPrice * (1 - discount);</p>
+<p>discountDiv.innerHTML = `Preço original: R$${originalPrice.toFixed(2)}<br>Preço com desconto: R$${discountedPrice.toFixed(2)}<br>Você será redirecionado em breve para adquirir o produto com o desconto ganho.`;</p>
+<p>discountDiv.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>```</p>
+<p>Agora, após o resultado da premiação, a mensagem de desconto será exibida abaixo do "JACKPOT!", informando o preço original, o preço com desconto e que o cliente será redirecionado para adquirir o produto com o desconto ganho. Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado e ajustar o `originalPrice` e `discount` conforme necessário.</p>
+
+
+                    
+
+                <p>o desconto deve ser mostrado como um contador regressivo e que subtrai o valor do preço original</p>
+
+
+                    
+
+                <p>Entendi, vamos criar um contador regressivo para mostrar o desconto sendo subtraído do preço original. Atualize o arquivo `script.js` conforme o código a seguir:</p>
+<p>```javascript</p>
+<p>// ... código existente ...</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>const discountDiv = document.getElementById('discount');</p>
+<p>const originalPrice = 100; // Insira o preço original do produto aqui</p>
+<p>const discount = 0.4; // 40% de desconto</p>
+<p>const discountedPrice = originalPrice * (1 - discount);</p>
+<p>let currentPrice = originalPrice;</p>
+<p>const countdown = setInterval(() => {</p>
+<p>currentPrice -= discount * originalPrice / 100;</p>
+<p>if (currentPrice <= discountedPrice) {</p>
+<p>currentPrice = discountedPrice;</p>
+<p>clearInterval(countdown);</p>
+<p>}</p>
+<p>discountDiv.innerHTML = `Preço original: R$${originalPrice.toFixed(2)}<br>Preço com desconto: R$${currentPrice.toFixed(2)}<br>Você será redirecionado em breve para adquirir o produto com o desconto ganho.`;</p>
+<p>}, 30);</p>
+<p>discountDiv.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>// ... código existente ...</p>
+<p>```</p>
+<p>Nesta versão atualizada do arquivo `script.js`, adicionamos uma função de intervalo chamada `countdown` que decrementa o preço atual a cada 30 milissegundos, criando uma animação de contador regressivo. A animação é interrompida quando o preço atual atinge o preço com desconto. O restante do código permanece inalterado.</p>
+<p>Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado e ajustar o `originalPrice` e `discount` conforme necessário.</p>
+
+
+                    
+
+                
+
+                    
+
+                <p>crie um botão CTA utilizando html, css e javascript, que ao clicar apareça uma tela similar a um caça níquel  e mostra que a pessoa foi premiada com um desconto</p>
+
+
+                    
+
+                <p>Para criar um botão CTA (Call to Action) com HTML, CSS e JavaScript, que ao clicar exibe uma tela similar a um caça-níquel e informa que a pessoa ganhou um desconto, siga as etapas abaixo:</p>
+<p>1. Crie um arquivo HTML (por exemplo, index.html) e adicione o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></div></p>
+<p><div class="slot"></div></p>
+<p><div class="slot"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>2. Crie um arquivo CSS (por exemplo, styles.css) e adicione o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>3. Crie um arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slots = document.querySelectorAll('.slot');</p>
+<p>const result = document.getElementById('result');</p>
+<p>function spinSlots() {</p>
+<p>for (const slot of slots) {</p>
+<p>const randomNumber = Math.floor(Math.random() * 10);</p>
+<p>slot.textContent = randomNumber;</p>
+<p>}</p>
+<p>}</p>
+<p>function showDiscount() {</p>
+<p>const discount = Math.floor(Math.random() * 51) + 10; // Gera um desconto aleatório entre 10% e 60%</p>
+<p>result.textContent = `Parabéns! Você ganhou ${discount}% de desconto!`;</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>spinSlots();</p>
+<p>setTimeout(showDiscount, 2000); // Mostra o desconto após 2 segundos</p>
+<p>});</p>
+<p>```</p>
+<p>Com isso, você terá um botão CTA que, ao ser clicado, exibirá uma animação de caça-níquel e depois inform</p>
+
+
+                    
+
+                <p>crie um botão CTA utilizando html, css e javascript, que após clicar no botão, uma tela se abre, similar a um caça níquel, alguns símbolos começam a girar e se alinham mostrando que a pessoa foi premiada com um desconto de 40%</p>
+
+
+                    
+
+                <p>Para criar um botão CTA (Call to Action) que, ao ser clicado, exibe uma tela similar a um caça-níquel com símbolos giratórios e mostra que a pessoa ganhou um desconto de 40%, siga as etapas abaixo:</p>
+<p>1. Crie um arquivo HTML (por exemplo, index.html) e adicione o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p><div class="slot"><div class="symbol"></div></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>2. Crie um arquivo CSS (por exemplo, styles.css) e adicione o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>font-size: 24px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>3. Crie um arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function spinSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>const randomSymbol = symbolsList[Math.floor(Math.random() *</p>
+
+
+                    
+
+                <p>continue</p>
+
+
+                    
+
+                <p>symbolsList.length)];</p>
+<p>symbol.textContent = randomSymbol;</p>
+<p>}</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'none';</p>
+<p>symbol.style.transform = 'translateY(0)';</p>
+<p>}</p>
+<p>setTimeout(() => {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = 'translateY(-240px)';</p>
+<p>}</p>
+<p>}, 50);</p>
+<p>}</p>
+<p>function showDiscount() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou 40% de desconto!';</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>spinSlots();</p>
+<p>showDiscount();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Agora, ao clicar no botão CTA, uma tela similar a um caça-níquel aparecerá com símbolos giratórios. Após a animação terminar, os símbolos se alinham e exibem uma mensagem informando que a pessoa ganhou um desconto de 40%.</p>
+
+
+                    
+
+                <p>melhore apenas o arquivo javascript e faça os elementos girar como um caça níquel e no final se alinhe com os mesmos símbolos passando a impressão de ganhar</p>
+
+
+                    
+
+                <p>Para melhorar o arquivo JavaScript e fazer com que os elementos girem como um caça-níquel, alinhando-se com os mesmos símbolos no final, siga as etapas abaixo:</p>
+<p>1. Modifique o arquivo JavaScript (por exemplo, script.js) e adicione o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function spinSlots() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.textContent = winningSymbol;</p>
+<p>}</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>for (const symbol of symbols) {</p>
+<p>symbol.style.transition = 'none';</p>
+<p>symbol.style.transform = 'translateY(0)';</p>
+<p>}</p>
+<p>setTimeout(() => {</p>
+<p>const spins = [5, 10, 15]; // Define the number of spins for each slot</p>
+<p>for (let i = 0; i < symbols.length; i++) {</p>
+<p>symbols[i].style.transition = 'transform 2s ease-out';</p>
+<p>symbols[i].style.transform = `translateY(-${spins[i] * 60}px)`;</p>
+<p>}</p>
+<p>}, 50);</p>
+<p>}</p>
+<p>function showResult() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou!';</p>
+<p>}</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>spinSlots();</p>
+<p>showResult();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Com essas modificações no arquivo JavaScript, os elementos giram como um caça-níquel e se alinham com os mesmos símbolos no final, passando a impressão de vitória.</p>
+
+
+                    
+
+                <p>corrija o código, os simbolos não estão girando corretamente</p>
+
+
+                    
+
+                <p>Peço desculpas pelo equívoco. Vamos corrigir o código JavaScript para garantir que os símbolos girem corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult() {</p>
+<p>result.textContent = 'Parabéns! Você ganhou!';</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>prepareSymbols();</p>
+<p>showResult();</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Agora, os símbolos devem girar corretamente, e todos os elementos se alinharão com os mesmos símbolos no final, passando a impressão de vitória.</p>
+
+
+                    
+
+                <p>arrume o html</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos ajustar o arquivo HTML para garantir que os símbolos sejam exibidos corretamente. Substitua o conteúdo do arquivo `index.html` com o seguinte código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>As alterações feitas no arquivo HTML envolvem a adição de uma div com a classe `symbol-wrapper` em torno das divs com a classe `symbol`. Essa mudança permite que os símbolos sejam exibidos corretamente ao girar.</p>
+
+
+                    
+
+                <p>corrija o css tambem</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco. Vamos ajustar o arquivo CSS para garantir que os símbolos sejam exibidos corretamente. Substitua o conteúdo do arquivo `styles.css` com o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>position: relative;</p>
+<p>}</p>
+<p>.symbol-wrapper {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>overflow: hidden;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>height: 1200px;</p>
+<p>}</p>
+<p>.symbol span {</p>
+<p>height: 60px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>Agora, com as alterações feitas no arquivo CSS, os símbolos devem ser exibidos corretamente ao girar.</p>
+
+
+                    
+
+                <p>corrija o javascript para que o resultado final apareça 3 símbolos iguais</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos corrigir o arquivo JavaScript para garantir que os símbolos finais sejam iguais. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17 + index; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesse código JavaScript corrigido, os três símbolos finais serão iguais, e a mensagem de resultado mostrará o símbolo vencedor.</p>
+
+
+                    
+
+                <p>corrija o css</p>
+
+
+                    
+
+                <p>Desculpe pelo equívoco anterior. Vamos corrigir o arquivo CSS para garantir que os símbolos finais sejam exibidos corretamente. Substitua o conteúdo do arquivo `styles.css` com o seguinte código:</p>
+<p>```css</p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>justify-content: center;</p>
+<p>height: 100vh;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.hidden {</p>
+<p>display: none;</p>
+<p>}</p>
+<p>.cta {</p>
+<p>background-color: #007bff;</p>
+<p>color: white;</p>
+<p>padding: 10px 20px;</p>
+<p>border-radius: 5px;</p>
+<p>border: none;</p>
+<p>font-size: 18px;</p>
+<p>cursor: pointer;</p>
+<p>}</p>
+<p>.slot-machine {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>margin: 30px 0;</p>
+<p>padding: 20px;</p>
+<p>background-color: #ddd;</p>
+<p>border-radius: 10px;</p>
+<p>}</p>
+<p>.slot-machine-row {</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>}</p>
+<p>.slot {</p>
+<p>width: 60px;</p>
+<p>height: 60px;</p>
+<p>background-color: white;</p>
+<p>margin: 0 5px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>border-radius: 5px;</p>
+<p>border: 1px solid #ccc;</p>
+<p>overflow: hidden;</p>
+<p>position: relative;</p>
+<p>}</p>
+<p>.symbol-wrapper {</p>
+<p>height: 60px;</p>
+<p>width: 60px;</p>
+<p>overflow: hidden;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol {</p>
+<p>display: flex;</p>
+<p>flex-direction: column;</p>
+<p>align-items: center;</p>
+<p>font-size: 24px;</p>
+<p>height: 1200px;</p>
+<p>width: 60px;</p>
+<p>position: absolute;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>}</p>
+<p>.symbol span {</p>
+<p>height: 60px;</p>
+<p>display: flex;</p>
+<p>justify-content: center;</p>
+<p>align-items: center;</p>
+<p>}</p>
+<p>.result {</p>
+<p>font-size: 24px;</p>
+<p>font-weight: bold;</p>
+<p>}</p>
+<p>```</p>
+<p>As alterações no arquivo CSS envolvem a adição do `position: absolute` e definição das propriedades `top` e `left` para a classe `.symbol`. Essas mudanças garantem que os símbolos finais sejam exibidos corretamente após a animação.</p>
+
+
+                    
+
+                <p>acrescente após o resultado premiado palavras que pisquem e dão a impressão de ganhar o jackpot, e após 3 segundo há o direcionamento da pagina</p>
+
+
+                    
+
+                <p>Vamos adicionar a mensagem "JACKPOT!" piscando após o resultado premiado e redirecionar a página após 3 segundos. Primeiro, atualize o arquivo `index.html`, acrescentando uma nova div para a mensagem "JACKPOT!".</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><button id="cta" class="cta">Clique aqui para ganhar um desconto!</button></p>
+<p><div id="slotMachine" class="slot-machine hidden"></p>
+<p><div class="slot-machine-row"></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="slot"></p>
+<p><div class="symbol-wrapper"></p>
+<p><div class="symbol"></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div id="result" class="result"></div></p>
+<p><div id="jackpot" class="jackpot hidden">JACKPOT!</div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Em seguida, atualize o arquivo `styles.css` para adicionar o estilo da mensagem "JACKPOT!" piscando.</p>
+<p>```css</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>.jackpot {</p>
+<p>font-size: 30px;</p>
+<p>font-weight: bold;</p>
+<p>color: red;</p>
+<p>animation: blink 1s linear infinite;</p>
+<p>}</p>
+<p>@keyframes blink {</p>
+<p>0%, 49% {</p>
+<p>opacity: 1;</p>
+<p>}</p>
+<p>50%, 100% {</p>
+<p>opacity: 0;</p>
+<p>}</p>
+<p>}</p>
+<p>```</p>
+<p>Por fim, atualize o arquivo `script.js` para exibir a mensagem "JACKPOT!" piscando após o resultado premiado e redirecionar a página após 3 segundos.</p>
+<p>```javascript</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>```</p>
+<p>Agora, a mensagem "JACKPOT!" piscará após o resultado premiado e a página será redirecionada após 3 segundos. Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado.</p>
+
+
+                    
+
+                <p>o resultado do terceiro slot não esta aparecendo, por favor, corrija</p>
+
+
+                    
+
+                <p>Peço desculpas pelo erro no código. Vamos corrigir o arquivo `script.js` para garantir que os símbolos finais nos três slots sejam exibidos corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = `translateY(-${index * 60}px)`;</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(index <i> 60) + (18 </i> 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesta versão corrigida do arquivo `script.js`, removemos o "+ index" na função `setWinningSymbols()` ao definir os símbolos vencedores. Isso garante que todos os três slots exibam corretamente os símbolos finais.</p>
+
+
+                    
+
+                <p>continua não aparecendo o resultado do terceiro slot</p>
+
+
+                    
+
+                <p>Peço desculpas novamente pelo erro no código. Vamos corrigir o arquivo `script.js` mais uma vez para garantir que os símbolos finais nos três slots sejam exibidos corretamente. Substitua o conteúdo do arquivo `script.js` com o seguinte código:</p>
+<p>```javascript</p>
+<p>const cta = document.getElementById('cta');</p>
+<p>const slotMachine = document.getElementById('slotMachine');</p>
+<p>const symbols = document.querySelectorAll('.symbol');</p>
+<p>const result = document.getElementById('result');</p>
+<p>const symbolsList = ['🍒', '🍋', '🍊', '🍇', '🍉', '🍓', '🍌', '🍍'];</p>
+<p>function getRandomSymbol() {</p>
+<p>return symbolsList[Math.floor(Math.random() * symbolsList.length)];</p>
+<p>}</p>
+<p>function prepareSymbols() {</p>
+<p>symbols.forEach((symbol) => {</p>
+<p>symbol.innerHTML = '';</p>
+<p>for (let i = 0; i < 20; i++) {</p>
+<p>const span = document.createElement('span');</p>
+<p>span.textContent = getRandomSymbol();</p>
+<p>symbol.appendChild(span);</p>
+<p>}</p>
+<p>symbol.style.transition = 'transform 0s';</p>
+<p>symbol.style.transform = 'translateY(0px)';</p>
+<p>});</p>
+<p>}</p>
+<p>function animateSlots() {</p>
+<p>symbols.forEach((symbol, index) => {</p>
+<p>setTimeout(() => {</p>
+<p>symbol.style.transition = 'transform 2s ease-out';</p>
+<p>symbol.style.transform = `translateY(-${(18 * 60)}px)`;</p>
+<p>}, 50);</p>
+<p>});</p>
+<p>}</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>}</p>
+<p>function setWinningSymbols() {</p>
+<p>const winningSymbol = getRandomSymbol();</p>
+<p>symbols.forEach((symbol) => {</p>
+<p>const symbolSpans = symbol.querySelectorAll('span');</p>
+<p>for (let i = 17; i < symbolSpans.length; i++) {</p>
+<p>symbolSpans[i].textContent = winningSymbol;</p>
+<p>}</p>
+<p>});</p>
+<p>return winningSymbol;</p>
+<p>}</p>
+<p>prepareSymbols();</p>
+<p>cta.addEventListener('click', () => {</p>
+<p>slotMachine.classList.remove('hidden');</p>
+<p>animateSlots();</p>
+<p>setTimeout(() => {</p>
+<p>const winningSymbol = setWinningSymbols();</p>
+<p>showResult(winningSymbol);</p>
+<p>}, 2000);</p>
+<p>});</p>
+<p>```</p>
+<p>Nesta versão corrigida do arquivo `script.js`, removemos o `index` relacionado à posição dos elementos nos métodos `prepareSymbols` e `animateSlots`, garantindo que todos os três slots exibam corretamente os símbolos finais.</p>
+
+
+                    
+
+                <p>após o resultado da premiação, crie um código para eu acrescentar ao código atual para aparecer abaixo do jackpot o desconto regredindo o preço original e informando que o cliente será redirecionado para adquirir com o desconto ganho</p>
+
+
+                    
+
+                <p>Você pode adicionar um novo elemento HTML para exibir o preço original e o preço com desconto e, em seguida, atualizar o arquivo `script.js` para mostrar essas informações após o resultado da premiação. Primeiro, atualize o arquivo `index.html`, acrescentando uma nova div para exibir o preço e o desconto:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><link rel="stylesheet" href="styles.css"></p>
+<p><title>Caça-Níquel Desconto</title></p>
+<p></head></p>
+<p><body></p>
+<p><!-- ... código existente ... --></p>
+<p><div id="jackpot" class="jackpot hidden">JACKPOT!</div></p>
+<p><div id="discount" class="discount hidden"></div></p>
+<p><script src="script.js"></script></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Em seguida, atualize o arquivo `styles.css` para adicionar o estilo da mensagem de desconto:</p>
+<p>```css</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>.discount {</p>
+<p>font-size: 20px;</p>
+<p>font-weight: bold;</p>
+<p>margin-top: 10px;</p>
+<p>}</p>
+<p>```</p>
+<p>Por fim, atualize o arquivo `script.js` para exibir a mensagem de desconto após o resultado premiado e antes do redirecionamento:</p>
+<p>```javascript</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>const discountDiv = document.getElementById('discount');</p>
+<p>const originalPrice = 100; // Insira o preço original do produto aqui</p>
+<p>const discount = 0.4; // 40% de desconto</p>
+<p>const discountedPrice = originalPrice * (1 - discount);</p>
+<p>discountDiv.innerHTML = `Preço original: R$${originalPrice.toFixed(2)}<br>Preço com desconto: R$${discountedPrice.toFixed(2)}<br>Você será redirecionado em breve para adquirir o produto com o desconto ganho.`;</p>
+<p>discountDiv.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>/<i> ... código existente ... </i>/</p>
+<p>```</p>
+<p>Agora, após o resultado da premiação, a mensagem de desconto será exibida abaixo do "JACKPOT!", informando o preço original, o preço com desconto e que o cliente será redirecionado para adquirir o produto com o desconto ganho. Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado e ajustar o `originalPrice` e `discount` conforme necessário.</p>
+
+
+                    
+
+                <p>o desconto deve ser mostrado como um contador regressivo e que subtrai o valor do preço original</p>
+
+
+                    
+
+                <p>Entendi, vamos criar um contador regressivo para mostrar o desconto sendo subtraído do preço original. Atualize o arquivo `script.js` conforme o código a seguir:</p>
+<p>```javascript</p>
+<p>// ... código existente ...</p>
+<p>function showResult(winningSymbol) {</p>
+<p>result.textContent = `Parabéns! Você ganhou com ${winningSymbol}!`;</p>
+<p>const jackpot = document.getElementById('jackpot');</p>
+<p>jackpot.classList.remove('hidden');</p>
+<p>const discountDiv = document.getElementById('discount');</p>
+<p>const originalPrice = 100; // Insira o preço original do produto aqui</p>
+<p>const discount = 0.4; // 40% de desconto</p>
+<p>const discountedPrice = originalPrice * (1 - discount);</p>
+<p>let currentPrice = originalPrice;</p>
+<p>const countdown = setInterval(() => {</p>
+<p>currentPrice -= discount * originalPrice / 100;</p>
+<p>if (currentPrice <= discountedPrice) {</p>
+<p>currentPrice = discountedPrice;</p>
+<p>clearInterval(countdown);</p>
+<p>}</p>
+<p>discountDiv.innerHTML = `Preço original: R$${originalPrice.toFixed(2)}<br>Preço com desconto: R$${currentPrice.toFixed(2)}<br>Você será redirecionado em breve para adquirir o produto com o desconto ganho.`;</p>
+<p>}, 30);</p>
+<p>discountDiv.classList.remove('hidden');</p>
+<p>setTimeout(() => {</p>
+<p>window.location.href = 'https://www.example.com'; // Altere para o URL desejado</p>
+<p>}, 3000);</p>
+<p>}</p>
+<p>// ... código existente ...</p>
+<p>```</p>
+<p>Nesta versão atualizada do arquivo `script.js`, adicionamos uma função de intervalo chamada `countdown` que decrementa o preço atual a cada 30 milissegundos, criando uma animação de contador regressivo. A animação é interrompida quando o preço atual atinge o preço com desconto. O restante do código permanece inalterado.</p>
+<p>Lembre-se de alterar `'https://www.example.com'` no arquivo `script.js` para o URL desejado e ajustar o `originalPrice` e `discount` conforme necessário.</p>
+
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>
