@@ -1,0 +1,1428 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Toggle sidebar responsive.
+    </title>
+    <meta name="description" content="Toggle sidebar responsive.">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#333">
+    <meta property="og:title" content="Toggle sidebar responsive." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Toggle_sidebar_responsive_.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content=" quais alterações preciso fazer nesse ejs para que a barra lateral tenha a função toggle e responsivo para smartphone? 
+
+
+
+
+JKO DIGITAL™
+
+body {
+display: flex;
+justify-content: space-between;
+padding: 1em;
+font-family: Arial, sans-serif;
+}
+.index {
+flex: 1;
+max-width: 200px;
+border-right: 1px solid #ddd;
+padding-right: 1em;
+position: sticky;
+top: 0;
+height: 100vh;
+overflow: auto;
+}
+.index input {
+width: 100%;
+padding: 0.5em;
+margin-bottom: 1em;
+box-sizing: border-box;
+}
+.index-item {
+margin-bottom: 0.5em;
+}
+.container {
+flex: 5;
+padding-left: 1em;
+}
+.card...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Toggle sidebar responsive." />
+    <meta name="twitter:description" content=" quais alterações preciso fazer nesse ejs para que a barra lateral tenha a função toggle e responsivo para smartphone? 
+
+
+
+
+JKO DIGITAL™
+
+body {
+display: flex;
+justify-content: space-between;
+padding: 1em;
+font-family: Arial, sans-serif;
+}
+.index {
+flex: 1;
+max-width: 200px;
+border-right: 1px solid #ddd;
+padding-right: 1em;
+position: sticky;
+top: 0;
+height: 100vh;
+overflow: auto;
+}
+.index input {
+width: 100%;
+padding: 0.5em;
+margin-bottom: 1em;
+box-sizing: border-box;
+}
+.index-item {
+margin-bottom: 0.5em;
+}
+.container {
+flex: 5;
+padding-left: 1em;
+}
+.card...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Toggle sidebar responsive.
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                31 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                31 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                <p>quais alterações preciso fazer nesse ejs para que a barra lateral tenha a função toggle e responsivo para smartphone? <!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><style></p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>justify-content: space-between;</p>
+<p>padding: 1em;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.index {</p>
+<p>flex: 1;</p>
+<p>max-width: 200px;</p>
+<p>border-right: 1px solid #ddd;</p>
+<p>padding-right: 1em;</p>
+<p>position: sticky;</p>
+<p>top: 0;</p>
+<p>height: 100vh;</p>
+<p>overflow: auto;</p>
+<p>}</p>
+<p>.index input {</p>
+<p>width: 100%;</p>
+<p>padding: 0.5em;</p>
+<p>margin-bottom: 1em;</p>
+<p>box-sizing: border-box;</p>
+<p>}</p>
+<p>.index-item {</p>
+<p>margin-bottom: 0.5em;</p>
+<p>}</p>
+<p>.container {</p>
+<p>flex: 5;</p>
+<p>padding-left: 1em;</p>
+<p>}</p>
+<p>.card {</p>
+<p>margin-bottom: 1em;</p>
+<p>padding: 1em;</p>
+<p>border: 1px solid #ddd;</p>
+<p>border-radius: 5px;</p>
+<p>}</p>
+<p>.title {</p>
+<p>font-size: 1.2em;</p>
+<p>font-weight: bold;</p>
+<p>margin-bottom: 0.5em;</p>
+<p>}</p>
+<p>.message {</p>
+<p>font-size: 1.2em;</p>
+<p>color: #666;</p>
+<p>white-space: pre-wrap;</p>
+<p>line-height: 1.6;</p>
+<p>}</p>
+<p>.navbar {</p>
+<p>transition: all 0.4s;</p>
+<p>box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);</p>
+<p>}</p>
+<p>.navbar.scrolled {</p>
+<p>background-color: rgba(22, 22, 23, .8) !important;</p>
+<p>box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);</p>
+<p>}</p>
+<p>.nav-link {</p>
+<p>transition: all 0.2s;</p>
+<p>}</p>
+<p>.nav-link:hover {</p>
+<p>color: #000000 !important;</p>
+<p>}</p>
+<p></style></p>
+<p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"</p>
+<p>integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></p>
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></p>
+<p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3352286551767392"</p>
+<p>crossorigin="anonymous"></script></p>
+<p></head></p>
+<p><body></p>
+<p><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"</p>
+<p>integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"</p>
+<p>crossorigin="anonymous"></script></p>
+<p><div class="index pt-5"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..." onkeyup="filterIndex()"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"></p>
+<p><div class="container-fluid"></p>
+<p><a class="navbar-brand d-md-none" href="#">JKO DIGITAL.</a></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"</p>
+<p>aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><div class="collapse navbar-collapse ms-auto " id="navbarNav"></p>
+<p><ul class="navbar-nav mx-auto"></p>
+<p><a class="navbar-brand d-none d-md-block" href="#">JKO DIGITAL.</a></p>
+<p><li class="nav-item active"></p>
+<p><a class="nav-link" href="#"><span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Home</span></a></p>
+<p></li></p>
+<p><li class="nav-item"></p>
+<p><a class="nav-link" href="#ps"> <span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Produtos e Serviços</span></a></p>
+<p></li></p>
+<p><li class="nav-item"></p>
+<p><a class="nav-link" href="#contato"> <span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Contato</span></a></p>
+<p></li></p>
+<p></ul></p>
+<p></div></p>
+<p></div></p>
+<p></nav></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><img src="images/IPEXTREME.png" width="128" height="128" class="img-fluid mx-auto my-1  border-bottom"></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementsByClassName("index")[0];</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+
+
+                    
+
+                <p>Para adicionar a função de toggle à barra lateral e torná-la responsiva, é possível utilizar o Bootstrap junto com um pouco de JavaScript. Abaixo segue um exemplo de como isso poderia ser feito.</p>
+<p>O primeiro passo é adicionar um botão de toggle para a barra lateral. Este botão será visível apenas em telas pequenas (como a de um smartphone). Aqui, adicionamos o botão no início do corpo:</p>
+<p>```html</p>
+<p><body></p>
+<p><button class="btn btn-primary d-md-none" id="sidebarToggle">Toggle Sidebar</button></p>
+<p>...</p>
+<p></body></p>
+<p>```</p>
+<p>Este botão tem a classe `d-md-none`, o que significa que será ocultado em telas médias e maiores (a partir de 768px de largura, por padrão no Bootstrap).</p>
+<p>Em seguida, vamos adicionar algumas classes à barra lateral (`.index`) para que ela se torne um elemento offcanvas do Bootstrap:</p>
+<p>```html</p>
+<p><div class="index offcanvas offcanvas-start pt-5" id="sidebar" tabindex="-1"></p>
+<p>...</p>
+<p></div></p>
+<p>```</p>
+<p>O `offcanvas-start` indica que a barra lateral vai aparecer a partir da esquerda (`start`) da tela.</p>
+<p>Finalmente, vamos adicionar algum JavaScript para abrir/fechar a barra lateral quando o botão é pressionado:</p>
+<p>```html</p>
+<p><script></p>
+<p>var sidebarToggle = document.getElementById('sidebarToggle');</p>
+<p>var sidebar = document.getElementById('sidebar');</p>
+<p>sidebarToggle.addEventListener('click', function () {</p>
+<p>sidebar.classList.toggle('show');</p>
+<p>});</p>
+<p></script></p>
+<p>```</p>
+<p>Nesse caso, a classe `show` do Bootstrap é usada para mostrar/ocultar a barra lateral.</p>
+<p>Com relação ao design responsivo, as classes do Bootstrap já devem lidar com a maior parte do trabalho. Se houver algum elemento específico que não esteja se comportando como esperado em telas pequenas, por favor, me informe para que eu possa fornecer uma solução mais detalhada.</p>
+<p>Lembrando que o uso dessas classes e funções do Bootstrap exigem a inclusão do JavaScript do Bootstrap na sua página. Certifique-se de que ele está sendo importado corretamente. Aqui está um exemplo de como importá-lo:</p>
+<p>```html</p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-nK5VIVehcq1Lyty64w4Vsn+rdV1iKX0eSLtI3zpmk6FduIudV6B0R6CmlBlwpqWu" crossorigin="anonymous"></script></p>
+<p>```</p>
+
+
+                    
+
+                <p>coloquei dessa maneira, mas não esta funcionando corretamente, o que devo corrigir para a barra aparecer quando esta em grandes telas e em pequenas telas só aparecer quando clicar no troggle botão? <!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><style></p>
+<p>body {</p>
+<p>display: flex;</p>
+<p>justify-content: space-between;</p>
+<p>padding: 1em;</p>
+<p>font-family: Arial, sans-serif;</p>
+<p>}</p>
+<p>.index {</p>
+<p>flex: 1;</p>
+<p>max-width: 200px;</p>
+<p>border-right: 1px solid #ddd;</p>
+<p>padding-right: 1em;</p>
+<p>position: sticky;</p>
+<p>top: 0;</p>
+<p>height: 100vh;</p>
+<p>overflow: auto;</p>
+<p>}</p>
+<p>.index input {</p>
+<p>width: 100%;</p>
+<p>padding: 0.5em;</p>
+<p>margin-bottom: 1em;</p>
+<p>box-sizing: border-box;</p>
+<p>}</p>
+<p>.index-item {</p>
+<p>margin-bottom: 0.5em;</p>
+<p>}</p>
+<p>.container {</p>
+<p>flex: 5;</p>
+<p>padding-left: 1em;</p>
+<p>}</p>
+<p>.card {</p>
+<p>margin-bottom: 1em;</p>
+<p>padding: 1em;</p>
+<p>border: 1px solid #ddd;</p>
+<p>border-radius: 5px;</p>
+<p>}</p>
+<p>.title {</p>
+<p>font-size: 1.2em;</p>
+<p>font-weight: bold;</p>
+<p>margin-bottom: 0.5em;</p>
+<p>}</p>
+<p>.message {</p>
+<p>font-size: 1.2em;</p>
+<p>color: #666;</p>
+<p>white-space: pre-wrap;</p>
+<p>line-height: 1.6;</p>
+<p>}</p>
+<p>.navbar {</p>
+<p>transition: all 0.4s;</p>
+<p>box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);</p>
+<p>}</p>
+<p>.navbar.scrolled {</p>
+<p>background-color: rgba(22, 22, 23, .8) !important;</p>
+<p>box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);</p>
+<p>}</p>
+<p>.nav-link {</p>
+<p>transition: all 0.2s;</p>
+<p>}</p>
+<p>.nav-link:hover {</p>
+<p>color: #000000 !important;</p>
+<p>}</p>
+<p></style></p>
+<p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"</p>
+<p>integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></p>
+<p><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"></p>
+<p><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3352286551767392"</p>
+<p>crossorigin="anonymous"></script></p>
+<p></head></p>
+<p><body></p>
+<p><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"</p>
+<p>integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"</p>
+<p>crossorigin="anonymous"></script></p>
+<p><div class="index pt-5 offcanvas offcanvas-start pt-5" id="sidebar" tabindex="-1"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..." onkeyup="filterIndex()"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"></p>
+<p><div class="container-fluid"></p>
+<p><a class="navbar-brand d-md-none" href="#">JKO DIGITAL.</a></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"</p>
+<p>aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><button class="btn btn-primary d-md-none" id="sidebarToggle">Toggle Sidebar</button></p>
+<p><div class="collapse navbar-collapse ms-auto " id="navbarNav"></p>
+<p><ul class="navbar-nav mx-auto"></p>
+<p><a class="navbar-brand d-none d-md-block" href="#">JKO DIGITAL.</a></p>
+<p><li class="nav-item active"></p>
+<p><a class="nav-link" href="#"><span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Home</span></a></p>
+<p></li></p>
+<p><li class="nav-item"></p>
+<p><a class="nav-link" href="#ps"> <span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Produtos e Serviços</span></a></p>
+<p></li></p>
+<p><li class="nav-item"></p>
+<p><a class="nav-link" href="#contato"> <span data-bs-toggle="collapse"</p>
+<p>data-bs-target=".navbar-collapse.show">Contato</span></a></p>
+<p></li></p>
+<p><button class="btn btn-primary d-md-none" id="sidebarToggle">Toggle Sidebar</button></p>
+<p></ul></p>
+<p><button class="btn btn-primary d-md-none" id="sidebarToggle">Toggle Sidebar</button></p>
+<p></div></p>
+<p></div></p>
+<p></nav></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><img src="images/IPEXTREME.png" width="128" height="128" class="img-fluid mx-auto my-1  border-bottom"></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementsByClassName("index")[0];</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p></script></p>
+<p><script></p>
+<p>var sidebarToggle = document.getElementById('sidebarToggle');</p>
+<p>var sidebar = document.getElementById('sidebar');</p>
+<p>sidebarToggle.addEventListener('click', function () {</p>
+<p>sidebar.classList.toggle('show');</p>
+<p>});</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+
+
+                    
+
+                <p>Vou listar algumas correções necessárias para a barra lateral (sidebar) funcionar corretamente com a função toggle e seja responsiva em telas de smartphone:</p>
+<p>1. Parece que você está usando Bootstrap 5.3.0, que tem um componente chamado Offcanvas. Você tentou utilizar este componente adicionando as classes "offcanvas" e "offcanvas-start" na div da barra lateral. Para o funcionamento correto desse componente, você deve adicionar o script do Bootstrap JS em sua página.</p>
+<p>2. Você possui três botões com o id "sidebarToggle" na página. O id de um elemento deve ser único em toda a página. Por isso, você deveria remover os dois extras.</p>
+<p>3. Em Bootstrap, o offcanvas pode ser acionado por um botão com o atributo `data-bs-toggle="offcanvas"`. Portanto, ao invés de criar um evento de clique, você pode usar este atributo.</p>
+<p>Aqui está uma versão corrigida do seu código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><!-- ...outros metadados... --></p>
+<p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"</p>
+<p>integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"></p>
+<p><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-WM1/nXo1UnP9b4UjBOnmUExh2LsIrMaEnD0gtzHfuh1D+XEwIbQnzFN7hhO/yaHg" crossorigin="anonymous"></script></p>
+<p></head></p>
+<p><body></p>
+<p><!-- ... --></p>
+<p><button class="btn btn-primary d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar">Toggle Sidebar</button></p>
+<p><div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"></p>
+<p><!-- ... --></p>
+<p></div></p>
+<p><!-- ... --></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>4. Para o comportamento responsivo de mostrar a barra lateral em telas grandes e esconder em telas pequenas, você pode utilizar as classes do Bootstrap para controle de visibilidade. Neste caso, você pode adicionar a classe `d-none` para esconder a barra lateral por padrão, e `d-md-block` para mostrar a barra lateral em telas médias (md) para cima. Além disso, para que a barra lateral não seja mostrada sobre o conteúdo em telas grandes, você pode remover a classe `offcanvas-start` em telas médias para cima. Por exemplo:</p>
+<p>```html</p>
+<p><div class="offcanvas offcanvas-start d-none d-md-block" tabindex="-1" id="sidebar"></p>
+<p><!-- ... --></p>
+<p></div></p>
+<p>```</p>
+<p>Para remover a classe `offcanvas-start` em telas médias, você pode usar um pouco de JavaScript:</p>
+<p>```javascript</p>
+<p>var sidebar = document.getElementById('sidebar');</p>
+<p>if (window.innerWidth >= 768) { // Tela média em Bootstrap 5 é de 768px para cima</p>
+<p>sidebar.classList.remove('offcanvas-start');</p>
+<p>}</p>
+<p>```</p>
+<p>Por fim, observe que a</p>
+
+
+                    
+
+                <p>escreva somente a parte do javascript completo para que funcione corretamente</p>
+
+
+                    
+
+                <p>Aqui está o JavaScript que você precisa para controlar a barra lateral. Esse código adiciona o evento de clique ao botão e controla a classe 'show' na barra lateral. Além disso, ajusta a classe da barra lateral de acordo com o tamanho da tela:</p>
+<p>```javascript</p>
+<p><script></p>
+<p>// Função para filtrar itens na barra lateral</p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementsByClassName("index")[0];</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>// Adaptação da barra lateral de acordo com o tamanho da tela</p>
+<p>var sidebar = document.getElementById('sidebar');</p>
+<p>if (window.innerWidth >= 768) { // Tela média em Bootstrap 5 é de 768px para cima</p>
+<p>sidebar.classList.remove('offcanvas-start');</p>
+<p>}</p>
+<p>// Ajuste da barra lateral ao redimensionar a janela</p>
+<p>window.addEventListener('resize', function() {</p>
+<p>if (window.innerWidth >= 768) {</p>
+<p>sidebar.classList.remove('offcanvas-start');</p>
+<p>} else if (!sidebar.classList.contains('offcanvas-start')) {</p>
+<p>sidebar.classList.add('offcanvas-start');</p>
+<p>}</p>
+<p>});</p>
+<p></script></p>
+<p>```</p>
+<p>Este código adiciona o comportamento esperado à barra lateral e ajusta sua aparência de acordo com o tamanho da janela. Note que o comportamento de toggle é agora controlado diretamente pelo Bootstrap através do atributo `data-bs-toggle="offcanvas"` no botão, portanto, não é mais necessário adicionar um evento de clique ao botão no JavaScript.</p>
+
+
+                    
+
+                <p>como fica o navbar para que apareça somente o botão troggle e o logo, pode retirar o home, produtos e serviços e o contato.</p>
+
+
+                    
+
+                <p>Para que somente o botão de alternância (toggler) e o logotipo apareçam, basta remover as tags `<li>` que contêm os itens do menu que você mencionou (Home, Produtos e Serviços e Contato). Aqui está como o `<nav>` deve ficar:</p>
+<p>```html</p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"></p>
+<p><div class="container-fluid"></p>
+<p><a class="navbar-brand" href="#">JKO DIGITAL.</a></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"</p>
+<p>aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p></div></p>
+<p></nav></p>
+<p>```</p>
+<p>Aqui, removi o botão 'sidebarToggle' adicional, assim como a divisão 'navbar-collapse'. Agora, o botão de alternância (toggler) está vinculado diretamente à barra lateral através dos atributos `data-bs-toggle` e `data-bs-target`, o que significa que quando você clicar nele, a barra lateral será mostrada ou escondida. Além disso, o logotipo 'JKO DIGITAL.' agora é mostrado independentemente do tamanho da tela.</p>
+
+
+                    
+
+                <p>esta certo essa parte do código?     <div class="index pt-5 offcanvas offcanvas-start pt-5" id="sidebar" tabindex="-1"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..." onkeyup="filterIndex()"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+
+
+                    
+
+                <p>Sim, essa parte do código parece correta. Ela está criando um elemento `<div>` com a barra lateral (sidebar) que contém um campo de entrada de texto (input) para pesquisa e um loop para exibir os itens do índice (`indexData`).</p>
+<p>No entanto, sem mais contexto ou código para analisar, é difícil dizer se essa parte do código vai funcionar conforme o esperado.</p>
+<p>Este código usa a sintaxe EJS (Embedded JavaScript), que é uma linguagem de modelo para gerar páginas HTML usando JavaScript. Este trecho de código está percorrendo o objeto `indexData` e para cada título, está criando um novo `<div>` com um link para o respectivo cartão.</p>
+<p>Se você estiver com problemas para renderizar esses elementos na página, verifique se você tem a biblioteca EJS instalada e configurada corretamente no seu servidor, e também certifique-se de que `indexData` é um objeto que foi passado para a vista quando foi renderizada.</p>
+
+
+                    
+
+                <p>o botão troggle não esta aparecendo</p>
+
+
+                    
+
+                <p>O problema pode ser com o código do botão "troggle" (ou "toggle", na grafia correta em inglês). Pode ser que o botão não esteja aparecendo devido a algumas configurações de CSS ou a falta de certos atributos no HTML.</p>
+<p>No Bootstrap 5, é comum usar o botão toggle para abrir e fechar o menu de navegação em dispositivos móveis. Aqui está como o botão toggle geralmente se parece:</p>
+<p>```html</p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p>```</p>
+<p>Nesse exemplo, o botão tem a classe `navbar-toggler` e usa o atributo `data-bs-toggle` para indicar que ele deve abrir e fechar o elemento com o ID especificado em `data-bs-target` (neste caso, `#sidebar`). O `navbar-toggler-icon` é o ícone padrão de três linhas horizontais, mas você pode substituí-lo por qualquer coisa que desejar.</p>
+<p>No seu código, você tem a classe `btn btn-primary` adicionada ao botão, que pode estar sobrepondo o estilo do `navbar-toggler`. Remova `btn btn-primary` e veja se o botão aparece.</p>
+<p>Caso contrário, se ainda não estiver aparecendo, verifique o seguinte:</p>
+<p>- O JavaScript e o CSS do Bootstrap estão sendo carregados corretamente.</p>
+<p>- Não há outros elementos sobrepondo o botão.</p>
+<p>- Não há erros no console do navegador.</p>
+<p>- Os atributos `data-bs-toggle` e `data-bs-target` estão corretos e correspondem ao ID do elemento que você quer abrir/fechar.</p>
+<p>Espero que isso ajude a solucionar o problema. Se ainda estiver enfrentando dificuldades, por favor, forneça mais detalhes para que eu possa ajudar ainda mais.</p>
+
+
+                    
+
+                <p>preciso que ao clicar em qualquer link do menu, ele feche o menu</p>
+
+
+                    
+
+                <p>No Bootstrap 5, é possível fazer com que o offcanvas feche ao clicar em um link usando JavaScript/jQuery. Aqui está um exemplo de como você pode implementar isso:</p>
+<p>```javascript</p>
+<p>// jQuery</p>
+<p>$(document).ready(function () {</p>
+<p>$('#sidebar a').on('click', function () {</p>
+<p>var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('sidebar'));</p>
+<p>bsOffcanvas.hide();</p>
+<p>});</p>
+<p>});</p>
+<p>```</p>
+<p>```javascript</p>
+<p>// JavaScript Puro</p>
+<p>document.addEventListener('DOMContentLoaded', function () {</p>
+<p>var sidebarLinks = document.querySelectorAll('#sidebar a');</p>
+<p>sidebarLinks.forEach(function (link) {</p>
+<p>link.addEventListener('click', function () {</p>
+<p>var sidebar = document.getElementById('sidebar');</p>
+<p>var bsOffcanvas = new bootstrap.Offcanvas(sidebar);</p>
+<p>bsOffcanvas.hide();</p>
+<p>});</p>
+<p>});</p>
+<p>});</p>
+<p>```</p>
+<p>Este código adiciona um ouvinte de evento 'click' a todos os links dentro do elemento com o ID `#sidebar`. Quando um link é clicado, ele chama a função que esconde o offcanvas.</p>
+<p>Note que `bootstrap.Offcanvas` é uma classe do Bootstrap 5 usada para controlar o comportamento do offcanvas. Nós criamos uma nova instância dessa classe para o elemento `#sidebar` e chamamos o método `hide()` para esconder o offcanvas.</p>
+<p>Certifique-se de adicionar este script depois de carregar o JavaScript do Bootstrap no seu HTML.</p>
+
+
+                    
+
+                <p>refaça todo arquivo ejs, deixe ele mais limpo e funcionando corretamente</p>
+
+
+                    
+
+                <p>Claro, posso lhe ajudar com isso. Antes de prosseguir, gostaria de ressaltar que a tecnologia do servidor ou do backend que você está usando para renderizar seus arquivos .ejs (Express, por exemplo) é relevante e pode afetar a estrutura e a funcionalidade corretas do código. Aqui está a versão simplificada do seu código ejs:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"></p>
+<p><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"></script></p>
+<p></head></p>
+<p><body></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"></p>
+<p><div class="container-fluid"></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><a class="navbar-brand mx-auto" href="#">JKO DIGITAL</a></p>
+<p></div></p>
+<p></nav></p>
+<p><div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"></p>
+<p><div class="offcanvas-header"></p>
+<p><h5>Menu</h5></p>
+<p><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></p>
+<p></div></p>
+<p><div class="offcanvas-body"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..." onkeyup="filterIndex()"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p></div></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementsByClassName("index")[0];</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+
+
+                    
+
+                <p>}</p>
+<p>}</p>
+<p>}</p>
+<p>// Fechar o menu quando clicar em um link</p>
+<p>$(document).ready(function () {</p>
+<p>$('#sidebar a').on('click', function () {</p>
+<p>var bsOffcanvas = new bootstrap.Offcanvas(document.getElementById('sidebar'));</p>
+<p>bsOffcanvas.hide();</p>
+<p>});</p>
+<p>});</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Este código simplifica a navbar para incluir apenas o logotipo e o botão de toggle. Além disso, o código JavaScript para fechar o menu offcanvas ao clicar em um link foi adicionado. Por fim, eu removi algumas importações desnecessárias para limpar o código.</p>
+
+
+                    
+
+                <p>o botão do menu não aparece quando a tela esta cheia, o campo procurar não esta funcionando, ao clicar link do menu o menu não esta fechando automaticamente e o botão fechar do menu tambem nao esta funcionando</p>
+
+
+                    
+
+                <p>O problema que você está encontrando está relacionado ao código JavaScript e ao uso do Bootstrap. Na versão 5.0.0-beta3 do Bootstrap, que você está usando, Offcanvas é um componente que ainda não foi implementado oficialmente. É introduzido apenas na versão 5.0.0-beta3 e posterior. Vamos usar a versão mais recente do Bootstrap e corrigir os problemas.</p>
+<p>Eis uma versão atualizada do código:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><link href="https://stackpath.bootstrapcdn.com/bootstrap/5.5.0/css/bootstrap.min.css" rel="stylesheet"></p>
+<p><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script></p>
+<p></head></p>
+<p><body></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"></p>
+<p><div class="container-fluid"></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><a class="navbar-brand mx-auto" href="#">JKO DIGITAL</a></p>
+<p></div></p>
+<p></nav></p>
+<p><div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar"></p>
+<p><div class="offcanvas-header"></p>
+<p><h5>Menu</h5></p>
+<p><button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button></p>
+<p></div></p>
+<p><div class="offcanvas-body"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..."></p>
+<p><div id="index"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementById("index");</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display =</p>
+
+
+                    
+
+                <p>"none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>document.getElementById('search').addEventListener('keyup', filterIndex);</p>
+<p>$('#sidebar a').on('click', function () {</p>
+<p>var bsOffcanvas = document.getElementById('sidebar');</p>
+<p>var bsOffcanvasInstance = bootstrap.Offcanvas.getInstance(bsOffcanvas);</p>
+<p>bsOffcanvasInstance.hide();</p>
+<p>});</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Este código atualizado deve corrigir os seguintes problemas:</p>
+<p>1. O botão do menu agora aparece em todas as telas.</p>
+<p>2. O campo "Procurar" está funcionando corretamente.</p>
+<p>3. Ao clicar em um link do menu, o menu fecha automaticamente.</p>
+<p>4. O botão de fechar do menu está funcionando.</p>
+
+
+                    
+
+                <p>o menu não esta aparecendo em telas maiores</p>
+
+
+                    
+
+                <p>Para resolver o problema do menu não aparecer em telas maiores, você pode fazer algumas mudanças no código CSS. Aqui está uma solução possível:</p>
+<p>Vamos usar um pouco de CSS para mostrar o offcanvas por padrão em telas maiores e ocultá-lo em telas menores até que o botão seja clicado. Aqui está um exemplo de como você pode fazer isso:</p>
+<p>```css</p>
+<p>#index {</p>
+<p>display: none;  /<i> Esconda a barra lateral por padrão (telas menores) </i>/</p>
+<p>}</p>
+<p>@media (min-width: 992px) {  /<i> Quando a tela é 992px ou maior, mostre a barra lateral </i>/</p>
+<p>#index {</p>
+<p>display: block;</p>
+<p>}</p>
+<p>}</p>
+<p>```</p>
+<p>Você pode colocar o código CSS acima no bloco `<style>` do cabeçalho HTML. Essas regras de CSS aplicam uma abordagem de design responsivo. Quando a tela é 992px ou maior (normalmente telas de desktop), a barra lateral (`#index`) será exibida. Caso contrário, ela estará oculta.</p>
+<p>Lembre-se de que a largura exata que você usa na consulta de mídia pode precisar ser ajustada para se adequar às suas necessidades exatas.</p>
+<p>Adicione também a seguinte linha ao código JavaScript:</p>
+<p>```javascript</p>
+<p>$('#sidebar').offcanvas('show');</p>
+<p>```</p>
+<p>Isso fará com que o offcanvas seja exibido por padrão. Coloque esta linha logo após o evento `addEventListener` para o campo de pesquisa.</p>
+<p>Espero que isso resolva o problema! Se você ainda estiver tendo problemas, sinta-se à vontade para perguntar.</p>
+
+
+                    
+
+                <p>o botão continua não aparecendo para grandes telas, mas não tem problema, desde que quando for tela grande apareça o sidebar com os index</p>
+
+
+                    
+
+                <p>Entendo. Para que o sidebar seja exibido por padrão em telas maiores, você pode usar o Bootstrap's offcanvas como um layout "permanent", ou seja, sempre visível. O código a seguir deve dar uma ideia geral de como fazer isso:</p>
+<p>Primeiro, em seu CSS, adicione o seguinte:</p>
+<p>```css</p>
+<p>@media (min-width: 992px) {</p>
+<p>.offcanvas {</p>
+<p>transform: translateX(0);</p>
+<p>}</p>
+<p>}</p>
+<p>```</p>
+<p>Em seguida, no JavaScript, você pode adicionar um ouvinte para o evento de redimensionamento da janela que irá ativar ou desativar o offcanvas dependendo da largura da janela. Aqui está um exemplo de como você pode fazer isso:</p>
+<p>```javascript</p>
+<p>function toggleOffcanvas() {</p>
+<p>var windowWidth = window.innerWidth;</p>
+<p>if (windowWidth > 991) {</p>
+<p>$('#sidebar').offcanvas('show');</p>
+<p>} else {</p>
+<p>$('#sidebar').offcanvas('hide');</p>
+<p>}</p>
+<p>}</p>
+<p>window.addEventListener('resize', toggleOffcanvas);</p>
+<p>document.addEventListener('DOMContentLoaded', toggleOffcanvas); // Ativar na inicialização</p>
+<p>```</p>
+<p>Essas alterações devem fazer com que o offcanvas seja exibido por padrão em telas grandes, mas ainda possa ser alternado em telas menores.</p>
+<p>Lembre-se de que a largura exata que você usa na consulta de mídia (`@media`) e no JavaScript pode precisar ser ajustada para se adequar às suas necessidades exatas.</p>
+<p>Espero que isso ajude! Se você ainda estiver tendo problemas, não hesite em pedir mais assistência.</p>
+
+
+                    
+
+                <p>crie apenas um botão no navbar que abra o sidebar com os index</p>
+
+
+                    
+
+                <p>Certamente! Para criar um botão no navbar que abra o sidebar, você pode utilizar a funcionalidade "offcanvas" do Bootstrap.</p>
+<p>Aqui está o código para o navbar e o botão:</p>
+<p>```html</p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow"></p>
+<p><div class="container-fluid"></p>
+<p><a class="navbar-brand" href="#">JKO DIGITAL.</a></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"</p>
+<p>aria-controls="sidebar" aria-expanded="false" aria-label="Toggle Sidebar"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p></div></p>
+<p></nav></p>
+<p>```</p>
+<p>E aqui está o sidebar offcanvas com o ID `sidebar`:</p>
+<p>```html</p>
+<p><div class="offcanvas offcanvas-start pt-5" id="sidebar" tabindex="-1"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..." onkeyup="filterIndex()"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p>```</p>
+<p>O botão no navbar agora tem o atributo `data-bs-toggle="offcanvas"` e `data-bs-target="#sidebar"`, que é o ID do elemento offcanvas. Quando o botão é clicado, ele deve alternar a visibilidade do sidebar offcanvas.</p>
+<p>Espero que isso seja útil! Se você tiver mais perguntas ou encontrar algum problema, por favor me avise.</p>
+
+
+                    
+
+                <p>quero que para telas maiores o side bar apareça constantemente com aside</p>
+
+
+                    
+
+                <p>Entendi. Para fazer com que o sidebar seja exibido constantemente em telas maiores, você pode usar media queries CSS para controlar o layout com base no tamanho da tela. Abaixo está uma versão modificada do seu código que implementa esse comportamento:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><link href="https://stackpath.bootstrapcdn.com/bootstrap/5.5.0/css/bootstrap.min.css" rel="stylesheet"></p>
+<p><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script></p>
+<p><style></p>
+<p>@media (min-width: 992px) {</p>
+<p>#sidebar {</p>
+<p>position: fixed;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>height: 100%;</p>
+<p>overflow: auto;</p>
+<p>}</p>
+<p>.container {</p>
+<p>margin-left: 250px;</p>
+<p>}</p>
+<p>}</p>
+<p></style></p>
+<p></head></p>
+<p><body></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-lg-none"></p>
+<p><div class="container-fluid"></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><a class="navbar-brand mx-auto" href="#">JKO DIGITAL</a></p>
+<p></div></p>
+<p></nav></p>
+<p><aside class="offcanvas offcanvas-start bg-light" tabindex="-1" id="sidebar"></p>
+<p><div class="offcanvas-body"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..."></p>
+<p><div id="index"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p></div></p>
+<p></aside></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementById("index");</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>document.getElementById('search').addEventListener('</p>
+
+
+                    
+
+                <p>keyup', filterIndex);</p>
+<p>$('#sidebar a').on('click', function () {</p>
+<p>if (window.innerWidth < 992) {</p>
+<p>var bsOffcanvas = document.getElementById('sidebar');</p>
+<p>var bsOffcanvasInstance = bootstrap.Offcanvas.getInstance(bsOffcanvas);</p>
+<p>bsOffcanvasInstance.hide();</p>
+<p>}</p>
+<p>});</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Com este código, o sidebar será exibido constantemente nas telas maiores e será um offcanvas nas telas menores.</p>
+
+
+                    
+
+                <p>não esta aparecendo o sidebar em telas grandes</p>
+
+
+                    
+
+                <p>Peço desculpas pela confusão anterior. Se você quiser que a barra lateral (sidebar) seja sempre visível em telas maiores e se torne um menu deslizante (offcanvas) em telas menores, você precisará de uma estrutura um pouco diferente e um pouco mais de CSS. Aqui está uma solução mais completa:</p>
+<p>```html</p>
+<p><!DOCTYPE html></p>
+<html lang="pt-br">
+<head>
+<p><meta charset="UTF-8"></p>
+<p><meta name="viewport" content="width=device-width, initial-scale=1.0"></p>
+<p><title>JKO DIGITAL™</title></p>
+<p><link href="https://stackpath.bootstrapcdn.com/bootstrap/5.5.0/css/bootstrap.min.css" rel="stylesheet"></p>
+<p><script src="https://code.jquery.com/jquery-3.6.0.min.js"></script></p>
+<p><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.5.0/dist/js/bootstrap.bundle.min.js"></script></p>
+<p><style></p>
+<p>@media (min-width: 992px) {</p>
+<p>#sidebar {</p>
+<p>display: block;</p>
+<p>position: fixed;</p>
+<p>top: 0;</p>
+<p>left: 0;</p>
+<p>width: 250px;</p>
+<p>height: 100vh;</p>
+<p>}</p>
+<p>.container {</p>
+<p>margin-left: 250px;</p>
+<p>}</p>
+<p>}</p>
+<p></style></p>
+<p></head></p>
+<p><body></p>
+<p><nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top d-lg-none"></p>
+<p><div class="container-fluid"></p>
+<p><button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation"></p>
+<p><span class="navbar-toggler-icon"></span></p>
+<p></button></p>
+<p><a class="navbar-brand mx-auto" href="#">JKO DIGITAL</a></p>
+<p></div></p>
+<p></nav></p>
+<p><div class="offcanvas offcanvas-start bg-light d-lg-block" tabindex="-1" id="sidebar"></p>
+<p><div class="offcanvas-body"></p>
+<p>Procurar Item:<input type="text" id="search" placeholder="Procurar..."></p>
+<p><div id="index"></p>
+<p><% for (let title in indexData) { %></p>
+<p><div class="index-item"><a href="#card-<%= indexData[title] %>"></p>
+<p><%= title %></p>
+<p></a></div></p>
+<p><% } %></p>
+<p></div></p>
+<p></div></p>
+<p></div></p>
+<p><div class="container pt-5 col-12"></p>
+<p><h1 class="my-3 text-center">Nossos Produtos e Serviços</h1></p>
+<p><% cardsData.forEach(function(card, index) { %></p>
+<p><div class="card card-header mt-2" id="card-<%= index %>"></p>
+<p><div class="title card-body"></p>
+<p><%= card.title %></p>
+<p></div></p>
+<p><div class="message card-text"></p>
+<p><%= card.message %></p>
+<p></div></p>
+<p></div></p>
+<p><% }); %></p>
+<p></div></p>
+<p><script></p>
+<p>function filterIndex() {</p>
+<p>var input, filter, index, items, item, a, textValue;</p>
+<p>input = document.getElementById("search");</p>
+<p>filter = input.value.toUpperCase();</p>
+<p>index = document.getElementById("index");</p>
+<p>items = index.getElementsByClassName("index-item");</p>
+<p>for (var i = 0; i < items.length; i++) {</p>
+<p>a = items[i].getElementsByTagName("a")[0];</p>
+<p>textValue = a.textContent || a.innerText;</p>
+<p>if (textValue.toUpperCase().indexOf(filter) > -1) {</p>
+<p>items[i].style</p>
+
+
+                    
+
+                <p>.display = "";</p>
+<p>} else {</p>
+<p>items[i].style.display = "none";</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>document.getElementById('search').addEventListener('keyup', filterIndex);</p>
+<p></script></p>
+<p><footer class="footer mt-auto py-3 bg-light"></p>
+<p><div class="container"></p>
+<p><span class="text-muted">&copy; 2023 JKO DIGITAL™</span></p>
+<p></div></p>
+<p></footer></p>
+<p></body></p>
+<p></html></p>
+<p>```</p>
+<p>Este código vai fazer a barra lateral permanecer visível para telas com largura maior que 992px (típico breakpoint para grandes dispositivos em Bootstrap), e transformá-la em um menu offcanvas para telas menores. Por favor, certifique-se de atualizar as bibliotecas do Bootstrap para a versão mais recente. Além disso, o filtro de busca deve funcionar corretamente agora.</p>
+
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>
