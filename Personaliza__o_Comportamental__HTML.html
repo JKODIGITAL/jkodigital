@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Personalização Comportamental: HTML, Bootstrap, JavaScript
+    </title>
+    <meta name="description" content="Personalização Comportamental: HTML, Bootstrap, JavaScript">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+
+    <meta property="og:title" content="Personalização Comportamental: HTML, Bootstrap, JavaScript" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Personaliza__o_Comportamental__HTML.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content=" como posso fazer uma  Personalização com Base no Comportamento:Ajustar a experiência com base no comportamento do usuário pode tornar a página mais relevante e atraente. Por exemplo, se um usuário passar muito tempo na seção de depoimentos, você pode destacar mais depoimentos para eles. crie um exemplo em...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Personalização Comportamental: HTML, Bootstrap, JavaScript" />
+    <meta name="twitter:description" content=" como posso fazer uma  Personalização com Base no Comportamento:Ajustar a experiência com base no comportamento do usuário pode tornar a página mais relevante e atraente. Por exemplo, se um usuário passar muito tempo na seção de depoimentos, você pode destacar mais depoimentos para eles. crie um exemplo em...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+    <div id="cookieConsentContainer" class="cookie-consent-container">
+        <p>Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site. <a href="#">Saiba Mais</a></p>
+        <button id="acceptCookieConsent">Aceitar</button>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Personalização Comportamental: HTML, Bootstrap, JavaScript
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                29 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                29 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                <p>como posso fazer uma  Personalização com Base no Comportamento:<br/>Ajustar a experiência com base no comportamento do usuário pode tornar a página mais relevante e atraente. Por exemplo, se um usuário passar muito tempo na seção de depoimentos, você pode destacar mais depoimentos para eles. crie um exemplo em html, bootsrap 5 e javascript</p>
+
+                    
+
+                <p>Claro, posso fornecer um exemplo básico de como você pode alterar o conteúdo de uma página web com base no comportamento do usuário. No entanto, é importante lembrar que essa é uma simplificação e, na prática, a personalização com base no comportamento normalmente envolve a análise e o armazenamento de grandes volumes de dados, o uso de cookies ou tecnologias semelhantes para rastrear o comportamento do usuário ao longo do tempo e possivelmente a aplicação de técnicas de aprendizado de máquina.</p><p>Este é um exemplo simplificado, onde o tempo que o usuário passa em uma seção do site afeta o conteúdo que eles veem.</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="testimonial-section" class="d-flex flex-column"><br/>    <h1>Depoimentos</h1><br/>    <div id="testimonial-content"><br/>      <!-- Conteúdo dos depoimentos aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>let timeOnTestimonials = 0;<br/>let testimonialSection = document.getElementById('testimonial-section');</p><p>testimonialSection.addEventListener('mouseover', () => {<br/>  // Inicia a contagem do tempo quando o mouse entra na seção<br/>  this.intervalId = setInterval(() => {<br/>    timeOnTestimonials++;<br/>    if (timeOnTestimonials > 10) {  // Ajuste esse número para a quantidade de tempo que você deseja verificar<br/>      // Adicione mais depoimentos quando o usuário passar um certo tempo na seção<br/>      let testimonialContent = document.getElementById('testimonial-content');<br/>      testimonialContent.innerHTML += "<p>Novo depoimento baseado no comportamento do usuário.</p>";<br/>    }<br/>  }, 1000);<br/>});</p><p>testimonialSection.addEventListener('mouseout', () => {<br/>  // Para a contagem do tempo quando o mouse sai da seção<br/>  clearInterval(this.intervalId);<br/>});<br/>```</p><p>No exemplo acima, a página começa a adicionar mais depoimentos à seção de depoimentos quando o usuário passa um determinado tempo com o mouse sobre essa seção. Isso é feito por meio do rastreamento do tempo que o mouse passa sobre a seção de depoimentos e, em seguida, modificando o conteúdo da página em resposta.</p><p>Novamente, este é um exemplo muito simplificado, e a personalização real com base no comportamento do usuário provavelmente exigiria o uso de mais ferramentas e técnicas além das que são mostradas aqui.<br/></p>
+
+                    
+
+                <p>onde mais posso aplicar essa personalização</p>
+
+                    
+
+                <p>Existem muitos lugares e maneiras de aplicar a personalização com base no comportamento do usuário em um site ou aplicativo. Aqui estão alguns exemplos:</p><p>1. <b>Recomendação de produtos:</b> Se você está administrando um site de comércio eletrônico, pode usar o comportamento passado do usuário para recomendar produtos que possam ser do seu interesse. Por exemplo, você pode destacar produtos que são frequentemente comprados juntos, ou pode recomendar produtos semelhantes aos que o usuário visualizou ou comprou anteriormente.</p><p>2. <b>Conteúdo personalizado:</b> Se você está administrando um site de notícias ou blog, pode personalizar os artigos que você mostra com base nos interesses do usuário. Por exemplo, se um usuário costuma ler artigos sobre ciência e tecnologia, você pode destacar mais conteúdo relacionado a esses tópicos.</p><p>3. <b>Publicidade direcionada:</b> Se você estiver veiculando anúncios em seu site, pode usar o comportamento do usuário para mostrar anúncios mais relevantes. Por exemplo, se um usuário frequentemente pesquisa por restaurantes em seu site, você pode mostrar anúncios de restaurantes locais.</p><p>4. <b>Interface do usuário personalizada:</b> Você pode até mesmo personalizar a interface do usuário com base no comportamento do usuário. Por exemplo, se um usuário costuma usar um determinado recurso em seu aplicativo, você pode tornar esse recurso mais proeminente ou acessível.</p><p>5. <b>Email marketing:</b> A personalização com base no comportamento também pode ser aplicada em email marketing, ajustando os emails enviados com base na atividade do usuário, como produtos visualizados, artigos lidos, entre outros.</p><p>Lembre-se, ao aplicar a personalização com base no comportamento do usuário, é importante respeitar a privacidade do usuário e cumprir todas as leis e regulamentos aplicáveis. Isso pode incluir a obtenção de consentimento do usuário para coletar e usar dados sobre seu comportamento, entre outras coisas.<br/></p>
+
+                    
+
+                <p>Recomendações de Produtos com Base na Hora do Dia:</p><p>Semelhante à personalização com base na hora do dia, você pode mostrar diferentes produtos dependendo da hora do dia. Por exemplo, se seu site vende eBooks de vários gêneros, talvez você possa recomendar thrillers de suspense à noite e romances leves durante o dia. Crie um exemplo em html bootstrap 5  e java script</p>
+
+                    
+
+                <p>Certamente, você pode ajustar o conteúdo do site com base na hora do dia para melhorar a experiência do usuário. Aqui está um exemplo simples que usa JavaScript para verificar a hora do dia e alterar o conteúdo do site com base nisso:</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="product-section" class="d-flex flex-column"><br/>    <h1>Recomendações de Livros</h1><br/>    <div id="product-content"><br/>      <!-- Conteúdo do produto aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>window.onload = function() {<br/>  let productContent = document.getElementById('product-content');</p><p>let date = new Date();<br/>  let currentHour = date.getHours();</p><p>if (currentHour < 12) {<br/>    // Manhã<br/>    productContent.innerHTML += "<p>Recomendação da Manhã: Romances Leves</p>";<br/>  } else if (currentHour < 18) {<br/>    // Tarde<br/>    productContent.innerHTML += "<p>Recomendação da Tarde: Livros de Desenvolvimento Pessoal</p>";<br/>  } else {<br/>    // Noite<br/>    productContent.innerHTML += "<p>Recomendação da Noite: Thrillers de Suspense</p>";<br/>  }<br/>};<br/>```</p><p>Este é um exemplo muito simples e certamente há maneiras mais complexas e eficazes de implementar essa funcionalidade, especialmente se você tiver uma grande variedade de produtos e um grande volume de dados de comportamento do usuário.</p><p>Além disso, lembre-se de sempre levar em conta as diferenças de fuso horário ao implementar personalizações com base na hora do dia. O código acima assume que todos os usuários estão no mesmo fuso horário do servidor, o que pode não ser o caso em um site real.</p>
+
+                    
+
+                <p>E UM EXEMPLO DE Conteúdo com Base na Temperatura Local:</p><p>Semelhante à previsão do tempo, você pode ajustar seu conteúdo com base na temperatura local do usuário. Isso pode não ser relevante para todos os produtos, mas se for, pode ser uma maneira interessante de personalizar a experiência do usuário.</p>
+
+                    
+
+                <p>Isso é um pouco mais complexo porque envolve o uso de uma API de previsão do tempo para obter a temperatura local do usuário. Existem várias APIs de previsão do tempo disponíveis, como OpenWeatherMap, Weather API, etc. A maioria dessas APIs requer uma chave de API que você precisa obter se inscrevendo no serviço.</p><p>Para este exemplo, vou usar a API OpenWeatherMap, que retorna a temperatura em Kelvin. Para simplificar, vamos supor que já temos a permissão do usuário para acessar sua localização.</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="content-section" class="d-flex flex-column"><br/>    <h1>Conteúdo Personalizado com Base na Temperatura</h1><br/>    <div id="content"><br/>      <!-- Conteúdo personalizado aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>// Sua chave de API do OpenWeatherMap<br/>let apiKey = 'YOUR<i>OPENWEATHERMAP</i>API_KEY';</p><p>window.onload = function() {<br/>  if (navigator.geolocation) {<br/>    navigator.geolocation.getCurrentPosition(position => {<br/>      let lat = position.coords.latitude;<br/>      let lon = position.coords.longitude;</p><p>fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)<br/>        .then(response => response.json())<br/>        .then(data => {<br/>          let temperature = data.main.temp - 273.15;  // Convertendo Kelvin para Celsius<br/>          let content = document.getElementById('content');</p><p>if (temperature < 10) {<br/>            // Tempo frio<br/>            content.innerHTML += "<p>Está frio lá fora! Talvez você queira ler um livro aconchegante em frente à lareira.</p>";<br/>          } else if (temperature < 25) {<br/>            // Tempo ameno<br/>            content.innerHTML += "<p>O tempo está agradável! Que tal um livro sobre aventuras ao ar livre?</p>";<br/>          } else {<br/>            // Tempo quente<br/>            content.innerHTML += "<p>Está quente lá fora! Que tal um livro sobre praia e verão?</p>";<br/>          }<br/>        })<br/>        .catch(error => console.error(error));<br/>    });<br/>  } else {<br/>    console.log("Geolocalização não é suportada por este navegador.");<br/>  }<br/>};<br/>```</p><p>Neste exemplo, o JavaScript primeiro obtém a localização do usuário e, em seguida, usa a API OpenWeatherMap para obter a temperatura local. Com base na temperatura, ele altera o conteúdo da página.</p><p>Lembre-se de que você precisa tratar erros adequadamente em um cenário do mundo real. Isso inclui o caso em que a geolocalização não é suportada ou o usuário não dá permissão para acessar sua localização, e o caso em que a solicitação à API falha por qualquer motivo.</p><p>Por fim, note que a solicitação à API OpenWeatherMap é feita sobre HTTP, o que pode não ser seguro ou permitido se o seu site estiver sendo servido sobre HTTPS. Em um cenário do mundo real, você deve fazer essa solicitação no servidor ou usar uma API que suporte HTTPS.</p>
+
+                    
+
+                <p>NÃO FUNCIONOU</p>
+
+                    
+
+                <p>Peço desculpas por qualquer confusão. Aqui estão algumas coisas que você pode verificar se o código não está funcionando como esperado:</p><p>1. <b>Chave de API:</b> Você substituiu 'YOUR<i>OPENWEATHERMAP</i>API_KEY' pela sua chave de API do OpenWeatherMap real?</p><p>2. <b>Permissão de Localização:</b> O usuário deu permissão para o navegador acessar sua localização? Se a permissão foi negada, o código não funcionará.</p><p>3. <b>HTTPS:</b> Você está usando HTTPS? Se o seu site é servido sobre HTTPS, as solicitações para a API OpenWeatherMap feitas diretamente do navegador serão bloqueadas porque a API OpenWeatherMap é servida sobre HTTP. Para resolver isso, você pode fazer a solicitação no servidor ou procurar uma API de previsão do tempo que suporte HTTPS.</p><p>4. <b>Erro no console:</b> Existe algum erro no console do desenvolvedor do navegador? Se houver algum problema com o código, o erro pode fornecer uma pista do que está acontecendo.</p><p>Por último, lembre-se de que este código é uma simplificação e pode não ser adequado para um site ou aplicativo real. Na prática, você deve tratar erros de maneira mais completa e considerar questões de privacidade e segurança ao acessar a localização do usuário.</p>
+
+                    
+
+                
+
+                    
+
+                <p>como posso fazer uma  Personalização com Base no Comportamento:<br/>Ajustar a experiência com base no comportamento do usuário pode tornar a página mais relevante e atraente. Por exemplo, se um usuário passar muito tempo na seção de depoimentos, você pode destacar mais depoimentos para eles. crie um exemplo em html, bootsrap 5 e javascript</p>
+
+                    
+
+                <p>Claro, posso fornecer um exemplo básico de como você pode alterar o conteúdo de uma página web com base no comportamento do usuário. No entanto, é importante lembrar que essa é uma simplificação e, na prática, a personalização com base no comportamento normalmente envolve a análise e o armazenamento de grandes volumes de dados, o uso de cookies ou tecnologias semelhantes para rastrear o comportamento do usuário ao longo do tempo e possivelmente a aplicação de técnicas de aprendizado de máquina.</p><p>Este é um exemplo simplificado, onde o tempo que o usuário passa em uma seção do site afeta o conteúdo que eles veem.</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="testimonial-section" class="d-flex flex-column"><br/>    <h1>Depoimentos</h1><br/>    <div id="testimonial-content"><br/>      <!-- Conteúdo dos depoimentos aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>let timeOnTestimonials = 0;<br/>let testimonialSection = document.getElementById('testimonial-section');</p><p>testimonialSection.addEventListener('mouseover', () => {<br/>  // Inicia a contagem do tempo quando o mouse entra na seção<br/>  this.intervalId = setInterval(() => {<br/>    timeOnTestimonials++;<br/>    if (timeOnTestimonials > 10) {  // Ajuste esse número para a quantidade de tempo que você deseja verificar<br/>      // Adicione mais depoimentos quando o usuário passar um certo tempo na seção<br/>      let testimonialContent = document.getElementById('testimonial-content');<br/>      testimonialContent.innerHTML += "<p>Novo depoimento baseado no comportamento do usuário.</p>";<br/>    }<br/>  }, 1000);<br/>});</p><p>testimonialSection.addEventListener('mouseout', () => {<br/>  // Para a contagem do tempo quando o mouse sai da seção<br/>  clearInterval(this.intervalId);<br/>});<br/>```</p><p>No exemplo acima, a página começa a adicionar mais depoimentos à seção de depoimentos quando o usuário passa um determinado tempo com o mouse sobre essa seção. Isso é feito por meio do rastreamento do tempo que o mouse passa sobre a seção de depoimentos e, em seguida, modificando o conteúdo da página em resposta.</p><p>Novamente, este é um exemplo muito simplificado, e a personalização real com base no comportamento do usuário provavelmente exigiria o uso de mais ferramentas e técnicas além das que são mostradas aqui.<br/></p>
+
+                    
+
+                <p>onde mais posso aplicar essa personalização</p>
+
+                    
+
+                <p>Existem muitos lugares e maneiras de aplicar a personalização com base no comportamento do usuário em um site ou aplicativo. Aqui estão alguns exemplos:</p><p>1. <b>Recomendação de produtos:</b> Se você está administrando um site de comércio eletrônico, pode usar o comportamento passado do usuário para recomendar produtos que possam ser do seu interesse. Por exemplo, você pode destacar produtos que são frequentemente comprados juntos, ou pode recomendar produtos semelhantes aos que o usuário visualizou ou comprou anteriormente.</p><p>2. <b>Conteúdo personalizado:</b> Se você está administrando um site de notícias ou blog, pode personalizar os artigos que você mostra com base nos interesses do usuário. Por exemplo, se um usuário costuma ler artigos sobre ciência e tecnologia, você pode destacar mais conteúdo relacionado a esses tópicos.</p><p>3. <b>Publicidade direcionada:</b> Se você estiver veiculando anúncios em seu site, pode usar o comportamento do usuário para mostrar anúncios mais relevantes. Por exemplo, se um usuário frequentemente pesquisa por restaurantes em seu site, você pode mostrar anúncios de restaurantes locais.</p><p>4. <b>Interface do usuário personalizada:</b> Você pode até mesmo personalizar a interface do usuário com base no comportamento do usuário. Por exemplo, se um usuário costuma usar um determinado recurso em seu aplicativo, você pode tornar esse recurso mais proeminente ou acessível.</p><p>5. <b>Email marketing:</b> A personalização com base no comportamento também pode ser aplicada em email marketing, ajustando os emails enviados com base na atividade do usuário, como produtos visualizados, artigos lidos, entre outros.</p><p>Lembre-se, ao aplicar a personalização com base no comportamento do usuário, é importante respeitar a privacidade do usuário e cumprir todas as leis e regulamentos aplicáveis. Isso pode incluir a obtenção de consentimento do usuário para coletar e usar dados sobre seu comportamento, entre outras coisas.<br/></p>
+
+                    
+
+                <p>Recomendações de Produtos com Base na Hora do Dia:</p><p>Semelhante à personalização com base na hora do dia, você pode mostrar diferentes produtos dependendo da hora do dia. Por exemplo, se seu site vende eBooks de vários gêneros, talvez você possa recomendar thrillers de suspense à noite e romances leves durante o dia. Crie um exemplo em html bootstrap 5  e java script</p>
+
+                    
+
+                <p>Certamente, você pode ajustar o conteúdo do site com base na hora do dia para melhorar a experiência do usuário. Aqui está um exemplo simples que usa JavaScript para verificar a hora do dia e alterar o conteúdo do site com base nisso:</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="product-section" class="d-flex flex-column"><br/>    <h1>Recomendações de Livros</h1><br/>    <div id="product-content"><br/>      <!-- Conteúdo do produto aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>window.onload = function() {<br/>  let productContent = document.getElementById('product-content');</p><p>let date = new Date();<br/>  let currentHour = date.getHours();</p><p>if (currentHour < 12) {<br/>    // Manhã<br/>    productContent.innerHTML += "<p>Recomendação da Manhã: Romances Leves</p>";<br/>  } else if (currentHour < 18) {<br/>    // Tarde<br/>    productContent.innerHTML += "<p>Recomendação da Tarde: Livros de Desenvolvimento Pessoal</p>";<br/>  } else {<br/>    // Noite<br/>    productContent.innerHTML += "<p>Recomendação da Noite: Thrillers de Suspense</p>";<br/>  }<br/>};<br/>```</p><p>Este é um exemplo muito simples e certamente há maneiras mais complexas e eficazes de implementar essa funcionalidade, especialmente se você tiver uma grande variedade de produtos e um grande volume de dados de comportamento do usuário.</p><p>Além disso, lembre-se de sempre levar em conta as diferenças de fuso horário ao implementar personalizações com base na hora do dia. O código acima assume que todos os usuários estão no mesmo fuso horário do servidor, o que pode não ser o caso em um site real.</p>
+
+                    
+
+                <p>E UM EXEMPLO DE Conteúdo com Base na Temperatura Local:</p><p>Semelhante à previsão do tempo, você pode ajustar seu conteúdo com base na temperatura local do usuário. Isso pode não ser relevante para todos os produtos, mas se for, pode ser uma maneira interessante de personalizar a experiência do usuário.</p>
+
+                    
+
+                <p>Isso é um pouco mais complexo porque envolve o uso de uma API de previsão do tempo para obter a temperatura local do usuário. Existem várias APIs de previsão do tempo disponíveis, como OpenWeatherMap, Weather API, etc. A maioria dessas APIs requer uma chave de API que você precisa obter se inscrevendo no serviço.</p><p>Para este exemplo, vou usar a API OpenWeatherMap, que retorna a temperatura em Kelvin. Para simplificar, vamos supor que já temos a permissão do usuário para acessar sua localização.</p><p><b>HTML (usando Bootstrap 5):</b></p>```html<br/><!DOCTYPE html><br/><html><br/><head><br/>  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.1/css/bootstrap.min.css"><br/></head><br/><body><br/>  <div id="content-section" class="d-flex flex-column"><br/>    <h1>Conteúdo Personalizado com Base na Temperatura</h1><br/>    <div id="content"><br/>      <!-- Conteúdo personalizado aqui --><br/>    </div><br/>  </div><br/></body><br/></html><br/>```<p><b>JavaScript:</b></p><p>```javascript<br/>// Sua chave de API do OpenWeatherMap<br/>let apiKey = 'YOUR<i>OPENWEATHERMAP</i>API_KEY';</p><p>window.onload = function() {<br/>  if (navigator.geolocation) {<br/>    navigator.geolocation.getCurrentPosition(position => {<br/>      let lat = position.coords.latitude;<br/>      let lon = position.coords.longitude;</p><p>fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`)<br/>        .then(response => response.json())<br/>        .then(data => {<br/>          let temperature = data.main.temp - 273.15;  // Convertendo Kelvin para Celsius<br/>          let content = document.getElementById('content');</p><p>if (temperature < 10) {<br/>            // Tempo frio<br/>            content.innerHTML += "<p>Está frio lá fora! Talvez você queira ler um livro aconchegante em frente à lareira.</p>";<br/>          } else if (temperature < 25) {<br/>            // Tempo ameno<br/>            content.innerHTML += "<p>O tempo está agradável! Que tal um livro sobre aventuras ao ar livre?</p>";<br/>          } else {<br/>            // Tempo quente<br/>            content.innerHTML += "<p>Está quente lá fora! Que tal um livro sobre praia e verão?</p>";<br/>          }<br/>        })<br/>        .catch(error => console.error(error));<br/>    });<br/>  } else {<br/>    console.log("Geolocalização não é suportada por este navegador.");<br/>  }<br/>};<br/>```</p><p>Neste exemplo, o JavaScript primeiro obtém a localização do usuário e, em seguida, usa a API OpenWeatherMap para obter a temperatura local. Com base na temperatura, ele altera o conteúdo da página.</p><p>Lembre-se de que você precisa tratar erros adequadamente em um cenário do mundo real. Isso inclui o caso em que a geolocalização não é suportada ou o usuário não dá permissão para acessar sua localização, e o caso em que a solicitação à API falha por qualquer motivo.</p><p>Por fim, note que a solicitação à API OpenWeatherMap é feita sobre HTTP, o que pode não ser seguro ou permitido se o seu site estiver sendo servido sobre HTTPS. Em um cenário do mundo real, você deve fazer essa solicitação no servidor ou usar uma API que suporte HTTPS.</p>
+
+                    
+
+                <p>NÃO FUNCIONOU</p>
+
+                    
+
+                <p>Peço desculpas por qualquer confusão. Aqui estão algumas coisas que você pode verificar se o código não está funcionando como esperado:</p><p>1. <b>Chave de API:</b> Você substituiu 'YOUR<i>OPENWEATHERMAP</i>API_KEY' pela sua chave de API do OpenWeatherMap real?</p><p>2. <b>Permissão de Localização:</b> O usuário deu permissão para o navegador acessar sua localização? Se a permissão foi negada, o código não funcionará.</p><p>3. <b>HTTPS:</b> Você está usando HTTPS? Se o seu site é servido sobre HTTPS, as solicitações para a API OpenWeatherMap feitas diretamente do navegador serão bloqueadas porque a API OpenWeatherMap é servida sobre HTTP. Para resolver isso, você pode fazer a solicitação no servidor ou procurar uma API de previsão do tempo que suporte HTTPS.</p><p>4. <b>Erro no console:</b> Existe algum erro no console do desenvolvedor do navegador? Se houver algum problema com o código, o erro pode fornecer uma pista do que está acontecendo.</p><p>Por último, lembre-se de que este código é uma simplificação e pode não ser adequado para um site ou aplicativo real. Na prática, você deve tratar erros de maneira mais completa e considerar questões de privacidade e segurança ao acessar a localização do usuário.</p>
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>
