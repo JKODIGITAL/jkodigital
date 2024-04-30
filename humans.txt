@@ -1,0 +1,20 @@
+/* EQUIPE */
+   Chefe do Projeto: Danilo Yuji Okazaki
+   Desenvolvimento Web: Danilo Yuji Okazaki
+   Design: Danilo Yuji Okazaki
+   Marketing: Danilo Yuji Okazaki
+   Redação de Conteúdo: Danilo Yuji Okazaki e ChatGPT
+
+/* AGRADECIMENTOS */
+   Agradecimentos especiais: Minha Mae
+   Bibliotecas utilizadas: ChatGPT
+
+/* CONTATO */
+   E-mail: contato@jkodigital.com.br
+   Site: https://www.jkodigital.com.br
+
+/* TECNOLOGIA */
+   Ferramentas de desenvolvimento: HTML, Bootstrap e Javascript
+
+/* MENSAGEM PARA OS HUMANOS */
+   Obrigado por visitar nosso site! Nós amamos criar experiências digitais que trazem alegria e conhecimento para as pessoas.

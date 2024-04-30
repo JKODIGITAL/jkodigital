@@ -1,0 +1,838 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Incluir Nome do Arquivo
+    </title>
+    <meta name="description" content="Incluir Nome do Arquivo">
+    <link rel="author" href="/humans.txt" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="style.css" rel="stylesheet">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#333">
+    <meta property="og:title" content="Incluir Nome do Arquivo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://jkodigital.com.br/Incluir_Nome_do_Arquivo.html" />
+    <meta property="og:image" content="default.png" />
+    <meta property="og:description" content=" num template.ejs, como faço para incluir o nome do arquivo no código?
+ Para incluir o nome do arquivo atual (`template.ejs`) no próprio código EJS, você pode usar uma variável ou uma constante para armazenar o nome do arquivo. No entanto, é importante notar que o EJS, por si só,...... clique e saiba mais" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Incluir Nome do Arquivo" />
+    <meta name="twitter:description" content=" num template.ejs, como faço para incluir o nome do arquivo no código?
+ Para incluir o nome do arquivo atual (`template.ejs`) no próprio código EJS, você pode usar uma variável ou uma constante para armazenar o nome do arquivo. No entanto, é importante notar que o EJS, por si só,...... clique e saiba mais" />
+    <meta name="twitter:image" content="default.png" />
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-5643T35');</script>
+            <!-- End Google Tag Manager -->
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GTEEHNL0PY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GTEEHNL0PY');
+</script>
+</head>
+
+<body>
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+        <symbol id="bootstrap" viewBox="0 0 118 94">
+            <title>Bootstrap</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" fill="white"
+                d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z">
+            </path>
+        </symbol>
+        <symbol id="home" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z">
+            </path>
+        </symbol>
+        <symbol id="speedometer2" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z">
+            </path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z">
+            </path>
+        </symbol>
+        <symbol id="table" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z">
+            </path>
+        </symbol>
+        <symbol id="people-circle" viewBox="0 0 16 16">
+            <path fill="white" d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"></path>
+            <path fill-rule="evenodd" fill="white"
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z">
+            </path>
+        </symbol>
+        <symbol id="grid" viewBox="0 0 16 16">
+            <path fill="white"
+                d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z">
+            </path>
+        </symbol>
+    </svg>
+
+
+
+
+    <!-- Barra Superior para Dispositivos Móveis -->
+    <div class="d-block d-lg-none top-bar fixed-top text-bg-dark">
+        <a href="index.html" class="navbar-brand">
+            <img src="logo.png" alt="Logo" style="height: 30px;"> <!-- Ajuste o tamanho do logo conforme necessário -->
+        </a>
+
+    </div>
+
+
+
+    <div class="d-flex d-lg-none bottom-nav fixed-bottom text-bg-dark py-2">
+        <a href="sobre.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#people-circle"></use>
+            </svg>
+            <span>Sobre</span>
+        </a>
+
+        <a href="categorias.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#grid"></use>
+            </svg>
+            <span>Categorias</span>
+        </a>
+        <a href="destaques.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#speedometer2"></use>
+            </svg>
+            <span>Destaques</span>
+        </a>
+
+        <a href="index.html" class="nav-item d-flex flex-column align-items-center">
+            <svg class="bi pe-none" width="16" height="16">
+                <use xlink:href="#home"></use>
+            </svg>
+            <span>Home</span>
+        </a>
+    </div>
+    <!-- SIDEBAR -->
+    <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark d-none d-lg-block sidebar" style="width: 280px;">
+        <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+            <img src="logo.png" alt="Logo JKO" height="30" class="m-2" loading="lazy">
+            <span class="fs-4">JKODIGITAL</span>
+        </a>
+        <hr>
+
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link active" aria-current="page">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="destaques.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    Destaques
+                </a>
+            </li>
+            <li>
+                <a href="categorias.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#table"></use>
+                    </svg>
+                    Categorias
+                </a>
+            </li>
+            <li>
+                <a href="sobre.html" class="nav-link text-white">
+                    <svg class="bi pe-none me-2" width="16" height="16">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                    Sobre
+                </a>
+            </li>
+        </ul>
+        <hr>
+    </div>
+
+    <div class="col mb-4 main-content">
+        <!-- Cabeçalho do Artigo -->
+        <h1 class="mb-3" itemprop="headline">
+            Incluir Nome do Arquivo
+        </h1>
+        <p class="text-muted">Escrito por <span class="author" itemprop="author">Danilo Yuji
+                Okazaki</span> Publicado em: <span class="date" itemprop="datePublished">
+                31 de janeiro de 2024
+            </span>| Atualizado em: <span class="date" itemprop="dateModified">
+                31 de janeiro de 2024
+            </span></p>
+
+        <!-- Imagem Principal do Artigo -->
+        <img src="artgo.png" class="img-fluid mb-4" alt="Imagem Principal do Artigo" itemprop="image" loading="lazy">
+
+        <!-- Conteúdo do Artigo -->
+        <article class="article-content" itemprop="articleBody">
+            
+
+                
+
+                    
+
+                <p>num template.ejs, como faço para incluir o nome do arquivo no código?</p>
+
+
+                    
+
+                <p>Para incluir o nome do arquivo atual (`template.ejs`) no próprio código EJS, você pode usar uma variável ou uma constante para armazenar o nome do arquivo. No entanto, é importante notar que o EJS, por si só, não fornece uma funcionalidade direta para obter o nome do arquivo atual como em algumas outras linguagens de programação.</p>
+<p>Se você estiver usando o EJS em um ambiente Node.js, pode obter o nome do arquivo atual usando o módulo `path` do Node.js. Aqui está um exemplo de como você pode fazer isso:</p>
+<p>1. Primeiro, importe o módulo `path` do Node.js no seu arquivo JavaScript que renderiza o template EJS:</p>
+<p>```javascript</p>
+<p>const path = require('path');</p>
+<p>```</p>
+<p>2. Em seguida, obtenha o nome do arquivo atual usando o método `basename` do módulo `path`:</p>
+<p>```javascript</p>
+<p>const fileName = path.basename(<i></i>filename);</p>
+<p>```</p>
+<p>3. Agora, passe o nome do arquivo como uma variável para o seu template EJS ao renderizá-lo:</p>
+<p>```javascript</p>
+<p>res.render('template.ejs', { fileName: fileName });</p>
+<p>```</p>
+<p>4. No seu arquivo `template.ejs`, você pode exibir o nome do arquivo usando a variável passada:</p>
+<p>```ejs</p>
+<p><p>Nome do arquivo: <%= fileName %></p></p>
+<p>```</p>
+<p>Lembre-se de que `<i></i>filename` é uma variável global em Node.js que contém o nome do arquivo do módulo atual. Se você estiver usando EJS fora de um ambiente Node.js, essa abordagem específica não funcionará e você precisará de uma alternativa para passar o nome do arquivo para o template.</p>
+
+
+                    
+
+                <p>se eu quiser colocar o nomedo arquivo, mais .html, como fica?</p>
+
+
+                    
+
+                <p>Se você quiser adicionar a extensão `.html` ao nome do arquivo em seu template EJS, pode fazer isso facilmente concatenando a string `'.html'` ao nome do arquivo. Seguindo o exemplo anterior, onde você está usando o Node.js, você faria assim:</p>
+<p>1. Obtenha o nome do arquivo (sem extensão) e adicione a extensão `.html`:</p>
+<p>```javascript</p>
+<p>const fileNameWithHtml = path.basename(<i></i>filename, '.ejs') + '.html';</p>
+<p>```</p>
+<p>Aqui, `path.basename(<i></i>filename, '.ejs')` obtém o nome do arquivo atual sem a extensão `.ejs`, e depois concatena `'.html'` a este nome.</p>
+<p>2. Passe essa nova string como uma variável para o seu template EJS:</p>
+<p>```javascript</p>
+<p>res.render('template.ejs', { fileNameWithHtml: fileNameWithHtml });</p>
+<p>```</p>
+<p>3. No seu arquivo `template.ejs`, exiba o nome do arquivo com a extensão `.html`:</p>
+<p>```ejs</p>
+<p><p>Nome do arquivo com .html: <%= fileNameWithHtml %></p></p>
+<p>```</p>
+<p>Dessa forma, se o seu arquivo EJS se chamar `template.ejs`, a saída no template será `template.html`.</p>
+
+
+                    
+
+                <p>no javascript que gera o arquivo html tem esse código:     let filename = title.replace(/[^a-zA-Z0-9]/g, "_").substr(0, 35) + '.html';</p>
+<p>ejs.renderFile('templateamp.ejs', {title, messages}, {}, function(err, str){</p>
+<p>if(err){</p>
+<p>console.log(err);</p>
+<p>} else {</p>
+<p>fs.writeFileSync(path.join('output', filename), str, 'utf-8');</p>
+<p>filesCreated.push({ title: title, filename: filename, summary: summary }); // Adicione essa linha</p>
+<p>}</p>
+
+
+                    
+
+                <p>No código JavaScript que você forneceu, o nome do arquivo HTML gerado é criado a partir de um título, com caracteres não alfanuméricos substituídos por sublinhados (`_`), limitado a 35 caracteres, e com a extensão `.html` adicionada. Este nome de arquivo é então usado para escrever o conteúdo renderizado do template EJS (`templateamp.ejs`) em um arquivo no diretório `output`.</p>
+<p>Para que o nome do arquivo seja incluído dentro do próprio arquivo HTML gerado (no conteúdo do template EJS), você precisa passar essa variável `filename` para o template EJS. Aqui está como você pode fazer isso:</p>
+<p>1. Modifique a chamada `ejs.renderFile` para incluir a variável `filename` junto com `title` e `messages`:</p>
+<p>```javascript</p>
+<p>ejs.renderFile('templateamp.ejs', { title, messages, filename }, {}, function(err, str){</p>
+<p>if(err){</p>
+<p>console.log(err);</p>
+<p>} else {</p>
+<p>fs.writeFileSync(path.join('output', filename), str, 'utf-8');</p>
+<p>filesCreated.push({ title: title, filename: filename, summary: summary }); // Adicione essa linha</p>
+<p>}</p>
+<p>});</p>
+<p>```</p>
+<p>2. No seu arquivo `templateamp.ejs`, você pode exibir o nome do arquivo usando a variável `filename`:</p>
+<p>```ejs</p>
+<p><p>Nome do arquivo: <%= filename %></p></p>
+<p>```</p>
+<p>Isso fará com que o nome do arquivo (já com a extensão `.html` e os ajustes feitos no título) seja exibido no arquivo HTML gerado. Assim, se o título for algo como "Meu Título", o nome do arquivo poderia ser algo como "Meu_Título.html" (dependendo do comprimento e dos caracteres do título original), e esse mesmo nome será exibido dentro do conteúdo HTML.</p>
+
+
+                    
+
+                <p>coloquei dessa maneira e gerou um erro:     <link rel="canonical" href="https://www.jkodigital.com.br/<%= filename %>.html" /></p>
+
+
+                    
+
+                <p>O erro que você está enfrentando provavelmente ocorre porque você já está adicionando a extensão `.html` ao `filename` no seu código JavaScript, e então está tentando adicionar `.html` novamente no seu template EJS. Isso resultaria em um nome de arquivo com duas extensões `.html`, como `nome<i>do</i>arquivo.html.html`, o que não é válido.</p>
+<p>Para corrigir isso, você só precisa usar `<%= filename %>` no seu template EJS, sem adicionar `.html` novamente. O código correto no seu arquivo EJS seria:</p>
+<p>```ejs</p>
+<p><link rel="canonical" href="https://www.jkodigital.com.br/<%= filename %>" /></p>
+<p>```</p>
+<p>Dessa forma, o `filename` já inclui a extensão `.html` (como definido no seu código JavaScript), e você não precisará adicionar a extensão novamente no template EJS.</p>
+
+
+                    
+
+                <p>esta falando o filename is not defined</p>
+
+
+                    
+
+                <p>Se você está recebendo o erro "filename is not defined", isso indica que a variável `filename` não está sendo passada corretamente para o seu template EJS. Vamos verificar o processo passo a passo para garantir que tudo está configurado corretamente.</p>
+<p>1. <b>Definição de `filename` no JavaScript</b>: Certifique-se de que a variável `filename` está sendo definida corretamente no seu script JavaScript antes de chamar `ejs.renderFile`. Baseado no seu código anterior, deveria ser algo assim:</p>
+<p>```javascript</p>
+<p>let filename = title.replace(/[^a-zA-Z0-9]/g, "_").substr(0, 35) + '.html';</p>
+<p>```</p>
+<p>2. <b>Passando `filename` para o EJS</b>: Ao renderizar o arquivo EJS, você precisa passar a variável `filename` junto com as outras variáveis. O código deve se parecer com isto:</p>
+<p>```javascript</p>
+<p>ejs.renderFile('templateamp.ejs', { title, messages, filename }, {}, function(err, str){</p>
+<p>if(err){</p>
+<p>console.log(err);</p>
+<p>} else {</p>
+<p>fs.writeFileSync(path.join('output', filename), str, 'utf-8');</p>
+<p>filesCreated.push({ title: title, filename: filename, summary: summary });</p>
+<p>}</p>
+<p>});</p>
+<p>```</p>
+<p>Aqui, `{ title, messages, filename }` são as variáveis que estão sendo passadas para o seu template EJS. Se `filename` não estiver incluído aqui, ou se estiver mal escrito, isso causará o erro mencionado.</p>
+<p>3. <b>Usando `filename` no Template EJS</b>: No seu arquivo `templateamp.ejs`, quando você usa a variável `filename`, não precisa adicionar `.html` novamente, pois `filename` já contém a extensão. Deve ser assim:</p>
+<p>```ejs</p>
+<p><link rel="canonical" href="https://www.jkodigital.com.br/<%= filename %>" /></p>
+<p>```</p>
+<p>Se você seguiu todos esses passos e ainda está enfrentando o erro, pode ser útil verificar se a variável `filename` está sendo definida corretamente no seu script JavaScript e se não há nenhum erro de digitação ou problema de escopo que possa estar impedindo que `filename` seja passado para o EJS.</p>
+
+
+                    
+
+                <p>como faço para que o template reconheça os títulos em negrito e formatação de texto automaticamente?</p>
+<p><p class="mb4 px3"></p>
+<p>Para criar um texto inspirado no livro "O Método Fácil de Parar de Fumar" de Allen Carr, irei analisar o</p>
+<p>conteúdo do livro e aplicar suas técnicas e princípios ao desenvolver um artigo motivacional e</p>
+<p>informativo. Vamos começar com a introdução, abordando a essência do método de Carr e estabelecendo um</p>
+<p>contexto motivacional para os leitores que desejam parar de fumar. <br /><br />###</p>
+<p>Introdução<br /><br /><h4>Enfrentando o Desafio: A Jornada para se Libertar do</h4>                Cigarro<br /><br />Fumar, um hábito que se infiltra silenciosamente nas rotinas diárias, acaba por se</p>
+<p>tornar um desafio aparentemente insuperável para muitos. O livro de Allen Carr, "O Método Fácil de Parar</p>
+<p>de Fumar", apresenta uma abordagem revolucionária, que tem ajudado milhões ao redor do mundo a romper as</p>
+<p>correntes da dependência do tabaco. Este artigo é um mergulho profundo nas técnicas de Carr, adaptadas e</p>
+<p>apresentadas de uma maneira que ressoe com você, que está buscando avidamente uma vida livre da fumaça e</p>
+<p>da nicotina.<br /><br /><h4>A Perspectiva de Carr: Redefinindo a Jornada<br /><br />Allen Carr, um</h4>                ex-fumante, compreendeu profundamente as armadilhas psicológicas e físicas do vício em cigarros. Sua</p>
+<p>abordagem não se baseia em assustar ou envergonhar o fumante, mas em reconfigurar a percepção sobre o</p>
+<p>ato de fumar. Carr propõe uma visão que desmistifica as crenças comumente associadas ao tabagismo, como</p>
+<p>a noção de que fumar proporciona alívio do estresse ou prazer genuíno. Ele argumenta que compreender a</p>
+<p>verdadeira natureza da dependência é o primeiro passo crucial na jornada para se tornar um</p>
+<p>não-fumante.<br /><br /><h4>Rompendo com os Mitos<br /><br />O livro desmantela vários mitos sobre o</h4>                fumar, enfatizando que a dependência não é uma questão de escolha ou de força de vontade, mas um ciclo</p>
+<p>de dependência alimentado por crenças equivocadas. Carr enfatiza a importância de alterar a mentalidade</p>
+<p>do fumante, transformando a percepção do cigarro de um "amigo confiável" para o que realmente é: uma</p>
+<p>fonte de dano e dependência.<br /><br /><h4>Preparando o Caminho<br /><br />Este artigo não apenas</h4>                resume os princípios fundamentais de Carr, mas também os expande com histórias inspiradoras, dicas</p>
+<p>práticas e uma mensagem de empoderamento. A intenção é fornecer a você as ferramentas e a motivação</p>
+<p>necessárias para embarcar nesta jornada transformadora. Juntos, exploraremos como redefinir sua relação</p>
+<p>com o tabaco, desvendar os mitos que o cercam e, finalmente, descobrir a liberdade que vem com o</p>
+<p>abandono do hábito de fumar.<br /><br />---<br /><br />Com a introdução estabelecida, vamos mergulhar no</p>
+<p>desenvolvimento do artigo, onde exploraremos mais profundamente os conceitos e técnicas do livro. Por</p>
+<p>favor, me avise quando estiver pronto para continuar.</p>
+<p></p></p>
+
+
+                    
+
+                <p>Para que o seu template EJS reconheça e formate automaticamente títulos em negrito e outros tipos de formatação de texto, você pode usar HTML diretamente no texto que está sendo passado para o template. O EJS renderizará HTML como qualquer outra linguagem de marcação, então se você incluir tags HTML no seu texto, elas serão interpretadas e renderizadas conforme esperado no navegador.</p>
+<p>Por exemplo, se você deseja que algumas partes do texto sejam em negrito, você pode envolver essas partes com a tag `<strong>` ou `<b>`. Para títulos, você pode usar as tags de cabeçalho como `<h1>`, `<h2>`, `<h3>`, etc.</p>
+<p>Aqui está um exemplo de como você pode formatar o texto que você forneceu:</p>
+<p>```html</p>
+<p><p class="mb4 px3"></p>
+<p>Para criar um texto inspirado no livro <strong>"O Método Fácil de Parar de Fumar"</strong> de Allen Carr, irei analisar o</p>
+<p>conteúdo do livro e aplicar suas técnicas e princípios ao desenvolver um artigo motivacional e</p>
+<p>informativo. Vamos começar com a introdução, abordando a essência do método de Carr e estabelecendo um</p>
+<p>contexto motivacional para os leitores que desejam parar de fumar. <br /><br /></p>
+<p><h2>Introdução</h2></p>
+<p><h3>Enfrentando o Desafio: A Jornada para se Libertar do Cigarro</h3></p>
+<p>Fumar, um hábito que se infiltra silenciosamente nas rotinas diárias, acaba por se</p>
+<p>tornar um desafio aparentemente insuperável para muitos. O livro de Allen Carr, <strong>"O Método Fácil de Parar</p>
+<p>de Fumar"</strong>, apresenta uma abordagem revolucionária, que tem ajudado milhões ao redor do mundo a romper as</p>
+<p>correntes da dependência do tabaco. Este artigo é um mergulho profundo nas técnicas de Carr, adaptadas e</p>
+<p>apresentadas de uma maneira que ressoe com você, que está buscando avidamente uma vida livre da fumaça e</p>
+<p>da nicotina.<br /><br /></p>
+<p><!-- Outras seções aqui --></p>
+<p></p></p>
+<p>```</p>
+<p>Neste exemplo, usei `<h2>` e `<h3>` para títulos e subtítulos e `<strong>` para destacar os títulos de livros em negrito. Quando você passar esse texto como variável para o seu template EJS e renderizá-lo, a formatação HTML será aplicada automaticamente.</p>
+<p>Lembre-se de que o texto precisa ser passado para o EJS de uma forma que preserve a formatação HTML. Se estiver vindo de uma fonte externa ou de um banco de dados, certifique-se de que não está sendo escapado ou convertido em texto simples antes de ser enviado ao template.</p>
+
+
+                    
+
+                <p>tenho diversos texto que gostaria que fosse identificado automaticamente no template.ejs, que possui o seguinte código: files.forEach(file => {</p>
+<p>const data = JSON.parse(fs.readFileSync(file, 'utf-8'));</p>
+<p>data.forEach(entry => {</p>
+<p>if (entry.mapping) {</p>
+<p>for (let key in entry.mapping) {</p>
+<p>if (entry.mapping[key].message && entry.mapping[key].message.content && entry.mapping[key].message.content.parts) {</p>
+<p>let partsData = entry.mapping[key].message.content.parts.join('\n');</p>
+<p>if (!cardsData[entry.title]) {</p>
+<p>cardsData[entry.title] = [];</p>
+<p>}</p>
+<p>cardsData[entry.title].push(partsData);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>});</p>
+<p>});</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substitua "\n" por "<br/>" para respeitar as quebras de linha</p>
+<p>message = message.replace(/\n/g, "<br/>");</p>
+<p>// Substitua texto entre <i></i> por <b></p>
+<p>message = message.replace(/\<i>\</i>(.<i>?)\</i>\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre * por <h2></p>
+<p>// message = message.replace(/\<i>(.</i>?)\*/g, "<h2>$1</h2>");</p>
+<p>message = message.replace(/\<i>(.</i>?)\*/g, "<b>$1</b>");</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Para gerar um resumo, vamos pegar as primeiras 100 palavras da primeira mensagem</p>
+<p>let summary = messages[2] && messages[2].trim() != '' ? messages[2].split(' ').slice(0, 15).join(' ') + '... clique e saiba mais' : 'Sem resumo disponível';</p>
+<p>let filename = title.replace(/[^a-zA-Z0-9]/g, "_").substr(0, 35) + '.html';</p>
+<p>ejs.renderFile('templateamp.ejs', {title, messages,filename}, {}, function(err, str){</p>
+<p>if(err){</p>
+<p>console.log(err);</p>
+<p>} else {</p>
+<p>fs.writeFileSync(path.join('output', filename), str, 'utf-8');</p>
+<p>filesCreated.push({ title: title, filename: filename, summary: summary }); // Adicione essa linha</p>
+<p>}</p>
+<p>});</p>
+<p>}</p>
+
+
+                    
+
+                <p>Para identificar e formatar automaticamente determinados padrões de texto em seu template EJS, você já tem um bom início com o código que substitui as sequências marcadas com asteriscos por tags HTML correspondentes. Esse método é comum em sistemas de markup simplificados, como o Markdown.</p>
+<p>No código que você forneceu, você está fazendo o seguinte:</p>
+<p>1. Substituindo as quebras de linha `\n` por `<br/>` para manter a formatação das quebras de linha no HTML.</p>
+<p>2. Substituindo texto entre `<i></i>` (duplo asterisco) por `<b>` para negrito.</p>
+<p>3. Substituindo texto entre `*` (asterisco único) por `<b>` (embora você tenha comentado uma linha que substituiria por `<h2>`).</p>
+<p>Se você quer adicionar mais tipos de formatação automática, você pode seguir o mesmo padrão. Aqui estão algumas sugestões de como você pode expandir esse sistema:</p>
+<h3>Itálico</h3>Substituir texto entre `_` (underline) por `<i>` para itálico.
+<p>```javascript</p>
+<p>message = message.replace(/<i>(.*?)</i>/g, "<i>$1</i>");</p>
+<p>```</p>
+<h3>Listas</h3>Para listas com marcadores, substituir linhas que começam com `-` ou `*`.
+<p>```javascript</p>
+<p>message = message.replace(/^[\-\<i>] (.</i>)/gm, "<li>$1</li>").replace(/(<li>.*<\/li>)/g, "<ul>$1</ul>");</p>
+<p>```</p>
+<h3>Cabeçalhos</h3>Para cabeçalhos, você pode usar um padrão similar ao Markdown, onde `#` representa um cabeçalho nível 1, `##` um nível 2, e assim por diante.
+<p>```javascript</p>
+<p>message = message.replace(/<h6>(.*?)/g, "<h6>$1</h6>")</h6>                 .replace(/<h5>(.*?)/g, "<h5>$1</h5>")</h5>                 .replace(/<h4>(.*?)/g, "<h4>$1</h4>")</h4>                 .replace(/<h3>(.*?)/g, "<h3>$1</h3>")</h3>                 .replace(/<h2>(.*?)/g, "<h2>$1</h2>")</h2>                 .replace(/<h1>(.*?)/g, "<h1>$1</h1>");</h1>```</p>
+<h3>Links</h3>Para links, você pode usar um formato como `<a href='URL'>texto do link</a>`.
+<p>```javascript</p>
+<p>message = message.replace(/\[(.<i>?)\]\((.</i>?)\)/g, "<a href='$2'>$1</a>");</p>
+<p>```</p>
+<p>Essas são apenas algumas ideias básicas. Você pode expandir e personalizar essas expressões regulares para se adequarem melhor às suas necessidades e ao formato específico dos seus dados.</p>
+<p><b>Importante:</b> Tenha cuidado ao usar expressões regulares para processar HTML ou qualquer linguagem de marcação, pois elas podem levar a resultados inesperados em casos complexos. Para casos mais complexos, pode ser mais seguro usar um parser de Markdown ou uma biblioteca de processamento de texto.</p>
+
+
+                    
+
+                <p>por favor, refaça todo o código que passei</p>
+
+
+                    
+
+                <p>Claro, vou reescrever o código que você forneceu com as sugestões de melhorias para a formatação automática do texto. Este código irá processar o texto substituindo padrões específicos por elementos HTML correspondentes, como negrito, itálico, listas, cabeçalhos e links.</p>
+<p>```javascript</p>
+<p>files.forEach(file => {</p>
+<p>const data = JSON.parse(fs.readFileSync(file, 'utf-8'));</p>
+<p>data.forEach(entry => {</p>
+<p>if (entry.mapping) {</p>
+<p>for (let key in entry.mapping) {</p>
+<p>if (entry.mapping[key].message && entry.mapping[key].message.content && entry.mapping[key].message.content.parts) {</p>
+<p>let partsData = entry.mapping[key].message.content.parts.join('\n');</p>
+<p>if (!cardsData[entry.title]) {</p>
+<p>cardsData[entry.title] = [];</p>
+<p>}</p>
+<p>cardsData[entry.title].push(partsData);</p>
+<p>}</p>
+<p>}</p>
+<p>}</p>
+<p>});</p>
+<p>});</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substitua "\n" por "<br/>" para respeitar as quebras de linha</p>
+<p>message = message.replace(/\n/g, "<br/>");</p>
+<p>// Substitua texto entre <i></i> por <b></p>
+<p>message = message.replace(/\<i>\</i>(.<i>?)\</i>\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre * por <b></p>
+<p>message = message.replace(/\<i>(.</i>?)\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre _ por <i></p>
+<p>message = message.replace(/<i>(.*?)</i>/g, "<i>$1</i>");</p>
+<p>// Substitua cabeçalhos markdown por tags h</p>
+<p>message = message.replace(/<h6>(.*?)/g, "<h6>$1</h6>")</h6>                         .replace(/<h5>(.*?)/g, "<h5>$1</h5>")</h5>                         .replace(/<h4>(.*?)/g, "<h4>$1</h4>")</h4>                         .replace(/<h3>(.*?)/g, "<h3>$1</h3>")</h3>                         .replace(/<h2>(.*?)/g, "<h2>$1</h2>")</h2>                         .replace(/<h1>(.*?)/g, "<h1>$1</h1>");</h1></p>
+<p>// Substitua <a href='URL'>texto do link</a> por <a href='URL'>texto do link</a></p>
+<p>message = message.replace(/\[(.<i>?)\]\((.</i>?)\)/g, "<a href='$2'>$1</a>");</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Para gerar um resumo, vamos pegar as primeiras 100 palavras da primeira mensagem</p>
+<p>let summary = messages[2] && messages[2].trim() != '' ? messages[2].split(' ').slice(0, 15).join(' ') + '... clique e saiba mais' : 'Sem resumo disponível';</p>
+<p>let filename = title.replace(/[^a-zA-Z0-9]/g, "_").substr(0, 35) + '.html';</p>
+<p>ejs.renderFile('templateamp.ejs', {title, messages, filename}, {}, function(err, str){</p>
+<p>if(err){</p>
+<p>console.log(err);</p>
+<p>} else {</p>
+<p>fs.writeFileSync(path.join('output', filename), str, 'utf-8');</p>
+<p>filesCreated.push({ title: title, filename: filename, summary: summary }); // Adicione essa linha</p>
+<p>}</p>
+<p>});</p>
+<p>}</p>
+<p>```</p>
+<p>Neste código:</p>
+<p>- As quebras de linha são convertidas em `<br/>`.</p>
+<p>- Texto entre `<i></i>` é convertido em negrito (`<b>`).</p>
+<p>- Texto entre `*` também é convertido em negrito (`<b>`). Se você deseja diferenciar negrito de itálico, você pode modificar isso.</p>
+<p>- Texto entre `_` é convertido em itálico (`<i>`).</p>
+<p>- Cabeçalhos estilo Markdown são convertidos em tags `<h1>` a `<h6>`.</p>
+<p>- Links no formato `<a href='URL'>texto</a>` são convertidos em links HTML.</p>
+<p>Certifique-se de testar o código em um ambiente seguro para garantir que ele atende às suas necessidades e que não há efeitos colaterais indesejados.</p>
+
+
+                    
+
+                <p>o texto final do html esta ficando assim <h4></h4>Compreendendo a Armadilha: A Natureza do Vício em Cigarros, sendo que o </h4> deveria ficar no final do titulo</p>
+
+
+                    
+
+                <p>O problema que você está enfrentando parece ser relacionado à forma como as expressões regulares estão manipulando os cabeçalhos. Quando você usa uma expressão regular como `/<h4>(.*?)/g` para substituir os cabeçalhos Markdown, ela procura por uma linha que começa com `####` seguida de um espaço e depois qualquer texto, mas não inclui o fim da linha na substituição.</h4></p>
+<p>Para corrigir isso, você pode ajustar suas expressões regulares para garantir que elas incluam todo o conteúdo da linha até o fim, antes de substituir pela tag de cabeçalho HTML correspondente. Aqui está como você pode modificar o código para corrigir esse problema:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substitua "\n" por "<br/>" para respeitar as quebras de linha</p>
+<p>message = message.replace(/\n/g, "<br/>");</p>
+<p>// Substitua texto entre <i></i> por <b></p>
+<p>message = message.replace(/\<i>\</i>(.<i>?)\</i>\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre * por <b></p>
+<p>message = message.replace(/\<i>(.</i>?)\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre _ por <i></p>
+<p>message = message.replace(/<i>(.*?)</i>/g, "<i>$1</i>");</p>
+<p>// Substitua cabeçalhos markdown por tags h</p>
+<p>message = message.replace(/<h6>(.*?)<br\/>/g, "<h6>$1</h6><br/>")</h6>                         .replace(/<h5>(.*?)<br\/>/g, "<h5>$1</h5><br/>")</h5>                         .replace(/<h4>(.*?)<br\/>/g, "<h4>$1</h4><br/>")</h4>                         .replace(/<h3>(.*?)<br\/>/g, "<h3>$1</h3><br/>")</h3>                         .replace(/<h2>(.*?)<br\/>/g, "<h2>$1</h2><br/>")</h2>                         .replace(/<h1>(.*?)<br\/>/g, "<h1>$1</h1><br/>");</h1></p>
+<p>// Substitua <a href='URL'>texto do link</a> por <a href='URL'>texto do link</a></p>
+<p>message = message.replace(/\[(.<i>?)\]\((.</i>?)\)/g, "<a href='$2'>$1</a>");</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Resto do código...</p>
+<p>}</p>
+<p>```</p>
+<p>Neste ajuste, as expressões regulares para cabeçalhos agora procuram por `<br/>` no final do padrão do cabeçalho e o incluem na substituição. Isso garante que o cabeçalho seja fechado corretamente antes de uma quebra de linha. Lembre-se de testar as modificações em um ambiente de desenvolvimento para garantir que tudo funcione como esperado.</p>
+
+
+                    
+
+                <p>gostaria de incluir class = "px3":         // Substitua cabeçalhos markdown por tags h</p>
+<p>message = message.replace(/<h6>(.*?)<br\/>/g, "<h6 class="px3">$1</h6><br/>")</h6>                         .replace(/<h5>(.*?)<br\/>/g, "<h5 class="px3">$1</h5><br/>")</h5>                         .replace(/<h4>(.*?)<br\/>/g, "<h4 class="px3">$1</h4><br/>")</h4>                         .replace(/<h3>(.*?)<br\/>/g, "<h3 class="px3">$1</h3><br/>")</h3>                         .replace(/<h2>(.*?)<br\/>/g, "<h2 class="px3">$1</h2><br/>")</h2>                         .replace(/<h1>(.*?)<br\/>/g, "<h1 class="px3">$1</h1><br/>");</h1></p>
+
+
+                    
+
+                <p>Para adicionar a classe `"px3"` aos cabeçalhos em seu código, você precisa ter cuidado com a maneira como as aspas são usadas. Em JavaScript, se você está usando aspas duplas para delimitar uma string, qualquer aspas duplas dentro da string precisam ser escapadas. Alternativamente, você pode usar aspas simples para delimitar a string e aspas duplas dentro dela, ou vice-versa. Aqui está como você pode ajustar seu código:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Outras substituições...</p>
+<p>// Substitua cabeçalhos markdown por tags h com a classe "px3"</p>
+<p>message = message.replace(/<h6>(.*?)<br\/>/g, "<h6 class=\"px3\">$1</h6><br/>")</h6>                         .replace(/<h5>(.*?)<br\/>/g, "<h5 class=\"px3\">$1</h5><br/>")</h5>                         .replace(/<h4>(.*?)<br\/>/g, "<h4 class=\"px3\">$1</h4><br/>")</h4>                         .replace(/<h3>(.*?)<br\/>/g, "<h3 class=\"px3\">$1</h3><br/>")</h3>                         .replace(/<h2>(.*?)<br\/>/g, "<h2 class=\"px3\">$1</h2><br/>")</h2>                         .replace(/<h1>(.*?)<br\/>/g, "<h1 class=\"px3\">$1</h1><br/>");</h1></p>
+<p>// Outras substituições...</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Resto do código...</p>
+<p>}</p>
+<p>```</p>
+<p>Neste ajuste, eu usei `\"` para escapar as aspas duplas dentro das strings. Isso permite que o código interprete corretamente as aspas como parte da string, sem encerrar a string prematuramente. Com essa alteração, a classe `"px3"` será adicionada corretamente aos elementos de cabeçalho no seu HTML gerado.</p>
+
+
+                    
+
+                <p>ok, obrigado. Agora tenho um problema porque o resto do texto não esta com <p> esta ficando sem nada, conforme texto abaixo:             <h4 class="px3">Uma Mensagem de Esperança</h4><br /><br />Para encerrar, gostaria de deixar uma mensagem de</p>
+<p>esperança e encorajamento. Você não está sozinho nesta jornada. Há muitos que trilharam este caminho antes</p>
+<p>de você e conseguiram. Você também pode. A liberdade e a alegria de viver uma vida sem cigarros estão ao seu</p>
+<p>alcance. Agarre essa oportunidade e abra as portas para um futuro mais saudável e</p>
+<p>feliz.<br /><br />---<br /><br />Este artigo, inspirado nas técnicas e filosofias de Allen Carr, é um</p>
+<p>convite para você embarcar em uma das jornadas mais transformadoras da sua vida. Espero que as informações,</p>
+<p>dicas e motivação fornecidas aqui sejam um farol de luz no seu caminho para se tornar um não-fumante. Se</p>
+<p>tiver alguma dúvida ou precisar de mais orientações, sinta-se à vontade para perguntar. Boa sorte em sua</p>
+<p>jornada!</p>
+
+
+                    
+
+                <p>Para garantir que todo o texto que não seja cabeçalho esteja envolvido em tags `<p>`, você pode implementar uma lógica adicional no seu script de processamento. Uma maneira de fazer isso é dividir o texto em blocos e envolver cada bloco que não é um cabeçalho em uma tag `<p>`.</p>
+<p>Aqui está um exemplo de como você pode modificar o seu código para alcançar isso:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Suas substituições existentes...</p>
+<p>// Dividir o texto em blocos separados por duas quebras de linha</p>
+<p>let blocks = message.split('<br/><br/>');</p>
+<p>message = blocks.map(block => {</p>
+<p>// Se o bloco já começa com um cabeçalho, deixe-o como está</p>
+<p>if (block.startsWith('<h1') || block.startsWith('<h2') || block.startsWith('<h3') || block.startsWith('<h4') || block.startsWith('<h5') || block.startsWith('<h6')) {</p>
+<p>return block;</p>
+<p>} else {</p>
+<p>// Caso contrário, envolva o bloco em uma tag <p></p>
+<p>return `<p>${block}</p>`;</p>
+<p>}</p>
+<p>}).join('<br/><br/></p>
+
+
+                    
+
+                <p>Para envolver o resto do texto em tags `<p>`, você pode fazer isso programaticamente no seu código JavaScript. Uma maneira de fazer isso é dividir o texto em parágrafos com base nas quebras de linha e depois envolvê-los com a tag `<p>`. Aqui está como você pode modificar o código para adicionar tags de parágrafo:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substituições existentes...</p>
+<p>// Dividir o texto em parágrafos e envolvê-los com <p></p>
+<p>message = message.split('<br/><br/>').map(para => {</p>
+<p>if (!para.trim()) return ''; // Ignora parágrafos vazios</p>
+<p>return `<p class="mb4 px3">${para.trim()}</p>`;</p>
+<p>}).join('');</p>
+<p>// Resto das substituições...</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Resto do código...</p>
+<p>}</p>
+<p>```</p>
+<p>Neste código, cada mensagem é dividida em parágrafos sempre que encontra a sequência `<br/><br/>`, que parece ser o seu separador de parágrafos. Cada um desses parágrafos é então envolvido em uma tag `<p>` com as classes `mb4` e `px3`. Se um parágrafo estiver vazio (apenas espaços), ele será ignorado.</p>
+<p>Por fim, os parágrafos são juntados de volta em uma única string. Isso deve resultar em cada parágrafo sendo adequadamente formatado dentro de uma tag `<p>`.</p>
+<p>Certifique-se de ajustar o código conforme necessário para corresponder exatamente à forma como seu texto está formatado e testá-lo em um ambiente de desenvolvimento antes de colocá-lo em produção.</p>
+
+
+                    
+
+                <p>o problema que ele esta colocando <p> inclusive nos titulos             <p class="mb4 px3"></p>
+<p><h3 class="px3">Introdução</h3></p>
+<p></p></p>
+<p><p class="mb4 px3"></p>
+<p><h4 class="px3">Enfrentando o Desafio: A Jornada para se Libertar do Cigarro</h4></p>
+<p></p></p>
+
+
+                    
+
+                <p>Para evitar que as tags de cabeçalho sejam envolvidas por tags `<p>`, é necessário ajustar o código para diferenciar entre o conteúdo que deve ser tratado como um parágrafo e o conteúdo que deve ser tratado como um cabeçalho. Uma maneira de fazer isso é verificar se um trecho do texto contém uma tag de cabeçalho antes de envolvê-lo com `<p>`.</p>
+<p>Aqui está como você pode modificar o código para fazer essa verificação:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substituições existentes...</p>
+<p>// Dividir o texto em segmentos com base em <br/><br/> e processar cada segmento</p>
+<p>message = message.split('<br/><br/>').map(segment => {</p>
+<p>if (!segment.trim()) return ''; // Ignora segmentos vazios</p>
+<p>// Verifica se o segmento contém um cabeçalho</p>
+<p>if (segment.match(/<h[1-6] class="px3">.*?<\/h[1-6]>/)) {</p>
+<p>return segment; // Retorna o cabeçalho como está</p>
+<p>} else {</p>
+<p>return `<p class="mb4 px3">${segment.trim()}</p>`; // Envolve o texto em <p></p>
+<p>}</p>
+<p>}).join('');</p>
+<p>// Resto das substituições...</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Resto do código...</p>
+<p>}</p>
+<p>```</p>
+<p>Neste código, cada segmento do texto (dividido com base em `<br/><br/>`) é verificado para ver se contém um cabeçalho. Se o segmento contiver um cabeçalho, ele é retornado como está. Caso contrário, o segmento é envolvido em uma tag `<p>`. Isso deve evitar que as tags de cabeçalho sejam envolvidas por tags `<p>` de forma inadequada.</p>
+<p>Essa é uma solução baseada em padrões de texto específicos. Como sempre, recomenda-se testar o código em um ambiente de desenvolvimento para garantir que ele funcione conforme o esperado com seus dados.</p>
+
+
+                    
+
+                <p>reescreva toda a função novamente, por favor :</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substitua "\n" por "<br/>" para respeitar as quebras de linha</p>
+<p>message = message.replace(/\n/g, "<br/>");</p>
+<p>// Substitua texto entre <i></i> por <b></p>
+<p>message = message.replace(/\<i>\</i>(.<i>?)\</i>\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre * por <b></p>
+<p>message = message.replace(/\<i>(.</i>?)\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre _ por <i></p>
+<p>message = message.replace(/<i>(.*?)</i>/g, "<i>$1</i>");</p>
+<p>message = message.replace(/<h6>(.*?)<br\/>/g, "<h6 class=\"px3\">$1</h6><br/>")</h6>                         .replace(/<h5>(.*?)<br\/>/g, "<h5 class=\"px3\">$1</h5><br/>")</h5>                         .replace(/<h4>(.*?)<br\/>/g, "<h4 class=\"px3\">$1</h4><br/>")</h4>                         .replace(/<h3>(.*?)<br\/>/g, "<h3 class=\"px3\">$1</h3><br/>")</h3>                         .replace(/<h2>(.*?)<br\/>/g, "<h2 class=\"px3\">$1</h2><br/>")</h2>                         .replace(/<h1>(.*?)<br\/>/g, "<h1 class=\"px3\">$1</h1><br/>");</h1></p>
+<p>// Substitua <a href='URL'>texto do link</a> por <a href='URL'>texto do link</a></p>
+<p>message = message.replace(/\[(.<i>?)\]\((.</i>?)\)/g, "<a href='$2'>$1</a>");</p>
+<p>message = message.split('<br/><br/>').map(para => {</p>
+<p>if (!para.trim()) return ''; // Ignora parágrafos vazios</p>
+<p>return `<p class="mb4 px3">${para.trim()}</p>`;</p>
+<p>}).join('');</p>
+<p>return message;</p>
+<p>});</p>
+
+
+                    
+
+                <p>Compreendendo sua necessidade, vou reescrever a função considerando as substituições de formatação e a correta aplicação das tags `<p>` e `<h>`. A chave é garantir que as tags de cabeçalho não sejam envolvidas por tags de parágrafo. Vamos ajustar o código para processar corretamente cada segmento do texto:</p>
+<p>```javascript</p>
+<p>for (let title in cardsData) {</p>
+<p>let messages = cardsData[title].map(message => {</p>
+<p>// Substitua "\n" por "<br/>" para respeitar as quebras de linha</p>
+<p>message = message.replace(/\n/g, "<br/>");</p>
+<p>// Substitua texto entre <i></i> por <b></p>
+<p>message = message.replace(/\<i>\</i>(.<i>?)\</i>\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre * por <b></p>
+<p>message = message.replace(/\<i>(.</i>?)\*/g, "<b>$1</b>");</p>
+<p>// Substitua texto entre _ por <i></p>
+<p>message = message.replace(/<i>(.*?)</i>/g, "<i>$1</i>");</p>
+<p>// Substituições para os cabeçalhos</p>
+<p>message = message.replace(/<h6>(.*?)<br\/>/g, "<h6 class=\"px3\">$1</h6><br/>")</h6>                         .replace(/<h5>(.*?)<br\/>/g, "<h5 class=\"px3\">$1</h5><br/>")</h5>                         .replace(/<h4>(.*?)<br\/>/g, "<h4 class=\"px3\">$1</h4><br/>")</h4>                         .replace(/<h3>(.*?)<br\/>/g, "<h3 class=\"px3\">$1</h3><br/>")</h3>                         .replace(/<h2>(.*?)<br\/>/g, "<h2 class=\"px3\">$1</h2><br/>")</h2>                         .replace(/<h1>(.*?)<br\/>/g, "<h1 class=\"px3\">$1</h1><br/>");</h1></p>
+<p>// Substitua <a href='URL'>texto do link</a> por <a href='URL'>texto do link</a></p>
+<p>message = message.replace(/\[(.<i>?)\]\((.</i>?)\)/g, "<a href='$2'>$1</a>");</p>
+<p>// Processar parágrafos e cabeçalhos</p>
+<p>message = message.split('<br/><br/>').map(segment => {</p>
+<p>if (!segment.trim()) return ''; // Ignora segmentos vazios</p>
+<p>// Verifica se o segmento contém um cabeçalho</p>
+<p>if (segment.match(/<h[1-6] class="px3">.*?<\/h[1-6]>/)) {</p>
+<p>return segment; // Retorna o cabeçalho como está</p>
+<p>} else {</p>
+<p>return `<p class="mb4 px3">${segment.trim()}</p>`; // Envolve o texto em <p></p>
+<p>}</p>
+<p>}).join('');</p>
+<p>return message;</p>
+<p>});</p>
+<p>// Código para renderizar e salvar os arquivos HTML...</p>
+<p>}</p>
+<p>```</p>
+<p>Neste código revisado, primeiro fazemos as substituições de formatação (negrito, itálico, links e cabeçalhos). Em seguida, dividimos o texto em segmentos com base em `<br/><br/>` e processamos cada segmento individualmente. Se o segmento contiver um cabeçalho, ele será mantido como está; caso contrário, ele será envolvido em uma tag `<p>`. Isso deve garantir que os cabeçalhos não sejam envolvidos por tags de parágrafo e que o texto seja formatado corretamente.</p>
+
+
+                    
+        </article>
+    </div>
+
+
+    </div>
+    </div>
+
+
+    <!-- Rodapé, similar à página index -->
+    <!-- Inserir aqui o código do rodapé, idêntico ao da página index -->
+    <footer class="text-bg-dark pt-4">
+        <div class="container">
+            <div class="row">
+                <!-- Sobre a Empresa/Site -->
+                <div class="col-md-3 mb-3">
+                    <a href="/" class="navbar-brand mb-2">
+                        <img src="logo.png" alt="Logo" style="height: 50px;">
+                        <!-- Ajuste o tamanho do logo conforme necessário -->
+                    </a>
+                    <p class="text-white-50">Na JKO Digital, os valores de integridade, precisão e profundidade são
+                        reflexo direto da minha filosofia pessoal.</p>
+                </div>
+
+                <!-- Links Rápidos -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Links Rápidos</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="destaques.html"
+                                class="nav-link p-0 text-white-50">Destaques</a></li>
+                        <li class="nav-item mb-2"><a href="categorias.html"
+                                class="nav-link p-0 text-white-50">Categorias</a></li>
+                        <li class="nav-item mb-2"><a href="sobre.html" class="nav-link p-0 text-white-50">Sobre</a>
+                        <li class="nav-item mb-2"><a href="contato.html" class="nav-link p-0 text-white-50">Contato</a>
+                        </li>
+                        <li class="nav-item mb-2"><a href="politicasdeprivacidade.html"
+                                class="nav-link p-0 text-white-50">Política de
+                                Privacidade</a></li>
+                        <li class="nav-item mb-2"><a href="termosdeservicos.html"
+                                class="nav-link p-0 text-white-50">Termos de Serviço</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Informações de Contato -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2 text-white-50"> Av. Paulista, 1374 - Bela Vista, São Paulo - SP,
+                            01310-100</li>
+                        <li class="nav-item mb-2 text-white-50">Email: contato@jkodigital.com.br</li>
+                        <li class="nav-item mb-2 text-white-50">Telefone: 11 98078-8323</li>
+                    </ul>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-white">Redes Sociais</h5>
+                    <a href="https://facebook.com/jkodigital" class="me-2 text-white-50"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/jko.digital/" class="me-2 text-white-50"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="border-top mt-3 pt-3">
+                <p class="text-white-50 small mb-0">&copy; 2024 JKO Digital. Todos os direitos
+                    reservados.</p>
+            </div>
+        </div>
+
+    </footer>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js').then(registration => {
+                    console.log('ServiceWorker registrado com sucesso: ', registration.scope);
+                }).catch(error => {
+                    console.log('Falha no registro do ServiceWorker: ', error);
+                });
+            });
+        }
+    </script>
+<script>
+    document.getElementById("acceptCookieConsent").onclick = function() {
+        document.getElementById("cookieConsentContainer").style.display = "none";
+        localStorage.setItem("cookieConsent", "true");
+    };
+    
+    window.onload = function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            document.getElementById("cookieConsentContainer").style.display = "block";
+        }
+    };
+    </script>
+</body>
+
+</html>
