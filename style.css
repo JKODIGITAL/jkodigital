@@ -2,10 +2,10 @@
 
 body {
   font-family: 'Google Sans', sans-serif;
-  color: #202124;
+  color: #dddddd;
     font-size: 18px; /* Tamanho maior para leitura fácil */
     line-height: 1.8;
-    background-color: #f9f9f9;
+     background-color: #252525;
     margin: 0;
     padding: 0;
 }
@@ -300,6 +300,13 @@ h2 {
   font-weight: 500;
   line-height: 1.33; /* Ajuste com base no espaçamento de linha exato */
   margin-bottom: 16px; /* Ajuste conforme necessário */
+}
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.33; /* Ajuste com base no espaçamento de linha exato */
+  margin-bottom: 16px; /* Ajuste conforme necessário */
+  margin-top: 66px;
 }
 
 p {
