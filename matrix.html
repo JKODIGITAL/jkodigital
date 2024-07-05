@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformação em 21 Dias</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        #matrixText {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            display: inline;
+        }
+        #cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #0f0;
+            animation: blink 0.7s infinite;
+            vertical-align: bottom;
+            margin-left: -2px;
+        }
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            50.01%, 100% { opacity: 0; }
+        }
+        #offer {
+            background-color: #111;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        .testimonials {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <div id="textContainer">
+            <div id="matrixText" class="mb-3"></div>
+            <div id="cursor"></div>
+        </div>
+        <button id="continueBtn" class="btn btn-success mt-3" onclick="showNextMessage()">Continuar</button>
+    </div>
+
+    <script>
+        const messages = [
+            "Bem-vindo ao despertar, onde o comum se dissolve e o extraordinário começa.",
+            "Você já se perguntou o que está além do visível, além do tangível?",
+            "A rotina sufoca, mas hoje você será liberado das correntes invisíveis.",
+            "Dentro de você reside um poder inexplorado, esperando para ser liberado.",
+            "Caminhe comigo por um caminho que poucos ousaram trilhar.",
+            "Há segredos escondidos em sua alma, prontos para serem revelados.",
+            "Está na hora de quebrar os grilhões que o sistema impôs sobre você.",
+            "O que você conhece é apenas uma sombra da verdadeira realidade.",
+            "Um universo de possibilidades infinitas está ao seu alcance.",
+            "Você está pronto para ver através do véu das ilusões?",
+            "Prepare-se para uma transformação profunda e duradoura.",
+            "Você tem a força necessária para reescrever seu destino.",
+            "Escolha a coragem e a sabedoria em vez da complacência.",
+            "A verdade está à sua espera, apenas abra sua mente e coração.",
+            "Dê o primeiro passo para a liberdade e a plenitude total."
+        ];
+
+        let currentMessageIndex = 0;
+        let charIndex = 0;
+
+        function typeMessage() {
+            if (currentMessageIndex < messages.length) {
+                const matrixText = document.getElementById("matrixText");
+                const message = messages[currentMessageIndex];
+                if (charIndex < message.length) {
+                    matrixText.textContent += message[charIndex];
+                    charIndex++;
+                    setTimeout(typeMessage, 10);
+                } else {
+                    charIndex = 0;
+                    currentMessageIndex++;
+                    document.getElementById("continueBtn").disabled = false;
+                }
+            } else {
+                document.getElementById("continueBtn").textContent = "Recomeçar";
+                document.getElementById("continueBtn").onclick = restartMessages;
+                document.getElementById("offer").style.display = 'block';
+            }
+        }
+
+        function showNextMessage() {
+            const matrixText = document.getElementById("matrixText");
+            matrixText.textContent = '';
+            document.getElementById("continueBtn").disabled = true;
+            typeMessage();
+        }
+
+        function restartMessages() {
+            currentMessageIndex = 0;
+            showNextMessage();
+            document.getElementById("continueBtn").textContent = "Continuar";
+            document.getElementById("continueBtn").onclick = showNextMessage;
+            document.getElementById("offer").style.display = 'none';
+        }
+
+        // Mensagem inicial
+        showNextMessage();
+
+        // Adicionar o cursor no final do texto
+        const observer = new MutationObserver(() => {
+            const textContainer = document.getElementById("textContainer");
+            textContainer.appendChild(document.getElementById("cursor"));
+        });
+
+        observer.observe(document.getElementById("matrixText"), {
+            childList: true,
+            subtree: true,
+            characterData: true
+        });
+    </script>
+    <div class="container">
+
+        <div id="offer" class="mt-5 col-lg-8">
+            <h2>Transforme sua Vida em 21 Dias!</h2>
+            <p>Eu ouvi seu pedido de ajuda. A transformação que você procura começa agora.</p>
+            <p>Nosso programa de 21 dias é projetado para resetar seus hormônios, eliminar toxinas e criar hábitos
+                poderosos que mudarão sua vida.</p>
+            <ul>
+                <li>Reset Hormonal</li>
+                <li>Eliminação de Toxinas</li>
+                <li>Criação de Hábitos Poderosos</li>
+                <li>Desenvolvimento da Mente, Corpo e Espiritualidade</li>
+            </ul>
+            <p><strong>Baixe nosso e-book</strong> "O Código Masculino Neantrópico" e veja como
+                você pode começar sua jornada hoje mesmo.</p>
+            <p>Você tem o poder de mudar seu destino. Basta começar agora.</p>
+            <a href="https://pay.hotmart.com/E93229706Q"> <button class="btn btn-success">Baixar E-book</button> </a>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
