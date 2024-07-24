@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,35 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #121212;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+            background-color: #0a0a0a;
+    color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
         }
+        h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffd700;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #4caf50;
+    margin-bottom: 1.2rem;
+}
+
+.btn {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
         .slide {
             display: none;
             height: 100vh;
@@ -34,28 +59,110 @@
             margin-top: 20px;
         }
         .btn-primary {
-            background-color: #1f7a8c;
-            border-color: #1f7a8c;
-        }
-        .btn-primary:hover {
-            background-color: #12616a;
-            border-color: #12616a;
-        }
-        .btn-secondary {
-            background-color: #444;
-            border-color: #444;
-        }
-        .btn-secondary:hover {
-            background-color: #333;
-            border-color: #333;
-        }
-        .btn-success {
+    background-color: #1e88e5;
+    border-color: #1e88e5;
+}
+
+.btn-primary:hover {
+    background-color: #1565c0;
+    border-color: #1565c0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.btn-secondary {
+    background-color: #555;
+    border-color: #555;
+}
+
+.btn-secondary:hover {
+    background-color: #444;
+    border-color: #444;
+}
+
+.btn-success {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.btn-success:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+        .cta {
             background-color: #198754;
-            border-color: #198754;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 40px;
         }
-        .btn-success:hover {
-            background-color: #146c43;
-            border-color: #146c43;
+        .cta h4, .cta p, .cta a, .cta small {
+            color: #e6e6e6;
+        }
+        .cta a {
+            background-color: #ffc107;
+            color: #e0e0e0;
+            font-weight: bold;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+        .cta a:hover {
+            background-color: #e0a800;
+        }
+        .testimonial {
+            background-color: #2d2d2d;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .testimonial img {
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .testimonial p {
+            margin: 0;
+        }
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        .benefits li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+        .benefits li::before {
+    content: "\2713";
+    color: #4caf50;
+    font-size: 24px;
+    left: 0;
+    top: -2px;
+}
+        .faq {
+            text-align: left;
+        }
+        .faq h4 {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-top: 1rem;
+            margin-bottom: 0.8rem;
+            cursor: pointer;
+        }
+        .faq p {
+            display: none;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+        .faq h4.active + p { display: block; }
+        .countdown {
+            font-size: 1.4rem;
+    font-weight: 600;
+    color: #ff4081;
+    margin-top: 30px;
         }
     </style>
         <!-- Google Tag Manager -->
@@ -79,6 +186,17 @@
     </script>
 </head>
 <body>
+
+    <!-- CTA at the top 
+    <div class="cta">
+        <h4 class="mb-3">Descubra o Poder da Neantropia!</h4>
+        <p class="mb-4">Desbloqueie seu potencial ancestral, aumente sua testosterona naturalmente e transforme sua vida com o Método de Ativação da Neantropia.</p>
+        <a href="https://pay.hotmart.com/E93229706Q?checkoutMode=2" class="btn btn-lg">
+            <strong>Comece sua Transformação Agora!</strong>
+        </a>
+        <p class="text-white-50 mt-3"><small>Oferta Exclusiva por Tempo Limitado - Garanta sua Vantagem Agora!</small></p>
+    </div>
+-->
     <div id="slide1" class="slide active">
         <div class="content">
             <h1>Bem-vindo ao Método de Ativação da Neantropia</h1>
@@ -90,7 +208,7 @@
     </div>
     <div id="slide2" class="slide">
         <div class="content">
-            <h2>A Queda da Testosterona na Vida Moderna</h2>
+            <h2>A Queda da Testosterona na <b> Vida Moderna</b></h2>
             <p>Veja como os níveis de testosterona têm caído drasticamente nos últimos anos.</p>
             <div class="graph-container">
                 <canvas id="testosteroneGraph"></canvas>
@@ -103,7 +221,7 @@
     </div>
     <div id="slide3" class="slide">
         <div class="content">
-            <h2>Método de Ativação da Neantropia</h2>
+            <h2>Resultados COM a Ativação da Neantropia</h2>
             <p>Comprove como nossos métodos aumentam a testosterona para níveis superiores a 1000.</p>
             <div class="graph-container">
                 <canvas id="neantropiaGraph"></canvas>
@@ -116,29 +234,100 @@
     </div>
     <div id="slide4" class="slide">
         <div class="content">
-            
-            <p>"A verdadeira força vem de dentro."</p>
-            <p>"Transforme sua vida com o poder da neantropia."</p>
-            <p>"Resultados rápidos e eficazes com ciência ancestral."</p>
+            <h2>Resultados da Ativação da Neantropia</h2>
+            <p>Comprove como nossos métodos aumentam a testosterona para níveis superiores a 1000.</p>
+            <div class="graph-container">
+                <canvas id="neantropiaGraph2"></canvas>
+            </div>
             <div class="nav-buttons">
                 <button class="btn btn-secondary" onclick="prevSlide()">Anterior</button>
-                <button class="btn btn-success" onclick="showCTA()">Quero Começar Agora</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
             </div>
         </div>
     </div>
-    <div id="cta" class="slide">
+    <div id="slide5" class="slide">
         <div class="content">
-            <h2>Pronto para Mudar sua Vida?</h2>
-            <p>Adquira o Método de Ativação da Neantropia e comece a transformação hoje mesmo.</p>
-           <a href="https://pay.hotmart.com/E93229706Q?checkoutMode=2"> <button class="btn btn-success">Adquirir Agora</button></a>
+            <h2>Benefícios do Método de Ativação da Neantropia</h2>
+            <ul class="benefits">
+                <li>Aumento significativo dos níveis de testosterona</li>
+                <li>Melhoria na performance física e mental</li>
+                <li>Fortalecimento do sistema imunológico</li>
+                <li>Redução do estresse e melhora na qualidade do sono</li>
+                <li>Transformação de hábitos e estilo de vida</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="prevSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
         </div>
     </div>
+    <div id="slide6" class="slide">
+        <div class="content">
+            <h2>Testemunhos de Sucesso</h2>
+            <div class="testimonial">
+                <img src="resultado1.webp" alt="Cliente Satisfeito1" width="250" height="250">
+                    <p><strong>Ricardo Abbud:</strong> "O Método de Ativação da Neantropia mudou minha vida. Meus níveis de testosterona dispararam e minha energia está nas alturas. Recomendo para todos!"</p>
+                </div>
+                <div class="testimonial">
+                    <img src="resultado2.webp" alt="Cliente Satisfeito2" width="250" height="250">
+                    <p><strong>Henrique Tardelli:</strong> "Sofria com baixos níveis de testosterona, mas após seguir o método, meus exames mostraram resultados incríveis. Estou mais forte e focado."</p>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevSlide()">Anterior</button>
+                    <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+                </div>
+            </div>
+        </div>
+        <div id="slide7" class="slide">
+            <div class="content">
+                <h2>Garantia de Satisfação</h2>
+                <p>Confiança total no Método de Ativação da Neantropia. Oferecemos uma garantia de satisfação: se você não estiver satisfeito nos primeiros 30 dias, devolvemos seu dinheiro.</p>
+                <img src="garantia.png" alt="Selo de Garantia" class="img-fluid mb-4">
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevSlide()">Anterior</button>
+                    <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+                </div>
+            </div>
+        </div>
+        <div id="slide8" class="slide">
+            <div class="content">
+                <h2>FAQs - Perguntas Frequentes</h2>
+                <div class="faq">
+                    <h4 onclick="toggleFaq(this)">O que é a Neantropia?</h4>
+                    <p>A Neantropia é um método que resgata práticas ancestrais para otimizar os níveis de testosterona e a saúde geral.</p>
+                </div>
+                <div class="faq">
+                    <h4 onclick="toggleFaq(this)">Quanto tempo leva para ver resultados?</h4>
+                    <p>Os resultados podem variar, mas muitos dos nossos clientes começam a notar mudanças significativas em poucas semanas.</p>
+                </div>
+                <div class="faq">
+                    <h4 onclick="toggleFaq(this)">O método é seguro?</h4>
+                    <p>Sim, todas as práticas recomendadas são baseadas em estudos científicos e práticas ancestrais comprovadas.</p>
+                </div>
+                <div class="nav-buttons">
+                    <button class="btn btn-secondary" onclick="prevSlide()">Anterior</button>
+                    <button class="btn btn-primary" onclick="showCTA()">Próximo</button>
+                </div>
+            </div>
+        </div>
+        <div id="cta" class="slide">
+            <div class="content">
+                <h2>Pronto para Mudar sua Vida?</h2>
+                <p>Adquira o Método de Ativação da Neantropia e comece a transformação hoje mesmo.</p>
+                <button class="btn btn-success" onclick="window.location.href='https://pay.hotmart.com/E93229706Q?checkoutMode=2'">Adquirir Agora</button>
+                <div class="countdown">
+                    Oferta Exclusiva termina em: <span id="countdown-timer">00:00:00</span>
+                </div>
+            </div>
+        </div>
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5643T35" height="0" width="0"
         style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
