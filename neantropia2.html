@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra o Método de Ativação da Neantropia e aumente seus níveis de testosterona. Aprenda práticas ancestrais e biológicas para otimizar sua masculinidade moderna.">
+    <meta name="keywords" content="testosterona, neantropia, masculinidade, práticas ancestrais, saúde masculina">
+    <meta name="author" content="Danilo Yuji Okazaki">
+    <title>Método de Ativação da Neantropia</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #1e88e5;
+            --secondary-color: #1e88e5;
+            --text-color: #e0e0e0;
+            --background-color: #121212;
+            --accent-color: #4caf50;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4 {
+            color: var(--secondary-color);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+        }
+
+        .btn {
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 12px 24px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .slide {
+            display: none;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-buttons {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .graph-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: #1565c0;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #444;
+        }
+
+        .btn-success {
+            background-color: var(--accent-color);
+            color: #fff;
+        }
+
+        .btn-success:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta {
+            background-color: rgba(25, 135, 84, 0.2);
+            padding: 30px;
+            text-align: center;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        .cta h4,
+        .cta p,
+        .cta small {
+            color: var(--text-color);
+        }
+
+        .cta a {
+            background-color: var(--secondary-color);
+            color: var(--background-color);
+            font-weight: bold;
+            padding: 12px 24px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .cta a:hover {
+            background-color: #e0a800;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial img {
+            border-radius: 50%;
+            margin-right: 20px;
+            object-fit: cover;
+        }
+
+        .testimonial p {
+            margin: 0;
+            font-style: italic;
+        }
+
+        .benefits {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+
+        .benefits li {
+            margin-bottom: 20px;
+            padding-left: 40px;
+            position: relative;
+        }
+
+        .benefits li::before {
+            content: "\2713";
+            color: var(--accent-color);
+            font-size: 24px;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .faq {
+            text-align: left;
+        }
+
+        .faq h4 {
+            font-size: 1.3rem;
+            color: var(--secondary-color);
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .faq h4:hover {
+            color: var(--primary-color);
+        }
+
+        .faq p {
+            display: none;
+            font-size: 1.1rem;
+            margin: 0;
+            padding-left: 20px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .faq h4.active + p {
+            display: block;
+        }
+
+        .countdown {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #ff4081;
+            margin-top: 40px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .infographic {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .step {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            width: 250px;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .step:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .step i {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            font-size: 1.3rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            font-size: 1rem;
+        }
+
+        .cta-section {
+            background-color: rgba(76, 175, 80, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-section h3 {
+            color: var(--secondary-color);
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 14px;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .step {
+                width: 100%;
+            }
+
+            .nav-buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+        }
+    </style>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start': new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MMP44LM');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MMP44LM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div class="slide active">
+        <div class="content">
+            <h2>Você sabia?</h2>
+            <p>A testosterona é vital para a saúde masculina. Descubra como o Método de Ativação da Neantropia pode aumentar seus níveis naturalmente.</p>
+            <img src="testosterona.webp" alt="Metodo Neantropia infografico" class="img-fluid mb-4">
+            <div class="nav-buttons">
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>Sintomas de Deficiência de Testosterona</h2>
+            <p>Sente algum desses sintomas?</p>
+            <ul class="benefits">
+                <li>Depressão</li>
+                <li>Desconcentração</li>
+                <li>Fadiga</li>
+                <li>Diminuição da massa muscular e força</li>
+                <li>Diminuição do desejo sexual</li>
+                <li>Disfunção erétil</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>A Importância da Testosterona</h2>
+            <p>Por que a testosterona é importante?</p>
+            <ul class="benefits">
+                <li>Desenvolvimento muscular</li>
+                <li>Saúde óssea</li>
+                <li>Bem-estar mental</li>
+                <li>Função sexual</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>A Queda dos Níveis de Testosterona</h2>
+            <p>A partir dos 30 anos... Os níveis de testosterona começam a diminuir 1-2% ao ano. Aos 50, pode ser apenas metade do que era na juventude.</p>
+            <div class="graph-container">
+                <canvas id="declineChart"></canvas>
+            </div>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>Fatores de Redução</h2>
+            <p>Fatores que reduzem a testosterona:</p>
+            <ul class="benefits">
+                <li>Envelhecimento</li>
+                <li>Genética</li>
+                <li>Doenças crônicas (diabetes, obesidade)</li>
+                <li>Uso de certos medicamentos</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>Consequências da Deficiência</h2>
+            <p>Se não tratada, a deficiência de testosterona pode levar a:</p>
+            <ul class="benefits">
+                <li>Osteoporose</li>
+                <li>Infertilidade</li>
+                <li>Problemas cardiovasculares</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>O Método de Ativação da Neantropia</h2>
+            <img src="Ativaçãoneantropica.webp" alt="Metodo Neantropia infografico" class="img-fluid mb-4">
+            <p>Quer recuperar sua vitalidade? Nosso eBook oferece um método comprovado para aumentar naturalmente seus níveis de testosterona.</p>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>Benefícios do Método</h2>
+            <ul class="benefits">
+                <li>Aumento da energia e disposição</li>
+                <li>Melhora na massa muscular e força</li>
+                <li>Aumento do desejo sexual e performance</li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <h2>Testemunhos de Sucesso</h2>
+            <div class="testimonial">
+                <p>"Recuperei minha energia e disposição como nunca antes." - João S.</p>
+            </div>
+            <img src="garantia.png" alt="Selo de Garantia" class="img-fluid mb-4">
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-primary" onclick="nextSlide()">Próximo</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide">
+        <div class="content">
+            <img src="banner.webp" alt="Metodo Neantropia" class="img-fluid mb-4">
+            <p>Pronto para transformar sua vida? Adquira agora o eBook Método de Ativação da Neantropia e aumente seus níveis de testosterona naturalmente.</p>
+            <div class="nav-buttons">
+                <button class="btn btn-secondary" onclick="previousSlide()">Anterior</button>
+                <button class="btn btn-success" onclick="window.location.href='cadastro.html'">Comece Agora</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="chart.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

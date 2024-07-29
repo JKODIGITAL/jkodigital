@@ -29,13 +29,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const testosteroneCtx = document.getElementById('testosteroneGraph').getContext('2d');
     const neantropiaCtx = document.getElementById('neantropiaGraph').getContext('2d');
     const neantropiaCtx2 = document.getElementById('neantropiaGraph2').getContext('2d');
+
     new Chart(testosteroneCtx, {
         type: 'line',
         data: {
-            labels: ['1950', '1970', '1990', '2010', '2020'],
+            labels: ['1950', '1970', '1990', '2010', '2024'],
             datasets: [{
                 label: 'Níveis de Testosterona ao Longo dos Anos',
-                data: [700, 650, 600, 550, 500],
+                data: [1133, 852, 613, 520, 466],
                 borderColor: 'rgba(255, 99, 132, 1)',
                 borderWidth: 6,
                 fill: false,
@@ -44,10 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
-                    max: 800,
+                    max: 1200,
                     min: 400,
                     ticks: {
                         color: '#ffffff'
@@ -88,7 +90,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
- 
+
     new Chart(neantropiaCtx, {
         type: 'line',
         data: {
@@ -104,11 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
                     max: 1100,
-                    min:400,
+                    min: 400,
                     ticks: {
                         color: '#ffffff'
                     },
@@ -134,15 +137,14 @@ document.addEventListener('DOMContentLoaded', () => {
                         color: '#ffffff'
                     }
                 }
-            },
-       
+            }
         }
     });
 
     new Chart(neantropiaCtx2, {
         type: 'bar',
         data: {
-            labels: ['Antes', 'Neantropia', 'Antes', 'Neantropia', 'Antes', 'Neantropia'],
+            labels: ['Antes', 'Com Neantropia', 'Antes', 'Com Neantropia', 'Antes', 'Com Neantropia'],
             datasets: [{
                 label: 'Testosterona (ng/dL)',
                 data: [624, 1134, 456, 1056, 557, 1132],
@@ -153,6 +155,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false,
             scales: {
                 y: {
                     beginAtZero: true,
@@ -276,28 +279,29 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
-    // Countdown Timer
-    const countdownTimer = document.getElementById('countdown-timer');
-    const endTime = new Date().getTime() + (12* 60 * 1000); // 24 hours from now
 
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const timeLeft = endTime - now;
+// Countdown Timer
+const countdownTimer = document.getElementById('countdown-timer');
+const endTime = new Date().getTime() + (12 * 60 * 1000); // 24 hours from now
 
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+function updateCountdown() {
+    const now = new Date().getTime();
+    const timeLeft = endTime - now;
 
-        countdownTimer.innerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-        if (timeLeft < 0) {
-            clearInterval(countdownInterval);
-            countdownTimer.innerText = '00:00:00';
-        }
+    countdownTimer.innerText = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+    if (timeLeft < 0) {
+        clearInterval(countdownInterval);
+        countdownTimer.innerText = '00:00:00';
     }
+}
 
-    const countdownInterval = setInterval(updateCountdown, 1000);
-    updateCountdown(); // Initial call to set timer immediately
+const countdownInterval = setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call to set timer immediately
 });
 
 
