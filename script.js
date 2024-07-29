@@ -98,7 +98,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 data: [450, 566, 720, 1083],
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 5,
-                fill: false
+                fill: false,
+                tension: 0.1
             }]
         },
         options: {
@@ -134,50 +135,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 }
             },
-            plugins: {
-                legend: {
-                    labels: {
-                        color: '#ffffff'
-                    }
-                },
-                tooltip: {
-                    mode: 'index',
-                    intersect: false
-                },
-                annotation: {
-                    annotations: {
-                        arrow1: {
-                            type: 'line',
-                            xMin: 0,
-                            xMax: 3,
-                            yMin: 450,
-                            yMax: 1000,
-                            borderColor: 'rgb(43, 255, 1)',
-                            borderWidth: 6,
-                            label: {
-                                content: ['↑ +550'],
-                                enabled: true,
-                                position: 'center',
-                                backgroundColor: 'rgb(43, 255, 1)'
-                            },
-                            arrowHeads: {
-                                end: {
-                                    display: true,
-                                    length: 40,
-                                    width: 10
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+       
         }
     });
 
     new Chart(neantropiaCtx2, {
         type: 'bar',
         data: {
-            labels: ['Roberto sem Neantropia', 'Roberto com Neantropia', 'Cleiton sem Neantropia', 'Cleiton com Neantropia', 'Nilton sem Neantropia', 'Nilton com Neantropia'],
+            labels: ['Antes', 'Neantropia', 'Antes', 'Neantropia', 'Antes', 'Neantropia'],
             datasets: [{
                 label: 'Testosterona (ng/dL)',
                 data: [624, 1134, 456, 1056, 557, 1132],
@@ -191,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
             scales: {
                 y: {
                     beginAtZero: true,
-                    max: 1200,
+                    max: 1300,
                     ticks: {
                         color: '#ffffff'
                     },
@@ -247,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             arrowHeads: {
                                 end: {
                                     display: true,
-                                    length: 40,
+                                    length: 20,
                                     width: 10
                                 }
                             }
@@ -274,7 +239,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             arrowHeads: {
                                 end: {
                                     display: true,
-                                    length: 40,
+                                    length: 20,
                                     width: 10
                                 }
                             }
@@ -301,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             arrowHeads: {
                                 end: {
                                     display: true,
-                                    length: 40,
+                                    length: 20,
                                     width: 10
                                 }
                             }
