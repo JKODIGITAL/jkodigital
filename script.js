@@ -1,5 +1,5 @@
 let currentSlide = 1;
-const totalSlides = 8;
+const totalSlides = 9;
 
 function nextSlide() {
     if (currentSlide < totalSlides) {
@@ -26,70 +26,11 @@ function toggleFaq(element) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const testosteroneCtx = document.getElementById('testosteroneGraph').getContext('2d');
+  
     const neantropiaCtx = document.getElementById('neantropiaGraph').getContext('2d');
     const neantropiaCtx2 = document.getElementById('neantropiaGraph2').getContext('2d');
 
-    new Chart(testosteroneCtx, {
-        type: 'line',
-        data: {
-            labels: ['1950', '1970', '1990', '2010', '2024'],
-            datasets: [{
-                label: 'Níveis de Testosterona ao Longo dos Anos',
-                data: [1133, 852, 613, 520, 466],
-                borderColor: 'rgba(255, 99, 132, 1)',
-                borderWidth: 6,
-                fill: false,
-                tension: 0.1
-            }]
-        },
-        options: {
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-                y: {
-                    beginAtZero: true,
-                    max: 1200,
-                    min: 400,
-                    ticks: {
-                        color: '#ffffff'
-                    },
-                    grid: {
-                        color: 'rgba(255, 255, 255, 0.2)'
-                    },
-                    title: {
-                        display: true,
-                        text: 'Nível de Testosterona (ng/dL)',
-                        color: '#ffffff'
-                    }
-                },
-                x: {
-                    ticks: {
-                        color: '#ffffff'
-                    },
-                    grid: {
-                        color: 'rgba(255, 255, 255, 0.2)'
-                    },
-                    title: {
-                        display: true,
-                        text: 'Ano',
-                        color: '#ffffff'
-                    }
-                }
-            },
-            plugins: {
-                legend: {
-                    labels: {
-                        color: '#ffffff'
-                    }
-                },
-                tooltip: {
-                    mode: 'index',
-                    intersect: false
-                }
-            }
-        }
-    });
+ 
 
     new Chart(neantropiaCtx, {
         type: 'line',
